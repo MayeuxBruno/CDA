@@ -28,7 +28,7 @@ INSERT INTO `gestion` (`idBureau`, `idCourrier`, `dateEnvoi`, `dateReception`) V
 INSERT INTO `gestion` (`idBureau`, `idCourrier`) VALUES ('6', '3');
 INSERT INTO `gestion` (`idBureau`, `idCourrier`) VALUES ('7', '4');
 
-INSERT INTO `acheminement` (`idBureau`, `idTransport`, `idCentresDeTri`) VALUES ('1', '1', '3');
-INSERT INTO `acheminement` (`idBureau`, `idTransport`, `idCentresDeTri`) VALUES ('3', '1', '3');
-INSERT INTO `acheminement` (`idBureau`, `idTransport`, `idCentresDeTri`) VALUES ('2', '1', '3');
-INSERT INTO `acheminement` (`idBureau`, `idTransport`, `idCentresDeTri`) VALUES ('1', '1', '3');
+INSERT INTO `acheminement` (`idBureau`, `idTransport`, `idCentresDeTri`) VALUES ('1', '1', '1');
+INSERT INTO `acheminement` (`idBureau`, `idTransport`, `idCentresDeTri`) VALUES ('3', '1', '1');
+INSERT INTO `acheminement` (`idBureau`, `idTransport`, `idCentresDeTri`) VALUES ('2', '3', '3');
+INSERT INTO `acheminement` (`idBureau`, `idTransport`, `idCentresDeTri`) VALUES ('5', '2', '2');
