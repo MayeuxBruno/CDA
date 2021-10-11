@@ -46,6 +46,15 @@ CREATE TABLE Produits(
 )ENGINE=InnoDB;
 
 #-----------------------------------------
+#   Table Titres
+#-----------------------------------------
+
+CREATE TABLE Titres(
+   idTitre INT AUTO_INCREMENT PRIMARY KEY,
+   libelleTitre VARCHAR(50) 
+)ENGINE=InnoDB;
+
+#-----------------------------------------
 #   Table Fautes
 #-----------------------------------------
 
@@ -56,7 +65,8 @@ CREATE TABLE Fautes(
    dateDetection DATE NOT NULL,
    commentaireFaute VARCHAR(200) ,
    dateReparation DATE,
-   idProduit INT NOT NULL
+   idProduit INT NOT NULL,
+   idTitre INT NOT NULL
 )ENGINE=InnoDB;
 
 #-----------------------------------------
@@ -73,5 +83,6 @@ ALTER TABLE Categories ADD CONSTRAINT FK_Categories_Categories  FOREIGN KEY(idSo
 ALTER TABLE Produits ADD CONSTRAINT FK_Modeles_Produits FOREIGN KEY(idModele) REFERENCES Modeles(idModele);
 ALTER TABLE Produits ADD CONSTRAINT FK_Series_Produits FOREIGN KEY(idSerie) REFERENCES Series(idSerie);
 ALTER TABLE Fautes ADD CONSTRAINT FK_Produits_Fautes FOREIGN KEY(idProduit) REFERENCES Produits(idProduit);
+ALTER TABLE Fautes ADD CONSTRAINT FK_Titres_Fautes FOREIGN KEY(idTitre) REFERENCES Titres(idTitre);
 ALTER TABLE Classifications ADD CONSTRAINT FK_Categories_Classifications FOREIGN KEY(idCategorie) REFERENCES Categories(idCategorie);
 ALTER TABLE Classifications ADD CONSTRAINT FK_Fautes_Classifications FOREIGN KEY(idFaute) REFERENCES Fautes(idFaute);
