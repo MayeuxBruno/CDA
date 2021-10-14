@@ -184,12 +184,11 @@
     SELECT nodep, COUNT(noemp) FROM employe GROUP BY nodep HAVING COUNT(*) >3;
 
 -- 4. Afficher les lettres qui sont l'initiale d'au moins trois employés. 
-    SELECT SUBSTRING(nom,1,1) AS initiale, count(nom) FROM employe GROUP BY initiale HAVING COUNT(*) >3;
-    SELECT SUBSTRING(nom,1,1) AS initiale, count((SELECT e.nom FROM employe as e WHERE SUBSTRING(nom,1,1)=initiale)) FROM employe
+    SELECT SUBSTRING(nom,1,1) AS initiale, count(SUBSTRING(nom,1,1)) AS "Nombre de noms" FROM employe GROUP BY SUBSTRING(nom,1,1) HAVING COUNT(*) >3;
 
 -- 5. Rechercher le salaire maximum et le salaire minimum parmi tous les 
 --  salariés et l'écart entre les deux. 
-
+    SELECT MAX(salaire) AS "Salaire Maxi", MIN(salaire) AS "Salaire Mini",(MAX(salaire)-MIN(salaire)) AS "Différence" FROM employe;
 
 -- 6. Rechercher le nombre de titres différents. 
     SELECT COUNT(DISTINCT titre) FROM employe
@@ -207,3 +206,4 @@
 
 -- 10.Rechercher le nombre de salaires renseignés et le nombre de taux de 
 -- commission renseignés.
+        SELECT COUNT(DISTINCT noemp) AS "Nb employe avex taux" FROM employe as e WHERE e.tauxcom IS NOT NULL;
