@@ -192,7 +192,7 @@
 
 
 -- 6. Rechercher le nombre de titres différents. 
-    
+    SELECT COUNT(DISTINCT titre) FROM employe
 
 -- 7. Pour chaque titre, compter le nombre d'employés possédant ce titre. 
     SELECT titre, count(noemp) as "Nb employés" FROM employe GROUP BY titre;
