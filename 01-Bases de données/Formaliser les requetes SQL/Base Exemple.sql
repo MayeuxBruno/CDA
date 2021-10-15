@@ -175,7 +175,7 @@
     SELECT d.nodept, d.nom, e.nom FROM dept as d LEFT JOIN employe as e ON d.nodept=e.nodep ORDER BY d.nodept;
 
 -- 1. Calculer le nombre d'employés de chaque titre. 
-    SELECT titre, COUNT(noemp) FROM employe GROUP BY titre; 
+    SELECT titre, COUNT(*) AS NbEmploye FROM employe GROUP BY titre;
 
 -- 2. Calculer la moyenne des salaires et leur somme, par région.
     SELECT d.noregion, AVG(e.salaire) AS "Moyenne Salaires", SUM(e.salaire) AS "Somme Salaires" FROM dept as d INNER JOIN employe as e ON d.nodept=e.nodep GROUP BY d.noregion;
@@ -184,7 +184,10 @@
     SELECT nodep, COUNT(noemp) FROM employe GROUP BY nodep HAVING COUNT(*) >3;
 
 -- 4. Afficher les lettres qui sont l'initiale d'au moins trois employés. 
-    SELECT SUBSTRING(nom,1,1) AS initiale, count(SUBSTRING(nom,1,1)) AS "Nombre de noms" FROM employe GROUP BY SUBSTRING(nom,1,1) HAVING COUNT(*) >3;
+    SELECT substring(nom,1,1) AS 'initial'
+    FROM employe
+    GROUP BY initial
+    HAVING count(initial) > 2
 
 -- 5. Rechercher le salaire maximum et le salaire minimum parmi tous les 
 --  salariés et l'écart entre les deux. 
@@ -206,4 +209,4 @@
 
 -- 10.Rechercher le nombre de salaires renseignés et le nombre de taux de 
 -- commission renseignés.
-        SELECT COUNT(DISTINCT noemp) AS "Nb employe avex taux" FROM employe as e WHERE e.tauxcom IS NOT NULL;
+    SELECT COUNT (salaire) , COUNT (tauxcom) FROM Employe
