@@ -51,13 +51,27 @@
 
 -- 10.Lister les commandes par nom fournisseur
 -- (Afficher le nom du fournisseur, le numéro de commande et la date)
+    SELECT nomfou as Fournisseur ,
+           numcom as "N° Commande",
+           DATE(datcom) as "Date de commande" 
+           FROM fournis as f INNER JOIN entcom as e ON e.numfou=f.numfou
+           ORDER BY Fournisseur;
 
 -- 11.Sortir les produits des commandes ayant le mot "urgent' en observation?
 -- (Afficher le numéro de commande, le nom du fournisseur, le libellé du produit et
--- le sous total = quantité commandée * Prix unitaire)
-
+-- le sous total = quantité commandée * Prix unitaire
+    SELECT l.numcom,
+           codart as code,
+           qtecde*priuni as prix,
+           nomfou 
+    FROM ligcom as l 
+    INNER JOIN entcom as e ON l.numcom=e.numcom 
+    INNER JOIN fournis as f ON e.numfou=f.numfou 
+    WHERE obscom LIKE "%urgent%";
+   
 -- 12.Coder de 2 manières différentes la requête suivante :
 -- Lister le nom des fournisseurs susceptibles de livrer au moins un article
+
 
 -- 13.Coder de 2 manières différentes la requête suivante
 -- Lister les commandes (Numéro et date) dont le fournisseur est celui de la 
