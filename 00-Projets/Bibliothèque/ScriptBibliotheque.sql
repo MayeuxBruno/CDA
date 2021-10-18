@@ -1,5 +1,5 @@
 DROP DATABASE IF EXISTS Bibliotheque;
-CREATE DATABASE Bibliotheque;
+CREATE DATABASE Bibliotheque DEFAULT CHARACTER SET utf8;
 USE Bibliotheque;
 
 #------------------------------
@@ -9,7 +9,7 @@ USE Bibliotheque;
 CREATE TABLE EtatsReservations(
    idEtatReservation INT AUTO_INCREMENT PRIMARY KEY,
    libelleEtatReservation VARCHAR(50) 
-)ENGINE=InnoDB CHARSET=utf8;
+)ENGINE=InnoDB;
 
 #-------------------
 #--  Table Themes --
@@ -18,7 +18,7 @@ CREATE TABLE EtatsReservations(
 CREATE TABLE Themes(
    idTheme INT AUTO_INCREMENT PRIMARY KEY,
    nomTheme VARCHAR(50) 
-)ENGINE=InnoDB CHARSET=utf8;
+)ENGINE=InnoDB;
 
 #--------------------
 #--  Table Auteurs --
@@ -27,7 +27,7 @@ CREATE TABLE Themes(
 CREATE TABLE Auteurs(
    idAuteur INT AUTO_INCREMENT PRIMARY KEY,
    nomAuteur VARCHAR(100) 
-)ENGINE=InnoDB CHARSET=utf8;
+)ENGINE=InnoDB;
 
 #------------------
 #-- Table Genres --
@@ -36,7 +36,7 @@ CREATE TABLE Auteurs(
 CREATE TABLE Genres(
    idGenre INT AUTO_INCREMENT PRIMARY KEY,
    nomGenre VARCHAR(50) 
-)ENGINE=InnoDB CHARSET=utf8;
+)ENGINE=InnoDB;
 
 #---------------------
 #--  Table Editeurs --
@@ -45,7 +45,7 @@ CREATE TABLE Genres(
 CREATE TABLE Editeurs(
    idEditeur INT AUTO_INCREMENT PRIMARY KEY,
    nomEditeur VARCHAR(100) 
-)ENGINE=InnoDB CHARSET=utf8;
+)ENGINE=InnoDB;
 
 #-------------------
 #--  Table Usures --
@@ -54,7 +54,7 @@ CREATE TABLE Editeurs(
 CREATE TABLE Usures(
    idUsure INT AUTO_INCREMENT PRIMARY KEY,
    codeUsure VARCHAR(50) 
-)ENGINE=InnoDB CHARSET=utf8;
+)ENGINE=InnoDB;
 
 #---------------------------------------
 #--  Table CategoriesProfessionnelles --
@@ -63,7 +63,7 @@ CREATE TABLE Usures(
 CREATE TABLE CategoriesProfessionnelles(
    idCategorieProfessionnelle INT AUTO_INCREMENT PRIMARY KEY,
    libelleCategPro VARCHAR(50)
-)ENGINE=InnoDB CHARSET=utf8;
+)ENGINE=InnoDB;
 
 #--------------------
 #-- Table MotsCles --
@@ -72,7 +72,7 @@ CREATE TABLE CategoriesProfessionnelles(
 CREATE TABLE MotsCles(
    idMotCle INT AUTO_INCREMENT PRIMARY KEY,
    libelleMotCle VARCHAR(50) 
-)ENGINE=InnoDB CHARSET=utf8;
+)ENGINE=InnoDB;
 
 #-------------------
 #--  Table Villes --
@@ -82,7 +82,7 @@ CREATE TABLE Villes(
    idVille INT AUTO_INCREMENT PRIMARY KEY,
    codePostal VARCHAR(5) ,
    nomVille VARCHAR(100) 
-)ENGINE=InnoDB CHARSET=utf8;
+)ENGINE=InnoDB;
 
 #-------------------
 #--  Table Livres --
@@ -94,7 +94,7 @@ CREATE TABLE Livres(
    codeCatalogue VARCHAR(50) ,
    idEditeur INT NOT NULL,
    idTheme INT NOT NULL
-)ENGINE=InnoDB CHARSET=utf8;
+)ENGINE=InnoDB;
 
 #------------------------
 #--  Table Exemplaires --
@@ -107,7 +107,7 @@ CREATE TABLE Exemplaires(
    codeRayon VARCHAR(50) ,
    idUsure INT NOT NULL,
    idLivre INT NOT NULL
-)ENGINE=InnoDB CHARSET=utf8;
+)ENGINE=InnoDB;
 
 #---------------------
 #--  Table Abonnes  --
@@ -124,7 +124,7 @@ CREATE TABLE Abonnes(
    dateNaissance DATE,
    idVille INT NOT NULL,
    idCategorieProfessionnelle INT NOT NULL 
-)ENGINE=InnoDB CHARSET=utf8;
+)ENGINE=InnoDB;
 
 #--------------------------
 #--  Table Reservations  --
@@ -137,7 +137,7 @@ CREATE TABLE Reservations(
    idAbonne INT,
    dateDebutReservation DATE,
    dateDemandeReservation DATE
-)ENGINE=InnoDB CHARSET=utf8;
+)ENGINE=InnoDB;
 
 #------------------------
 #--  Table Definitions --
@@ -147,7 +147,7 @@ CREATE TABLE Definitions(
    idDefinition INT AUTO_INCREMENT PRIMARY KEY,
    idGenre INT,
    idLivre INT
-)ENGINE=InnoDB CHARSET=utf8;
+)ENGINE=InnoDB;
 
 #-------------------------
 #--  Table Compositions --
@@ -157,7 +157,7 @@ CREATE TABLE Compositions(
    idComposition INT AUTO_INCREMENT PRIMARY KEY,
    idAuteur INT,
    idLivre INT
-)ENGINE=InnoDB CHARSET=utf8;
+)ENGINE=InnoDB;
 
 #-------------------------------
 #--  Table EmpruntExemplaires --
@@ -169,7 +169,7 @@ CREATE TABLE EmpruntExemplaires(
    idAbonne INT,
    dateEmprunt DATE,
    dateRetourEffective DATE
-)ENGINE=InnoDB CHARSET=utf8;
+)ENGINE=InnoDB;
 
 #----------------------------
 #--  Table Identifications --
@@ -179,7 +179,11 @@ CREATE TABLE Identifications(
    idIdentification INT AUTO_INCREMENT PRIMARY KEY,
    idLivre INT,
    idMotCle INT
-)ENGINE=InnoDB CHARSET=utf8;
+)ENGINE=InnoDB;
+
+#------------------------------------------------------------------------------
+#            Ajout des contraintes 
+#------------------------------------------------------------------------------
 
 ALTER TABLE Livres ADD CONSTRAINT FK_Livres_Editeurs FOREIGN KEY(idEditeur) REFERENCES editeurs(idEditeur);
 ALTER TABLE Livres ADD CONSTRAINT FK_Livres_Themes FOREIGN KEY(idTheme) REFERENCES Themes(idTheme);
