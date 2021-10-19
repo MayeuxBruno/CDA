@@ -94,15 +94,12 @@
 -- 15.Editer la liste des fournisseurs susceptibles de livrer les produits dont le stock est 
 -- inférieur ou égal à 150 % du stock d'alerte. La liste est triée par produit puis 
 -- fournisseur
-SELECT l.numcom,l.codart,p.stkphy,p.stkale FROM ligcom as l
-    INNER JOIN entcom on
+    SELECT f.nomfou as "Fournisseur",p.libart as "Article",p.stkphy as "Stock",p.stkale as "Alerte" FROM fournis as f
+    INNER JOIN entcom as e ON e.numfou=f.numfou 
     INNER JOIN ligcom as l ON l.numcom=e.numcom
     INNER JOIN produit as p ON l.codart=p.codart 
     WHERE p.stkphy < p.stkale*2.5  
-   
-   
-    SELECT libart,stkphy,stkale FROM produit WHERE stkphy < stkale*2.5
-
+    ORDER BY p.libart,f.nomfou
 
 -- 16.Éditer la liste des fournisseurs susceptibles de livrer les produit dont le stock est 
 -- inférieur ou égal à 150 % du stock d'alerte et un délai de livraison d'au plus 30 
@@ -143,4 +140,4 @@ SELECT e.numcom as "N° Commande",,
 FROM entcom as e
 INNER JOIN ligcom as l ON l.numcom=e.numcom
 INNER JOIN fournis as f ON e.numfou=f.numfou
-INNER JOIN produit as p ON l.codart=
+INNER JOIN produit as p ON l.codart=p.codart;
