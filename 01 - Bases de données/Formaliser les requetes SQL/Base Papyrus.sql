@@ -47,7 +47,11 @@
 -- 9. Lister les commandes dont le total est supérieur à 10 000€ ; on exclura dans le
 -- calcul du total les articles commandés en quantité supérieure ou égale à 1000.
 -- (Affichage numéro de commande et total)
-    SELECT x.Commande, SUM(x.Prix) as Total FROM (SELECT numcom as "Commande", qtecde*priuni as Prix FROM ligcom WHERE qtecde<1000 ) as x GROUP BY Commande HAVING Total > 10000;
+    SELECT x.Commande, 
+           SUM(x.Prix) as Total 
+    FROM (SELECT numcom as "Commande", qtecde*priuni as Prix FROM ligcom WHERE qtecde<1000 ) as x 
+    GROUP BY Commande 
+    HAVING Total > 10000;
 
 -- 10.Lister les commandes par nom fournisseur
 -- (Afficher le nom du fournisseur, le numéro de commande et la date)
@@ -104,6 +108,18 @@
 -- 16.Éditer la liste des fournisseurs susceptibles de livrer les produit dont le stock est 
 -- inférieur ou égal à 150 % du stock d'alerte et un délai de livraison d'au plus 30 
 -- jours. La liste est triée par fournisseur puis produit
+    SELECT f.nomfou as "Fournisseur",
+           p.libart as "Article",
+           p.stkphy as "Stock",
+           p.stkale as "Alerte",
+           v.delliv as "Délai de livraison"  
+    FROM fournis as f
+    INNER JOIN entcom as e ON e.numfou=f.numfou 
+    INNER JOIN ligcom as l ON l.numcom=e.numcom
+    INNER JOIN produit as p ON l.codart=p.codart 
+    INNER JOIN vente as v ON p.codart=v.codart
+    WHERE p.stkphy < p.stkale*2.5  AND v.delliv <= 30
+    ORDER BY p.libart,f.nomfou
 
 -- 17.Avec le même type de sélection que ci-dessus, sortir un total des stocks par 
 -- fournisseur trié par total décroissant
