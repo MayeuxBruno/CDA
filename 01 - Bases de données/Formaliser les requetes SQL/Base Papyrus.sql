@@ -71,19 +71,38 @@
    
 -- 12.Coder de 2 manières différentes la requête suivante :
 -- Lister le nom des fournisseurs susceptibles de livrer au moins un article
-
+    
 
 -- 13.Coder de 2 manières différentes la requête suivante
 -- Lister les commandes (Numéro et date) dont le fournisseur est celui de la 
 -- commande 70210 :
+   SELECT numcom, DATE(datcom) 
+   FROM entcom 
+   WHERE numcom <> "70210" AND numfou=(SELECT numfou FROM entcom WHERE numcom="70210"); 
 
 -- 14.Dans les articles susceptibles d’être vendus, lister les articles moins chers (basés 
 -- sur Prix1) que le moins cher des rubans (article dont le premier caractère 
 -- commence par R). On affichera le libellé de l’article et prix1
+    SELECT libart,prix1 
+    FROM vente as v 
+    INNER JOIN produit as p on p.codart=v.codart
+    WHERE prix1< (SELECT MIN(prix1) 
+                  FROM vente as v 
+                  INNER JOIN produit as p on p.codart=v.codart 
+                  WHERE p.libart LIKE "r%")
 
 -- 15.Editer la liste des fournisseurs susceptibles de livrer les produits dont le stock est 
 -- inférieur ou égal à 150 % du stock d'alerte. La liste est triée par produit puis 
 -- fournisseur
+SELECT l.numcom,l.codart,p.stkphy,p.stkale FROM ligcom as l
+    INNER JOIN entcom on
+    INNER JOIN ligcom as l ON l.numcom=e.numcom
+    INNER JOIN produit as p ON l.codart=p.codart 
+    WHERE p.stkphy < p.stkale*2.5  
+   
+   
+    SELECT libart,stkphy,stkale FROM produit WHERE stkphy < stkale*2.5
+
 
 -- 16.Éditer la liste des fournisseurs susceptibles de livrer les produit dont le stock est 
 -- inférieur ou égal à 150 % du stock d'alerte et un délai de livraison d'au plus 30 
@@ -100,3 +119,28 @@
  
 -- 20.Existe-t-il des lignes de commande non cohérentes avec les produits vendus par 
 -- les fournisseurs. ?
+
+CREATE VIEW fournisseurCommandeTable
+AS 
+SELECT f.nomfou as "Fournisseur",
+       f.ruefou as "Adresse", 
+       f.posfou as "Code Postal",
+       f.vilfou as Ville, 
+       e.numcom,
+       e.obscom,
+       DATE(e.datcom) 
+FROM fournisseurs as f
+LEFT JOIN entcom as e ON f.numfou=e.numfou;
+
+CREATE VIEW commandesLignes
+AS
+SELECT e.numcom as "N° Commande",,
+       e.obscom as "Observations",
+       DATE (e.datcom)as "Date de commande",
+       p.libart as "Article",
+       l.qtecde as "Quantité",
+       l.priuni as "Prix unitaire" 
+FROM entcom as e
+INNER JOIN ligcom as l ON l.numcom=e.numcom
+INNER JOIN fournis as f ON e.numfou=f.numfou
+INNER JOIN produit as p ON l.codart=
