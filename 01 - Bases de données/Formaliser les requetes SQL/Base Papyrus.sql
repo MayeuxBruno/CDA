@@ -75,7 +75,11 @@
    
 -- 12.Coder de 2 manières différentes la requête suivante :
 -- Lister le nom des fournisseurs susceptibles de livrer au moins un article
-    
+    SELECT f.nomfou
+    FROM fournis as f
+    INNER JOIN vente as v ON v.numfou=f.numfou 
+    INNER JOIN produit as p ON p.codart=v.codart
+    GROUP BY f.nomfou HAVING p.stkphy>1;
 
 -- 13.Coder de 2 manières différentes la requête suivante
 -- Lister les commandes (Numéro et date) dont le fournisseur est celui de la 
@@ -123,16 +127,50 @@
 
 -- 17.Avec le même type de sélection que ci-dessus, sortir un total des stocks par 
 -- fournisseur trié par total décroissant
+    SELECT f.nomfou as "Forunisseur",
+           p.libart as "Article",
+           p.stkphy as "Stock"
+    FROM fournis as f
+    INNER JOIN vente as v ON v.numfou=f.numfou
+    INNER JOIN produit as p ON p.codart=v.codart
+    ORDER BY f.nomfou DESC
 
 -- 18.En fin d'année, sortir la liste des produits dont la quantité réellement commandée 
 -- dépasse 90% de la quantité annuelle prévue.
+    SELECT p.libart as "Produit", 
+           SUM(l.qtecde) as Quantite, 
+           p.qteann*0.9 AS pourcentage 
+    FROM ligcom as l
+    INNER JOIN produit as p ON l.codart=p.codart
+    GROUP BY l.codart HAVING Quantite > pourcentage
+
+    SELECT p.libart as "Produit", qteann*0.9
+    FROM produit as p
+    INNER JOIN ligcom as l ON l.codart=p.codart
+    GROUP BY p.libart HAVING SUM(l.qtecde) > qteann*0.9;
 
 -- 19.Calculer le chiffre d'affaire par fournisseur pour l'année 93 sachant que les prix 
 -- indiqués sont hors taxes et que le taux de TVA est 20%.
- 
+
+
+
+
 -- 20.Existe-t-il des lignes de commande non cohérentes avec les produits vendus par 
 -- les fournisseurs. ?
 
+
+--1. Application d'une augmentation de tarif de 4% pour le prix 1, 2% pour le prix2 pour le fournisseur 9180
+
+--2. Dans la table vente, mettre à jour le prix2 des articles dont le prix2 est null, en affectant a valeur de prix.
+
+--3. Mettre à jour le champ obscom en positionnant '*****' pour toutes les commandes dont le fournisseur a un indice de satisfaction <5
+
+--4. Suppression du produit I110
+
+--5. Suppression des entête de commande qui n'ont aucune ligne
+
+
+-- TEST SUR LES VUES --
 CREATE VIEW fournisseurCommandeTable
 AS 
 SELECT f.nomfou as "Fournisseur",
