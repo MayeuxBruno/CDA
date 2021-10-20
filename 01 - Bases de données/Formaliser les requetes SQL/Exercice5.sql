@@ -44,8 +44,7 @@ CREATE TABLE HISTOFONCTION(
    noemp INT,
    date_nom DATE,
    fonction VARCHAR(50) ,
-   PRIMARY KEY(noemp, date_nom),
- 
+   PRIMARY KEY(noemp, date_nom)
 )ENGINE=InnoDB;
 
 
