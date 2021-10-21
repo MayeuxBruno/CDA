@@ -98,6 +98,6 @@ F.	Requêtes avec clause « group by »
         SELECT AVG(sala*12) as 'moyenne annuelle', fonction FROM employe GROUP BY fonction HAVING COUNT(noemp)>2;
 
 5.	Donner la liste des départements avec au moins deux ouvriers
-        SELECT nodep FROM employe GROUP BY nodep HAVING COUNT((SELECT * FROM employe WHERE fonction="ouvrier"))>=2; 
+        SELECT nodep as y FROM employe GROUP BY nodep HAVING COUNT("ouvrier")>=2; 
 6.	Donner les salaires moyens des présidents, directeurs et responsables
 
