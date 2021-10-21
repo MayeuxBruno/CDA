@@ -33,7 +33,7 @@
     SELECT nomemp, sala FROM EMPLOYE WHERE LOWER(fonction)="vendeur" AND nodep=30 AND sala > 1500;
 
 --6.	Donner la liste des noms, fonctions et salaires des directeurs et des présidents
-    SELECT nomemp, fonction, sala FROM EMPLOYE WHERE LOWER(fonction)="directeur" OR LOWER(fonction)="Président";
+    SELECT nomemp, fonction, sala FROM EMPLOYE WHERE LOWER(fonction)="directeur" OR LOWER(fonction)="président";
 
 --7.	Donner la liste des noms, fonctions et salaires des directeurs et des employés qui ont un salaire > 2500 €
     SELECT nomemp, fonction, sala FROM EMPLOYE WHERE LOWER(fonction)="directeur" OR sala>2500;
