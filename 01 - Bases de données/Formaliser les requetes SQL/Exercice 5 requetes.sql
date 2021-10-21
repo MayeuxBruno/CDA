@@ -65,3 +65,39 @@
 
 --16.	Donner la liste des employés qui ont une commission et qui sont dans le département 30 ou 20
 
+
+--C.	Requêtes avec clause « order by »
+
+--1.	Donner la liste des salaires, fonctions et noms des employés du département 30, selon l'ordre croissant des salaires
+        SELECT sala, fonction, nomemp FROM employe WHERE nodep=30 ORDER BY sala;
+
+--2.	Donner la liste des salaires, fonctions et noms des employés du département 30, selon l'ordre décroissant des salaires
+        SELECT sala, fonction, nomemp FROM employe WHERE nodep=30 ORDER BY sala DESC;
+
+--3.	Donner la liste des employés triée selon l'ordre croissant des fonctions et l'ordre décroissant des salaires
+        SELECT nomemp,fonction, sala FROM employe ORDER BY fonction, sala DESC; 
+
+--4.	Donner la liste des commissions, salaires et noms triée selon l'ordre croissant des commissions
+        SELECT comm, sala, nomemp FROM employe ORDER BY comm;
+
+--5.	Donner la liste des commissions, salaires et noms triée selon l'ordre décroissant des commissions
+        SELECT comm, sala, nomemp FROM employe ORDER BY comm DESC;
+
+F.	Requêtes avec clause « group by »
+
+1.	Donner la moyenne des salaires pour chaque département
+        SELECT nodep, AVG(sala) FROM employe GROUP BY nodep;
+
+2.	Donner pour chaque département, le salaire annuel moyen des employés qui ne sont ni directeur ni président
+        SELECT nodep as "N° Departement", AVG(sala*12) as "Moyenne salaires" FROM employe WHERE fonction NOT IN ("directeur","president") GROUP BY nodep;
+
+3.	Donner pour chaque fonction de chaque département le nombre d''employés et le salaire annuel moyen
+        SELECT nodep as "N° Departement", fonction , count(*), AVG(sala) FROM employe GROUP BY nodep,fonction;
+
+4.	Donner la liste des salaires annuels moyens pour les fonctions comportant plus de deux employés
+        SELECT AVG(sala*12) as 'moyenne annuelle', fonction FROM employe GROUP BY fonction HAVING COUNT(noemp)>2;
+
+5.	Donner la liste des départements avec au moins deux ouvriers
+        SELECT nodep FROM employe GROUP BY nodep HAVING COUNT((SELECT * FROM employe WHERE fonction="ouvrier"))>=2; 
+6.	Donner les salaires moyens des présidents, directeurs et responsables
+

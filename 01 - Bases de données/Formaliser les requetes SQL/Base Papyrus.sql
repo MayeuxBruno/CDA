@@ -200,6 +200,6 @@ SELECT e.numcom as "N° Commande",,
        l.qtecde as "Quantité",
        l.priuni as "Prix unitaire" 
 FROM entcom as e
-INNER JOIN ligcom as l ON l.numcom=e.numcom
+LEFT JOIN ligcom as l ON l.numcom=e.numcom
 INNER JOIN fournis as f ON e.numfou=f.numfou
 INNER JOIN produit as p ON l.codart=p.codart;
