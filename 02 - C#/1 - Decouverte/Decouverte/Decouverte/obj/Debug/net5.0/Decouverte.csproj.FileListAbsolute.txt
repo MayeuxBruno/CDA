@@ -1,0 +1,16 @@
+U:\59011-07-08\CDA\02 - C#\1 - Decouverte\Decouverte\Decouverte\bin\Debug\net5.0\Decouverte.exe
+U:\59011-07-08\CDA\02 - C#\1 - Decouverte\Decouverte\Decouverte\bin\Debug\net5.0\Decouverte.deps.json
+U:\59011-07-08\CDA\02 - C#\1 - Decouverte\Decouverte\Decouverte\bin\Debug\net5.0\Decouverte.runtimeconfig.json
+U:\59011-07-08\CDA\02 - C#\1 - Decouverte\Decouverte\Decouverte\bin\Debug\net5.0\Decouverte.runtimeconfig.dev.json
+U:\59011-07-08\CDA\02 - C#\1 - Decouverte\Decouverte\Decouverte\bin\Debug\net5.0\Decouverte.dll
+U:\59011-07-08\CDA\02 - C#\1 - Decouverte\Decouverte\Decouverte\bin\Debug\net5.0\ref\Decouverte.dll
+U:\59011-07-08\CDA\02 - C#\1 - Decouverte\Decouverte\Decouverte\bin\Debug\net5.0\Decouverte.pdb
+U:\59011-07-08\CDA\02 - C#\1 - Decouverte\Decouverte\Decouverte\obj\Debug\net5.0\Decouverte.csproj.AssemblyReference.cache
+U:\59011-07-08\CDA\02 - C#\1 - Decouverte\Decouverte\Decouverte\obj\Debug\net5.0\Decouverte.GeneratedMSBuildEditorConfig.editorconfig
+U:\59011-07-08\CDA\02 - C#\1 - Decouverte\Decouverte\Decouverte\obj\Debug\net5.0\Decouverte.AssemblyInfoInputs.cache
+U:\59011-07-08\CDA\02 - C#\1 - Decouverte\Decouverte\Decouverte\obj\Debug\net5.0\Decouverte.AssemblyInfo.cs
+U:\59011-07-08\CDA\02 - C#\1 - Decouverte\Decouverte\Decouverte\obj\Debug\net5.0\Decouverte.csproj.CoreCompileInputs.cache
+U:\59011-07-08\CDA\02 - C#\1 - Decouverte\Decouverte\Decouverte\obj\Debug\net5.0\Decouverte.dll
+U:\59011-07-08\CDA\02 - C#\1 - Decouverte\Decouverte\Decouverte\obj\Debug\net5.0\ref\Decouverte.dll
+U:\59011-07-08\CDA\02 - C#\1 - Decouverte\Decouverte\Decouverte\obj\Debug\net5.0\Decouverte.pdb
+U:\59011-07-08\CDA\02 - C#\1 - Decouverte\Decouverte\Decouverte\obj\Debug\net5.0\Decouverte.genruntimeconfig.cache

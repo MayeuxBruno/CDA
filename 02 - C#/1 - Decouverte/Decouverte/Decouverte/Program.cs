@@ -6,7 +6,10 @@ namespace Decouverte
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Console.WriteLine("Hello World!");
+            /* Exercice 1 */
+            string chaine1;
+            chaine1 = Console.ReadLine();
         }
     }
 }
