@@ -55,7 +55,7 @@ namespace Decouverte
             longueur = float.Parse(Console.ReadLine());
             Console.Write("Entrez la largeur du rectangle : ");
             largeur = float.Parse(Console.ReadLine());
-            Console.WriteLine("La surface du rectangle est : " + (2 * longueur + 2 * largeur));*/
+            Console.WriteLine("La surface du rectangle est : " + (longueur * largeur));*/
 
             /* Exercice 1-7 
             char a='B';
@@ -219,7 +219,12 @@ namespace Decouverte
                     break;
 
                 case "/":
-                    Console.WriteLine(a + " / " + b + " = " + (a / b));
+                    if(b!=0)
+                    {
+                        Console.WriteLine(a + " / " + b + " = " + (a / b));
+                    }
+                    else{
+                        console.WriteLine("Division par 0 impossible");
                     break;
                 default:
                     Console.WriteLine("Opérateur non valide");
@@ -235,7 +240,6 @@ namespace Decouverte
             j = Convert.ToInt32(Console.ReadLine());
             if(( i>0 && i<=8 ) && (j>0 && j<=8))
             {
-               //if((i%2==0 && j%2==0)||(i%2!=0 && j%2!=0))
                 if((i+j)%2==0)
                 {
                     Console.WriteLine("La case est de couleur noire");
@@ -281,18 +285,18 @@ namespace Decouverte
             }*/
 
             /* Exercice 3-10 */
-            string piece;
-            int i;
-            int j;
-            int ii;
-            int jj;
-            Console.WriteLine("Quelle pièce souhaitez vous déplacer?");
-            Console.WriteLine("0 = Cavalier");
-            Console.WriteLine("1 = Tour");
-            Console.WriteLine("2 = Fou");
-            Console.WriteLine("3 = Dame");
-            Console.WriteLine("4 = Roi");
-            piece = Console.ReadLine();
+            string nomPiece = "";
+            int piece,i,j,ii,jj;
+            bool correct = false;
+            Console.WriteLine("Quelle pièce souhaitez vous déplacer?" +
+                               "\n*---------------------------*"+ 
+                               "\n 0 = Cavalier" +
+                               "\n 1 = Tour" +
+                               "\n 2 = Fou" +
+                               "\n 3 = Dame" +
+                               "\n 4 = Roi"+
+                               "\n*---------------------------*");
+            piece = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Coordonnées (i,j) de la position de depart : ");
             Console.Write("i= ");
             i=Convert.ToInt32(Console.ReadLine());
@@ -305,37 +309,173 @@ namespace Decouverte
             jj = Convert.ToInt32(Console.ReadLine());
             switch (piece)
             {
-                case "0":
-                    if ((((ii == i + 2) || (ii == i - 2)) && ((jj == j + 1) || (jj == j - 1))) || (((jj == j + 2) || (jj == j - 2)) && ((ii == i + 1) || (ii == i - 1))))
-                    {
-                        Console.WriteLine("Déplacement du cavalier de ("+i+" , "+j+") vers ("+ii+" , "+jj+") correct.");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Déplacement du cavalier de (" + i + " , " + j + ") vers (" + ii + " , " + jj + ") n'est pas correct.");
-                    }
+                case 0: // Cavalier
+                    nomPiece = "Cavalier";
+                    correct = ((Math.Abs(i - ii) == 2 && Math.Abs(j - jj) == 1 || Math.Abs(i - ii) == 1 && Math.Abs(j - jj) == 2) ? true : false);
                     break;
 
-                case "1":
-                    if((i==ii && Math.Abs(j-jj)>=1)|| (j == jj && Math.Abs(i - ii) >= 1))
-                    {
-                        Console.WriteLine("Déplacement de la Tour de (" + i + " , " + j + ") vers (" + ii + " , " + jj + ") correct.");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Déplacement du la Tour de (" + i + " , " + j + ") vers (" + ii + " , " + jj + ") n'est pas correct.");
-                    }
+                case 1: // Tour
+                    nomPiece = "Tour";
+                    correct = ((i == ii || j == jj) ? true : false);
                     break;
 
-                case "2":
+                case 2: //Fou
+                    nomPiece = "Fou";
+                    correct = ((Math.Abs(i - ii) == Math.Abs(j - jj))?true:false);
                     break;
 
-                case "3":
+                case 3: // Dame
+                    nomPiece = "Dame";
+                    correct = (i == ii || j == jj || Math.Abs(i - ii) == Math.Abs(j - jj) ? true:false);
                     break;
+                    
 
-                case "4":
-                    break;
+                case 4: //Roi
+                    nomPiece = "Roi";
+                    correct = ((Math.Abs(i - ii) < 2 && Math.Abs(j - jj) < 2) ? true:false);
+                    break;         
             }
+            Console.WriteLine("Déplacement "+((piece==1||piece==3)?"de la":"du")+" "+nomPiece+" de ( " + i + " , " + j + " ) vers ( " + ii + " , " + jj + " ) "+ (correct==true ? "est correcte":"n'est pas correcte"));
+
+
+            /* Exercice 3-11 
+            int h;
+            int m;
+            int hh;
+            int mm;
+            int hr;
+            int mr;
+            Console.WriteLine("Entrez l'heure de début : ");
+            Console.Write("Heures de début : ");
+            h = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Minutes de début : ");
+            m = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Entrez l'heure de fin : ");
+            Console.Write("Heures de fin : ");
+            hh = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Minutes de fin : ");
+            mm = Convert.ToInt32(Console.ReadLine());
+            hr = hh - h;
+            if (hr >= 0)
+            {
+                mr = mm - m;
+                if (mr < 0)
+                {
+                    mr = 60 - Math.Abs(mr);
+                    hr = hr - 1;
+                }
+                Console.WriteLine("La différence entre " + h + " H " + m + " Min et " + hh + " H " + mm + " Min, est de " + hr + " H " + mr + " Min ");
+            }
+            else
+            {
+                Console.WriteLine("L'heure de début doit se trouver avant l'heure de fin");
+            }*/
+
+            /* Exercice 3-12 
+            int jour;
+            int mois;
+            int annee;
+            Console.WriteLine("Veuillez saisir une date : ");
+            Console.Write(" Jour : ");
+            jour = Convert.ToInt32(Console.ReadLine());
+            Console.Write(" Mois : ");
+            mois = Convert.ToInt32(Console.ReadLine());
+            Console.Write(" Année : ");
+            annee = Convert.ToInt32(Console.ReadLine());
+            jour++;
+            if(mois==1||mois==3||mois==5||mois==8||mois==10||mois==12)
+            {
+                if(jour>31)
+                {
+                    if (mois == 12)
+                    {
+                        annee++;
+                        jour = 1;
+                        mois = 1;
+                    }
+                    else
+                    {
+                        jour = 1;
+                        mois++;
+                    }
+                }
+            }
+            else if (mois==4||mois==6||mois==9||mois==11)
+            {
+                if (jour > 30)
+                {
+                    jour = 1;
+                    mois++;
+                }
+            }
+            else
+            {
+                if ((annee % 4 == 0) && (annee % 100 != 0))
+                {
+                    if (jour>29)
+                    {
+                        jour = 1;
+                        mois++;
+                    }
+                }
+                else
+                {
+                    if (jour>28)
+                    {
+                        jour = 1;
+                        mois++;
+                    }
+                }
+            }
+            Console.WriteLine("La date suivante sera le " + jour + " " + mois + " " + annee);*/
+
+            /*Exercice 3-12
+            string a;
+            string b;
+            int ba;
+            int bb;
+            Console.WriteLine("Veuillez saisir un intervalle : ");
+            Console.Write(" Borne A : ");
+            a = Console.ReadLine();
+            Console.Write(" Borne B : ");
+            b = Console.ReadLine();
+            if (int.TryParse(a, out ba) & int.TryParse(b, out bb))
+            {
+                if (ba > bb)
+                {
+                    Console.WriteLine("l'intervalle [ " + a + " , " + b + " ] n'est pas valide la borne B doit être supérieur à la borne A");
+                }
+            }
+            */
+
+            /*Exercice 3-14
+            int a;
+            int b;
+            int v;
+            Console.WriteLine("Veuillez saisir un intervalle : ");
+            Console.Write(" Borne A : ");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.Write(" Borne B : ");
+            b = Convert.ToInt32(Console.ReadLine());
+            Console.Write(" Valeur : ");
+            v = Convert.ToInt32(Console.ReadLine());
+            if (a < b)
+            {
+                if(v>=a && v<=b)
+                {
+                    Console.WriteLine("La valeur " + v + " se trouve dans l'intervalle [ " + a + " , " + b + " ]");
+                }
+                else
+                {
+                    Console.WriteLine("La valeur " + v + " ne se trouve pas  dans l'intervalle [ " + a + " , " + b + " ]");
+
+                }
+            }
+            else
+            {
+                Console.WriteLine("l'intervalle [ " + a + " , " + b + " ] n'est pas valide la borne B doit être supérieur à la borne A");
+
+            }*/
         }
     }
     
