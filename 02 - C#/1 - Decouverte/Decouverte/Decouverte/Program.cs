@@ -284,7 +284,7 @@ namespace Decouverte
                 Console.WriteLine("Coordonnées Invalides");
             }*/
 
-            /* Exercice 3-10 */
+            /* Exercice 3-10 
             string nomPiece = "";
             int piece,i,j,ii,jj;
             bool correct = false;
@@ -336,15 +336,10 @@ namespace Decouverte
                     break;         
             }
             Console.WriteLine("Déplacement "+((piece==1||piece==3)?"de la":"du")+" "+nomPiece+" de ( " + i + " , " + j + " ) vers ( " + ii + " , " + jj + " ) "+ (correct==true ? "est correcte":"n'est pas correcte"));
-
+            */
 
             /* Exercice 3-11 
-            int h;
-            int m;
-            int hh;
-            int mm;
-            int hr;
-            int mr;
+            int h,m,hh,mm,hr,mr;
             Console.WriteLine("Entrez l'heure de début : ");
             Console.Write("Heures de début : ");
             h = Convert.ToInt32(Console.ReadLine());
@@ -362,7 +357,7 @@ namespace Decouverte
                 if (mr < 0)
                 {
                     mr = 60 - Math.Abs(mr);
-                    hr = hr - 1;
+                    hr--;
                 }
                 Console.WriteLine("La différence entre " + h + " H " + m + " Min et " + hh + " H " + mm + " Min, est de " + hr + " H " + mr + " Min ");
             }
@@ -372,9 +367,7 @@ namespace Decouverte
             }*/
 
             /* Exercice 3-12 
-            int jour;
-            int mois;
-            int annee;
+            int jour, mois, annee;
             Console.WriteLine("Veuillez saisir une date : ");
             Console.Write(" Jour : ");
             jour = Convert.ToInt32(Console.ReadLine());
@@ -449,34 +442,137 @@ namespace Decouverte
             */
 
             /*Exercice 3-14
-            int a;
-            int b;
-            int v;
+            string a, b, v;
+            int ba,bb,vv;
+            bool correct = false;
             Console.WriteLine("Veuillez saisir un intervalle : ");
             Console.Write(" Borne A : ");
-            a = Convert.ToInt32(Console.ReadLine());
+            a = Console.ReadLine();
             Console.Write(" Borne B : ");
-            b = Convert.ToInt32(Console.ReadLine());
+            b = Console.ReadLine();
             Console.Write(" Valeur : ");
-            v = Convert.ToInt32(Console.ReadLine());
-            if (a < b)
+            v = Console.ReadLine();
+            if (int.TryParse(a, out ba) & int.TryParse(b, out bb) & int.TryParse(v, out vv))
             {
-                if(v>=a && v<=b)
+                if (ba < bb)
                 {
-                    Console.WriteLine("La valeur " + v + " se trouve dans l'intervalle [ " + a + " , " + b + " ]");
+                    correct = ((ba <= vv && vv <= bb) ? true : false);
+                    Console.WriteLine("La valeur " + v + " " + (correct ? "se trouve" : "ne se trouve pas") + " dans l'intervalle [ " + a + " , " + b + " ]");
                 }
                 else
                 {
-                    Console.WriteLine("La valeur " + v + " ne se trouve pas  dans l'intervalle [ " + a + " , " + b + " ]");
-
+                    Console.WriteLine("l'intervalle [ " + a + " , " + b + " ] n'est pas valide la borne B doit être supérieur à la borne A");
                 }
+            }
+            else{
+                Console.WriteLine("Erreur de saisie");
+            }
+
+            /*Exercice 3-15 
+            string xHg, yHg, xBd, yBd;
+            int xIHg, yIHg, xIBd, yIBd;
+            Console.WriteLine("Entrez les coordonnées du rectangle : ");
+            Console.Write("X Haut Gauche : ");
+            xHg = Console.ReadLine();
+            Console.Write("Y Haut Gauche : ");
+            yHg = Console.ReadLine();
+            Console.Write("X Bas Droit : ");
+            xBd = Console.ReadLine();
+            Console.Write("Y Bas Droit : ");
+            yBd = Console.ReadLine();
+            if (int.TryParse(xHg, out xIHg) && int.TryParse(yHg, out yIHg) && int.TryParse(xBd, out xIBd) && int.TryParse(yBd, out yIBd))
+            {
+                Console.WriteLine("Saisie Correcte");
             }
             else
             {
-                Console.WriteLine("l'intervalle [ " + a + " , " + b + " ] n'est pas valide la borne B doit être supérieur à la borne A");
+                Console.WriteLine("Erreur de saisie");
+            }*/
 
+            /*Exercice 3-16 
+            string xHg, yHg, xBd, yBd,vx,vy;
+            int xIHg, yIHg, xIBd, yIBd,vIx,vIy;
+            bool correct = false;
+            Console.WriteLine("Entrez les coordonnées du rectangle : ");
+            Console.Write("X Haut Gauche : ");
+            xHg = Console.ReadLine();
+            Console.Write("Y Haut Gauche : ");
+            yHg = Console.ReadLine();
+            Console.Write("X Bas Droit : ");
+            xBd = Console.ReadLine();
+            Console.Write("Y Bas Droit : ");
+            yBd = Console.ReadLine();
+            Console.WriteLine("Entrez les coordonnées du point : ");
+            Console.Write("X : ");
+            vx = Console.ReadLine();
+            Console.Write("Y : ");
+            vy = Console.ReadLine();
+            if (int.TryParse(xHg, out xIHg) && int.TryParse(yHg, out yIHg) && int.TryParse(xBd, out xIBd) && int.TryParse(yBd, out yIBd)&& int.TryParse(vx, out vIx)&& int.TryParse(vy, out vIy))
+            {
+                correct = ((vIx >= xIHg && vIx <= xIBd) && (vIy >= yIHg && vIy <= yIBd) ? true : false);
+                Console.WriteLine("Le point "+(correct?"fait":"ne fait pas")+" parti du rectangle");
+            }
+            else
+            {
+                Console.WriteLine("Erreur de saisie");
+            }*/
+
+            /* Exercice 4.1  (6,15)*/
+
+            /* Exercice 4.2 */
+            /* Exercice 4.3 */
+
+            /* Exercice 4.4 
+            int valeur;
+            Console.Write("Entrez une valeur entière positive :");
+            valeur = Convert.ToInt32(Console.ReadLine());
+            while(valeur>=0)
+            {
+                Console.Write(valeur + (valeur > 0 ? ", " : ""));
+                valeur--;
+            }*/
+
+            /* Exercice 4.5 
+            for(int i=1;i<=10;i++)
+            {
+                for(int j=1;j<=10;j++)
+                {
+                    Console.Write(i + " x " + j + " = " + (i * j)+ (j < 10 ? "\t" : "\n"));
+                }
+            }*/
+
+            /* Exercice 4.6 
+            int b, n,res;
+            Console.Write("Entrez une valeur entière positive :");
+            b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Entrez l'exposant :");
+            n= Convert.ToInt32(Console.ReadLine());
+            if (b>0)
+            {
+                res = b;
+                while(n>1)
+                {
+                    res *= b;
+                    n--;
+                }
+                Console.WriteLine("Le résultat est : "+res);
+            }
+            else
+            {
+                Console.WriteLine("La valeur n'est pas positive...");
+            }*/
+
+            /* Exercice 4.9
+            int n;
+            Console.Write("Entrez une valeur entière positive :");
+            n = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j <n; j++)
+                {
+                    Console.Write(" X " + (j < n-1 ? "\t" : "\n"));
+                }
             }*/
         }
     }
-    
 }
