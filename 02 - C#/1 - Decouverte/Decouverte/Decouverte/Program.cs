@@ -480,7 +480,8 @@ namespace Decouverte
             xBd = Console.ReadLine();
             Console.Write("Y Bas Droit : ");
             yBd = Console.ReadLine();
-            if (int.TryParse(xHg, out xIHg) && int.TryParse(yHg, out yIHg) && int.TryParse(xBd, out xIBd) && int.TryParse(yBd, out yIBd))
+            if (int.TryParse(xHg, out xIHg) && int.TryParse(yHg, out yIHg) && int.TryParse(xBd, out xIBd) && int.TryParse(yBd, out yIBd)
+                && ((xIBd>xIHg)&&(yIHg>yIBd))
             {
                 Console.WriteLine("Saisie Correcte");
             }
@@ -490,32 +491,47 @@ namespace Decouverte
             }*/
 
             /*Exercice 3-16 
+
             string xHg, yHg, xBd, yBd,vx,vy;
             int xIHg, yIHg, xIBd, yIBd,vIx,vIy;
             bool correct = false;
             Console.WriteLine("Entrez les coordonnées du rectangle : ");
             Console.Write("X Haut Gauche : ");
             xHg = Console.ReadLine();
+
             Console.Write("Y Haut Gauche : ");
             yHg = Console.ReadLine();
+
             Console.Write("X Bas Droit : ");
             xBd = Console.ReadLine();
+
             Console.Write("Y Bas Droit : ");
             yBd = Console.ReadLine();
+
             Console.WriteLine("Entrez les coordonnées du point : ");
             Console.Write("X : ");
             vx = Console.ReadLine();
+
             Console.Write("Y : ");
             vy = Console.ReadLine();
-            if (int.TryParse(xHg, out xIHg) && int.TryParse(yHg, out yIHg) && int.TryParse(xBd, out xIBd) && int.TryParse(yBd, out yIBd)&& int.TryParse(vx, out vIx)&& int.TryParse(vy, out vIy))
-            {
-                correct = ((vIx >= xIHg && vIx <= xIBd) && (vIy >= yIHg && vIy <= yIBd) ? true : false);
-                Console.WriteLine("Le point "+(correct?"fait":"ne fait pas")+" parti du rectangle");
+
+            if (int.TryParse(xHg, out xIHg) && int.TryParse(yHg, out yIHg) && int.TryParse(xBd, out xIBd) && int.TryParse(yBd, out yIBd) && int.TryParse(vx, out vIx)&& int.TryParse(vy, out vIy))
+            {  
+                if((xIBd>xIHg)&&(yIHg>yIBd))
+                {
+                    correct = ((vIx >= xIHg && vIx <= xIBd) && (vIy >= yIHg && vIy <= yIBd) ? true : false);
+                    Console.WriteLine("Le point " + (correct ? "fait" : "ne fait pas") + " parti du rectangle");
+                }
+                else
+                {
+                    Console.WriteLine("Le rectangle n'est pas correcte");
+                }
             }
             else
             {
                 Console.WriteLine("Erreur de saisie");
             }*/
+
 
             /* Exercice 4.1  (6,15)*/
 
