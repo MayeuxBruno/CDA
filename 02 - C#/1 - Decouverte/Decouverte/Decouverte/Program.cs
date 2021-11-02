@@ -546,24 +546,87 @@ namespace Decouverte
             {
                 Console.Write(valeur + (valeur > 0 ? ", " : ""));
                 valeur--;
+            }
+
+            int valeur;
+            Console.Write("Entrez une valeur entière positive :");
+            valeur = Convert.ToInt32(Console.ReadLine());
+            for (int i = valeur;i>= 0;i--)
+            {
+                Console.Write(i + (i > 0 ? ", " : ""));
+            }
+
+            int valeur;
+            Console.Write("Entrez une valeur entière positive :");
+            valeur = Convert.ToInt32(Console.ReadLine());
+            do
+            {
+                Console.Write(valeur + (valeur > 0 ? ", " : ""));
+                valeur--;
+            } while (valeur >= 0);*/
+
+
+            /* Exercice 4.5
+            int valeur;
+            int fact = 1;
+            Console.Write("Entrez une valeur entière positive : ");
+            valeur = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i<=valeur;i++)
+            {
+                fact *= i;
+            }
+            Console.WriteLine("La factorielle de " + valeur + " est " + fact);
+
+            int valeur;
+            int fact = 1;
+            int i=1;
+            Console.Write("Entrez une valeur entière positive : ");
+            valeur = Convert.ToInt32(Console.ReadLine());
+            while(i<=valeur)
+            {
+                fact *= i;
+                i++;
+            }
+            Console.WriteLine("La factorielle de " + valeur + " est " + fact);
+
+            int valeur;
+            int fact = 1;
+            int i = 1;
+            Console.Write("Entrez une valeur entière positive : ");
+            valeur = Convert.ToInt32(Console.ReadLine());
+            do
+            {
+                fact *= i;
+                i++;
+            } while (i <= valeur) ;
+                Console.WriteLine("La factorielle de " + valeur + " est " + fact);*/
+
+            /* Exercice 4.6 
+            int valeur;
+            Console.Write("Entrez une valeur entière positive : ");
+            valeur = Convert.ToInt32(Console.ReadLine());
+            for (int i=0;i<=10;i++)
+            {
+                Console.WriteLine(i + " x " + valeur + " = " + (i * valeur));
             }*/
 
-            /* Exercice 4.5 
+            /* Exercice 4.7
             for(int i=1;i<=10;i++)
             {
                 for(int j=1;j<=10;j++)
                 {
-                    Console.Write(i + " x " + j + " = " + (i * j)+ (j < 10 ? "\t" : "\n"));
+                    //Console.Write(i + " x " + j + " = " + (i * j)+ (j < 10 ? "\t" : "\n"));
+                    Console.Write((i * j)+ (j < 10 ? "\t" : "\n"));
                 }
             }*/
 
-            /* Exercice 4.6 
+            /* Exercice 4.8
             int b, n,res;
             Console.Write("Entrez une valeur entière positive :");
             b = Convert.ToInt32(Console.ReadLine());
             Console.Write("Entrez l'exposant :");
             n= Convert.ToInt32(Console.ReadLine());
-            if (b>0)
+            if (n>0)
             {
                 res = b;
                 while(n>1)
@@ -589,6 +652,178 @@ namespace Decouverte
                     Console.Write(" X " + (j < n-1 ? "\t" : "\n"));
                 }
             }*/
+
+            /*Exercice 4-10 
+            double a, b;
+            char op;
+            Console.WriteLine("valeur a : ");
+            a = double.Parse(Console.ReadLine());
+            do
+            {
+                Console.WriteLine("opérateur de calcul");
+                op = char.Parse(Console.ReadLine());
+                if (op != '=')
+                {
+                    Console.WriteLine("valeur b : ");
+                    b = double.Parse(Console.ReadLine());
+                    switch (op)
+                    {
+                        case '-':
+                            a = a - b;
+                            break;
+                        case '+':
+                            a = a + b;
+                            break;
+                        case '*':
+                            a = a * b;
+                            break;
+                        case '/':
+                            if (b == 0)
+                            {
+                                Console.WriteLine("Division impossible par 0");
+                            }
+                            else
+                            {
+                                a = a / b;
+                            }
+                            break;
+                        default:
+                            Console.WriteLine("Operateur invalide");
+                            break;
+                    }
+                }
+            } while(op != '=');
+            Console.WriteLine("Le Résultat est " + a);*/
+
+            /*Exercice 4-11 
+            double a, b;
+            char op;
+            Console.WriteLine("valeur a : ");
+            a = double.Parse(Console.ReadLine());
+            do
+            {
+                Console.WriteLine("opérateur de calcul");
+                op = char.Parse(Console.ReadLine());
+                if (op != '=')
+                {
+                    Console.WriteLine("valeur b : ");
+                    b = double.Parse(Console.ReadLine());
+                    switch (op)
+                    {
+                        case '-':
+                            a = a - b;
+                            break;
+                        case '+':
+                            a = a + b;
+                            break;
+                        case '*':
+                            a = a * b;
+                            break;
+                        case '/':
+                            if (b == 0)
+                            {
+                                Console.WriteLine("Division impossible par 0");
+                            }
+                            else
+                            {
+                                a = a / b;
+                            }
+                            break;
+                        case '$':
+                            if (b > 0)
+                            {
+                                for (double i = b; i > 1; i--)
+                                {
+                                    a *= b;
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("La valeur n'est pas positive...");
+                            }
+                            break;
+                        default:
+                            Console.WriteLine("Operateur invalide");
+                            break;
+                    }
+                }
+            } while (op != '=');
+            Console.WriteLine("Le Résultat est " + a);*/
+
+            /*Exercice 4-12 
+            double a, b;
+            double fact = 1;
+            char op;
+            Console.WriteLine("valeur a : ");
+            a = double.Parse(Console.ReadLine());
+            do
+            {
+                Console.WriteLine("opérateur de calcul ( + - * / $ r ! = )");
+                op = char.Parse(Console.ReadLine());
+                if (op != '=')
+                {
+                    if (op == 'r' || op == '!')
+                    {
+                        switch(op)
+                        {
+                            case 'r':
+                                a = Math.Sqrt(a);
+                                break;
+                            case '!':
+                                for (int i = 1; i <= a; i++)
+                                {
+                                    fact *= i;
+                                }
+                                a = fact;
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("valeur b : ");
+                        b = double.Parse(Console.ReadLine());
+                        switch (op)
+                        {
+                            case '-':
+                                a = a - b;
+                                break;
+                            case '+':
+                                a = a + b;
+                                break;
+                            case '*':
+                                a = a * b;
+                                break;
+                            case '/':
+                                if (b == 0)
+                                {
+                                    Console.WriteLine("Division impossible par 0");
+                                }
+                                else
+                                {
+                                    a = a / b;
+                                }
+                                break;
+                            case '$':
+                                if (b > 0)
+                                {
+                                    for (double i = b; i > 1; i--)
+                                    {
+                                        a *= a;
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("La valeur n'est pas positive...");
+                                }
+                                break;
+                            default:
+                                Console.WriteLine("Operateur invalide");
+                                break;
+                        }
+                    }
+                }
+            } while (op != '=');
+            Console.WriteLine("Le Résultat est " + a);*/
         }
     }
 }
