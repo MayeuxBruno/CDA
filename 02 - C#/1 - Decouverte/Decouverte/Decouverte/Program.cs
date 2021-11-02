@@ -2,10 +2,12 @@
 
 namespace Decouverte
 {
-    
-            static void Main(string[] args)
-        {
-          
+    class Program
+    {
+
+    static void Main(string[] args)
+    {
+
 
             //Console.WriteLine("Hello World!");
 
@@ -329,7 +331,7 @@ namespace Decouverte
                     nomPiece = "Dame";
                     correct = (i == ii || j == jj || Math.Abs(i - ii) == Math.Abs(j - jj) ? true:false);
                     break;
-                    
+
 
                 case 4: //Roi
                     nomPiece = "Roi";
@@ -825,6 +827,31 @@ namespace Decouverte
                 }
             } while (op != '=');
             Console.WriteLine("Le Résultat est " + a);*/
+
+            /* Exercice 5.1 
+            string valeur = "Les framboises sont perchées dur le tabouret de mon grand père";
+            for(int i=0;i<(valeur.Length);i++)
+                {
+                    Console.WriteLine(valeur[i]);
+                }*/
+
+            /* Exercice 5.2 */
+            string t;
+            string tt = "";
+            int i, j;
+            Console.Write("Saisissez une chaine de caractères : ");
+            t = Console.ReadLine();
+            Console.Write("Saisissez l'index de début : ");
+            i = int.Parse(Console.ReadLine());
+            Console.Write("Saisissez l'index de fin : ");
+            j = int.Parse(Console.ReadLine());
+            for(int k = i; k <= j; k++) 
+            {
+                tt =tt +  t[k];
+            }
+            Console.WriteLine(tt);
         }
+
+
     }
 }
