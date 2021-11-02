@@ -36,7 +36,7 @@ namespace Calculatrice
                 {
                     Console.Write(texte);
                     isOk = double.TryParse(Console.ReadLine(), out valeur);
-                } while (!isOk || valeur != 0);
+                } while (!isOk || valeur == 0);
                 return valeur;
             }
 
@@ -49,7 +49,7 @@ namespace Calculatrice
                 {
                     Console.Write(texte);
                     isOk = char.TryParse(Console.ReadLine(), out operateur);
-                    condition= !isOk || (operateur != '+' && operateur != '-' && operateur != '*' && operateur != '/' && operateur != '$' && operateur != '!' && operateur != 'v' && operateur != '=')
+                condition = !isOk || (operateur != '+' && operateur != '-' && operateur != '*' && operateur != '/' && operateur != '$' && operateur != '!' && operateur != 'v' && operateur != '=');
                     if (condition) Console.WriteLine("Opérateur inconnu");
                 } while (condition);
                 return char.ToLower(operateur);
@@ -120,7 +120,7 @@ namespace Calculatrice
             valeur1 = DemanderDouble("Saisissez la première valeur : ");
             do
             {
-                operateur = DemanderOperateur("Saisissez l'opérateur + - * / $ ! v");
+                operateur = DemanderOperateur("Saisissez l'opérateur + - * / $ ! v : ");
                 if (operateur != '=')
                 {
                     switch (operateur)
