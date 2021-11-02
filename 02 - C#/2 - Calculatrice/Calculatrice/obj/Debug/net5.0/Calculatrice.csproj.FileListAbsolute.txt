@@ -1,0 +1,5 @@
+D:\Exercices\CDA\02 - C#\2 - Calculatrice\Calculatrice\obj\Debug\net5.0\Calculatrice.csproj.AssemblyReference.cache
+D:\Exercices\CDA\02 - C#\2 - Calculatrice\Calculatrice\obj\Debug\net5.0\Calculatrice.GeneratedMSBuildEditorConfig.editorconfig
+D:\Exercices\CDA\02 - C#\2 - Calculatrice\Calculatrice\obj\Debug\net5.0\Calculatrice.AssemblyInfoInputs.cache
+D:\Exercices\CDA\02 - C#\2 - Calculatrice\Calculatrice\obj\Debug\net5.0\Calculatrice.AssemblyInfo.cs
+D:\Exercices\CDA\02 - C#\2 - Calculatrice\Calculatrice\obj\Debug\net5.0\Calculatrice.csproj.CoreCompileInputs.cache
