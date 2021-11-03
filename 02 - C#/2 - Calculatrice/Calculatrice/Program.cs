@@ -49,7 +49,7 @@ namespace Calculatrice
                 {
                     Console.Write(texte);
                     isOk = char.TryParse(Console.ReadLine(), out operateur);
-                condition = !isOk || (operateur != '+' && operateur != '-' && operateur != '*' && operateur != '/' && operateur != '$' && operateur != '!' && operateur != 'v' && operateur != '=');
+                    condition = !isOk || (operateur != '+' && operateur != '-' && operateur != '*' && operateur != '/' && operateur != '$' && operateur != '!' && operateur != 'v' && operateur != '=' && operateur != 'V');
                     if (condition) Console.WriteLine("Opérateur inconnu");
                 } while (condition);
                 return char.ToLower(operateur);
@@ -61,29 +61,15 @@ namespace Calculatrice
                 switch (operateur)
                 {
                     case '!':
-                        if (valeur >= 0)
-                        {
                             for (int i = 1; i <= valeur; i++)
                             {
                                 resultat *= i;
-                            }
-                        }
-                        else
-                        {
-                            Console.WriteLine(" Impossible de faire la factorielle d'une valeur négative ");
-                            resultat = valeur;
-                        }
+                            }                       
                         break;
                     case 'v':
-                        if (valeur >= 0)
-                        {
                             resultat = Math.Sqrt(valeur);
-                        }
-                        else
-                        {
-                            Console.WriteLine(" Impossible de faire la racine carré d'une valeur négative ");
-                            resultat = valeur;
-                        }
+                        break;
+                    default:
                         break;
                 }
                 return resultat;
@@ -120,9 +106,7 @@ namespace Calculatrice
             valeur1 = DemanderDouble("Saisissez la première valeur : ");
             do
             {
-                operateur = DemanderOperateur("Saisissez l'opérateur + - * / $ ! v : ");
-                if (operateur != '=')
-                {
+                operateur = DemanderOperateur("Saisissez l'opérateur ( + - * / $ ! v ) : ");
                     switch (operateur)
                     {
                         case '-':
@@ -132,7 +116,7 @@ namespace Calculatrice
                             valeur1 = CalculSimple(valeur1, valeur2, operateur);
                             break;
                         case '/':
-                            valeur2 = DemanderDoubleNonNul("Saisissez le diviseur : ");
+                            valeur2 = DemanderDoubleNonNul("Saisissez le diviseur ( non nul ) : ");
                             valeur1 = CalculSimple(valeur1, valeur2, operateur);
                             break;
                         case '$':
@@ -140,15 +124,33 @@ namespace Calculatrice
                             valeur1 = CalculSimple(valeur1, valeur2, operateur);
                             break;
                         case 'v':
+                            if (valeur1%1==0 && valeur1 > 0)
+                            {
+                                valeur1 = Calcul(valeur1, operateur);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Calcul Impossible");
+                            }
+                        break;
                         case '!':
-                            valeur1 = Calcul(valeur1, operateur);
+                            if (valeur1 > 0)
+                            {
+                                valeur1 = Calcul(valeur1, operateur);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Calcul Impossible");
+                            }
+                        break;
+                        case '=':
+                            break;
+                        default:
+                            Console.WriteLine("Operateur incorrecte.");
                             break;
                     }
                     Console.WriteLine(" = " + valeur1);
-                }
             } while (operateur != '=');
-            Console.WriteLine("Le Résultat est " + valeur1);
-            
         }
     }
 }

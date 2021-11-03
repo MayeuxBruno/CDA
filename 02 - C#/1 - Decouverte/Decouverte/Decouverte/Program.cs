@@ -2,6 +2,7 @@
 
 namespace Decouverte
 {
+    using System.Text;
     class Program
     {
 
@@ -851,6 +852,7 @@ namespace Decouverte
             } while (op != '=');
             Console.WriteLine("Le Résultat est " + a);*/
 
+
             /* Exercice 5.1 
             string valeur = "Les framboises sont perchées dur le tabouret de mon grand père";
             for(int i=0;i<(valeur.Length);i++)
@@ -858,7 +860,8 @@ namespace Decouverte
                     Console.WriteLine(valeur[i]);
                 }*/
 
-            /* Exercice 5.2 */
+
+            /* Exercice 5.2 
             string t;
             string tt = "";
             int i, j;
@@ -872,9 +875,68 @@ namespace Decouverte
             {
                 tt =tt +  t[k];
             }
-            Console.WriteLine(tt);
-        }
+            Console.WriteLine(tt);*/
 
+            /* Exercice 5.3 
+            string t;
+            string tt = "" ;
+            int i, j;
+            Console.Write("Saisissez une chaine de caractères : ");
+            t = Console.ReadLine();
+            Console.Write("Saisissez l'index de début : ");
+            i = int.Parse(Console.ReadLine());
+            Console.Write("Saisissez l'index de fin : ");
+            j = int.Parse(Console.ReadLine());
+            tt = tt.Insert(0, t.Substring(i, j));
+            Console.WriteLine(t);
+            Console.WriteLine(tt);*/
+
+            /* Exercice 5.4 
+            string t, tt;
+            char a, b;
+            Console.Write("Saisissez une chaine de caractères : ");
+            t = Console.ReadLine();
+            Console.Write("Saisissez le caractère à remplacer : ");
+            a =Convert.ToChar(Console.ReadLine());
+            Console.Write("Saisissez le caractere de remplacement : ");
+            b = Convert.ToChar(Console.ReadLine());
+            tt = t.Replace(a,b);
+            Console.WriteLine(t);
+            Console.WriteLine(tt);*/
+
+            /* Exercice 5.5 
+            StringBuilder chaine = new StringBuilder();
+            char a, b;
+            Console.Write("Saisissez une chaine de caractères : ");
+            chaine.Append(Console.ReadLine());
+            Console.WriteLine(chaine);
+            Console.Write("Saisissez le caractère à remplacer : ");
+            a = Convert.ToChar(Console.ReadLine());
+            Console.Write("Saisissez le caractere de remplacement : ");
+            b = Convert.ToChar(Console.ReadLine());
+            for (int i=0; i<chaine.Length;i++)
+            {
+                if(chaine[i]==a)
+                {
+                    chaine[i] = b;
+                }
+            }
+            Console.WriteLine(chaine);*/
+
+            /* Exercice 5.6 
+            string fichier;
+            int index,index1;
+            Console.Write("Saisissez un nom de fichier : ");
+            fichier = Console.ReadLine();
+            index = fichier.LastIndexOf('.');
+            index1 = fichier.IndexOf('.');
+            Console.WriteLine("Le nom du fichier est : "+fichier.Substring(0,index1));
+            Console.WriteLine("L'extension du fichier est : "+fichier.Substring(index));*/
+
+
+           
+
+        }
 
     }
 }
