@@ -933,8 +933,124 @@ namespace Decouverte
             Console.WriteLine("Le nom du fichier est : "+fichier.Substring(0,index1));
             Console.WriteLine("L'extension du fichier est : "+fichier.Substring(index));*/
 
+            /* Exercice 5.7 
+            string expression;
+            int i=0;
+            int cpt = 0;
+            Console.WriteLine("Entrez une expression : ");
+            expression = Console.ReadLine();
+            do
+            {
+                if (expression[i] == '(') cpt++;
+                if (expression[i] == ')') cpt--;
+                i++;
+            }while(i < expression.Length);
+            if(cpt==0)
+            {
+                Console.WriteLine("l'expression est correcte");
+            }
+            else
+            {
+                Console.WriteLine("l'expression n'est pas correcte");
+            }*/
 
-           
+
+            /* Exercice 6.1*/
+            // aJkr bKlS
+
+            /* Exercice 6.2 */
+
+            /* Exercice 6.3*/
+
+            /* Exercice 6.4 
+            int[] T = new int[] {1,2,3,4,5,6,7,8,9,10};
+            foreach (int val in T)
+            {
+                Console.WriteLine(val);
+            }*/
+
+            /* Exercice 6.5 
+            int[] T = new int[10];
+            for (int i=0;i<10;i++)
+            {
+                T[i] = i+1;
+            }
+            foreach (int val in T)
+            {
+                Console.WriteLine(val);
+            }*/
+
+            /* Exercice 6.6
+            int[] T = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int somme=0;
+            foreach (int val in T)
+            {
+                somme+=val;
+            }
+            Console.WriteLine(somme);*/
+
+            /* Exercice 6.7 
+            int[] T = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int recherche;
+            int i = 0;
+            bool trouve = false;
+            Console.Write("Entrez la valeur à rechercher : ");
+            recherche = Convert.ToInt32(Console.ReadLine());
+            while (i<T.Length && !trouve)
+            {
+                if (T[i] == recherche) trouve = true;
+                i++;
+            }
+            Console.WriteLine("La valeur " + recherche +(trouve? " se trouve dans le tableau": " ne se trouve pas dans le tableau"));*/
+
+
+            /* Exercice 6.8 
+           int[] T = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+           int[] U = new int[10];
+           int j = T.Length - 1;
+           for (int i=0;i<T.Length;i++)
+           {
+               U[i] = T[j];
+               j++;
+               if (j >= T.Length) j = 0;
+           }
+           foreach (int val in U)
+           {
+               Console.Write(val+" ");
+           }*/
+
+            /* Exercice 6.9
+            int[] T = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int j = T.Length - 1;
+            int temp = T[j];
+            Console.WriteLine(temp);
+            for (int i=j;i>0;i--)
+            {
+                T[i] = T[i - 1];
+            }
+            T[0] = temp;
+            foreach (int val in T)
+            {
+                Console.Write(val + " ");
+            }*/
+
+            /* Exercice 6.10 
+            int[] T = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11 };
+            int j = T.Length - 1;
+            int temp;
+            for (int i=0;i<(T.Length/2);i++)
+            {
+                temp = T[i];
+                T[i] = T[j];
+                T[j] = temp;
+                j--;
+            }
+            foreach (int val in T)
+            {
+                Console.Write(val + " ");
+            }*/
+
+
 
         }
 
