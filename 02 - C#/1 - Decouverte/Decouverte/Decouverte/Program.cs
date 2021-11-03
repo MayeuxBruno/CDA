@@ -1035,10 +1035,10 @@ namespace Decouverte
             }*/
 
             /* Exercice 6.10 
-            int[] T = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11 };
+            int[] T = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
             int j = T.Length - 1;
             int temp;
-            for (int i=0;i<(T.Length/2);i++)
+            for (int i=0;i<j;i++)
             {
                 temp = T[i];
                 T[i] = T[j];
