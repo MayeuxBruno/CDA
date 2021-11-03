@@ -532,7 +532,29 @@ namespace Decouverte
                 valeur--;
             }*/
 
-            /* Exercice 4.5 
+            /* Exercice 4.5
+            int n;
+            int f=1;
+            Console.Write("Entrez une valeur entière positive :");
+            n = Convert.ToInt32(Console.ReadLine());
+            for(int i=1;i<=n;i++)
+            {
+                f *= i;
+            }
+            Console.WriteLine("La factorielle de " + n + " est " + f);*/
+
+
+            /* Exercice 4.6
+            int n;
+            Console.Write("Quelle table souhaitez vous ?");
+            n = Convert.ToInt32(Console.ReadLine());
+            for (int j=1; j<=10;j++)
+            {
+                Console.Write("\t"+j + " X " + n + " = " + (j * n) + "\n");
+            }*/
+
+
+            /* Exercice 4.7
             for(int i=1;i<=10;i++)
             {
                 for(int j=1;j<=10;j++)
@@ -541,7 +563,8 @@ namespace Decouverte
                 }
             }*/
 
-            /* Exercice 4.6 
+
+            /* Exercice 4.8
             int b, n,res;
             Console.Write("Entrez une valeur entière positive :");
             b = Convert.ToInt32(Console.ReadLine());
@@ -562,7 +585,7 @@ namespace Decouverte
                 Console.WriteLine("La valeur n'est pas positive...");
             }*/
 
-            /* Exercice 4.9
+            /* Exercice 4.9 
             int n;
             Console.Write("Entrez une valeur entière positive :");
             n = Convert.ToInt32(Console.ReadLine());
@@ -573,6 +596,56 @@ namespace Decouverte
                     Console.Write(" X " + (j < n-1 ? "\t" : "\n"));
                 }
             }*/
+
+            /* Exercice 4.10 */
+            int a;
+            int b;
+            string op;
+            Console.Write("Entrez la première valeur : ");
+            a = Convert.ToInt32(Console.ReadLine());
+            do
+            {
+                Console.Write("Entrez l'opérateur ( + - * / $ = ) : ");
+                op = Console.ReadLine();
+                if (op != "=")
+                {
+                    Console.Write("Entrez la deuxième valeur : ");
+                    b = Convert.ToInt32(Console.ReadLine());
+                    switch (op)
+                    {
+                        case "+":
+                            a += b;
+                            break;
+
+                        case "-":
+                            a -= b;
+                            break;
+
+                        case "*":
+                            a *= b;
+                            break;
+
+                        case "/":
+                            if (b != 0)
+                            {
+                                a /= b;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Division par 0 impossible");
+                            }
+                            break;
+                        case "$":
+                                                            
+                            break;
+                        default:
+                            Console.WriteLine("Opérateur non valide");
+                            break;
+                    }
+                    Console.WriteLine(a);
+                }
+            } while (op != "=");
+            Console.WriteLine("Le resultat est : " + a);
         }
     }
 }
