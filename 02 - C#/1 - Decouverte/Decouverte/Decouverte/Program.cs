@@ -905,10 +905,10 @@ namespace Decouverte
             Console.WriteLine(tt);*/
 
             /* Exercice 5.5 
-            StringBuilder chaine = new StringBuilder();
+            StringBuilder chaine;
             char a, b;
             Console.Write("Saisissez une chaine de caractères : ");
-            chaine.Append(Console.ReadLine());
+            chaine== new StringBuilder((Console.ReadLine()));
             Console.WriteLine(chaine);
             Console.Write("Saisissez le caractère à remplacer : ");
             a = Convert.ToChar(Console.ReadLine());
@@ -942,9 +942,9 @@ namespace Decouverte
             do
             {
                 if (expression[i] == '(') cpt++;
-                if (expression[i] == ')') cpt--;
+                else if (expression[i] == ')') cpt--;
                 i++;
-            }while(i < expression.Length);
+            }while(i < expression.Length && cpt>0);
             if(cpt==0)
             {
                 Console.WriteLine("l'expression est correcte");
@@ -1005,50 +1005,109 @@ namespace Decouverte
 
 
             /* Exercice 6.8 
-           int[] T = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-           int[] U = new int[10];
-           int j = T.Length - 1;
-           for (int i=0;i<T.Length;i++)
+           int[] t = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+           int[] t = new int[10];
+           int j = t.Length - 1;
+           for (int i=0;i<t.Length;i++)
            {
-               U[i] = T[j];
+               u[i] = t[j];
                j++;
-               if (j >= T.Length) j = 0;
+               if (j >= t.Length) j = 0;
            }
-           foreach (int val in U)
+           foreach (int val in u)
            {
                Console.Write(val+" ");
            }*/
 
             /* Exercice 6.9
-            int[] T = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            int j = T.Length - 1;
-            int temp = T[j];
-            Console.WriteLine(temp);
+            int[] t = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int j = t.Length - 1;
+            int temp = t[j];
             for (int i=j;i>0;i--)
             {
-                T[i] = T[i - 1];
+                t[i] = t[i - 1];
             }
-            T[0] = temp;
-            foreach (int val in T)
+            t[0] = temp;
+            foreach (int val in t)
             {
                 Console.Write(val + " ");
             }*/
 
             /* Exercice 6.10 
-            int[] T = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-            int j = T.Length - 1;
+            int[] t = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11};
+            int j = t.Length - 1;
             int temp;
             for (int i=0;i<j;i++)
             {
-                temp = T[i];
-                T[i] = T[j];
-                T[j] = temp;
+                temp = t[i];
+                t[i] = t[j];
+                t[j] = temp;
                 j--;
             }
-            foreach (int val in T)
+            foreach (int val in t)
             {
                 Console.Write(val + " ");
             }*/
+
+            /* Exercice 6.11 
+            int[] t = new int[] {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+            for (int i=0;i<t.Length;i++)
+            {
+                t[i] = (t[i]*t[i])%17;
+            }
+            foreach (int val in t)
+            {
+                Console.Write(val + " ");
+            }*/
+
+            /* Exercice 6.12 
+            int[] t = new int[] { 70, 2, 3, 4, 5, 6, 90, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 1 };
+            int max, min;
+            max = min = t[0];
+            for (int i=1;i<t.Length;i++)
+            {
+                if (t[i] > max)
+                {
+                    max = t[i];
+                }
+                else if (t[i]<min)
+                {
+                    min = t[i];
+                }
+            }
+            Console.WriteLine("La valeur Maxi est " + max + " et la valeur Mini est "+min);*/
+
+            /* Exercice 6.13 
+            int[] t = new int[] { 1, 2, 3, 4, 5, 6, 90, 1, 9, 10, 11, 12, 1, 14, 15, 16, 17, 18, 19, 1 };
+            int valeur;
+            Console.Write("Entrez une valeur à rechercher");
+            valeur = Convert.ToInt32(Console.ReadLine());
+            for (int i=0;i<t.Length;i++)
+            {
+                if (t[i]==valeur)
+                {
+                    Console.Write(i + " ");
+                }
+            }*/
+
+            /* Exercice 6.14 */
+            int[] t = new int[] { 1, 2, 3, 4, 5, 6, 90, 1, 9, 10, 11, 12, 1, 14, 15, 16, 17, 18, 19, 1 };
+            int[] q = new int[0];
+            int valeur;
+            Console.Write("Entrez une valeur à rechercher");
+            valeur = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < t.Length; i++)
+            {
+                if (t[i] == valeur)
+                {
+                    Array.Resize(ref q, q.Length + 1);
+                    q[q.Length-1]=i ;
+                }
+            }
+            foreach (int val in q)
+            {
+                Console.Write(val + " ");
+            }
 
 
 
