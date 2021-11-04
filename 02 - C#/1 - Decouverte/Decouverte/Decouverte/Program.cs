@@ -1050,10 +1050,11 @@ namespace Decouverte
             }*/
 
             /* Exercice 6.11 
-            int[] t = new int[] {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+            int[] t = new int[10];
+            ArrayResize(ref t, t.Length + 10);
             for (int i=0;i<t.Length;i++)
             {
-                t[i] = (t[i]*t[i])%17;
+                t[i] = i*i%17;
             }
             foreach (int val in t)
             {
@@ -1094,7 +1095,7 @@ namespace Decouverte
             int[] t = new int[] { 1, 2, 3, 4, 5, 6, 90, 1, 9, 10, 11, 12, 1, 14, 15, 16, 17, 18, 19, 1 };
             int[] q = new int[0];
             int valeur;
-            Console.Write("Entrez une valeur à rechercher");
+            Console.Write("Entrez une valeur à rechercher : ");
             valeur = Convert.ToInt32(Console.ReadLine());
             for (int i = 0; i < t.Length; i++)
             {
@@ -1104,11 +1105,36 @@ namespace Decouverte
                     q[q.Length-1]=i ;
                 }
             }
-            foreach (int val in q)
+            if (q.Length != 0)
             {
-                Console.Write(val + " ");
+                Console.Write("La valeur " + valeur + " a été trouvée aux indices suivants : ");
+                foreach (int val in q)
+                {
+                    Console.Write(val + " ");
+                }
+            }
+            else
+            {
+                Console.Write("La valeur "+valeur+" n'a pas été trouvée");
             }
 
+            /* Exercice 6.15
+            double[] pieces = new double[] {0.5,0.1,0.1,0.05,0.02,0.01};
+            int[] nbPieces = new int[6];
+            double somme;
+            Console.Write("Veuillez saisir la somme : ");
+            somme = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(somme);
+            if (somme == 0.2) Console.WriteLine("ok");
+            while (somme > 0) 
+            {
+                if(somme%0.2==0)
+                {
+                    Console.WriteLine("1 pièce ");
+                    somme = somme - 0.2;
+                }
+                
+            }*/
 
 
         }
