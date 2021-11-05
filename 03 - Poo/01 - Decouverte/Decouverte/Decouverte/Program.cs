@@ -6,7 +6,8 @@ namespace Decouverte
     {
         static void Main(string[] args)
         {
-            Personnes P = new Personnes();
+            Personnes p = new Personnes();
+            p.ToString();
         }
     }
 }

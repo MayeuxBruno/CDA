@@ -14,6 +14,7 @@ namespace Decouverte
         private int age;
         private string adresse;
 
+     
         // Constructeurs
         public Personnes()
         {
@@ -25,6 +26,12 @@ namespace Decouverte
             this.prenom = prenom;
             this.age = age;
             this.adresse = adresse;
+        }
+        public Personnes(string nom, string prenom, int age)
+        {
+            this.nom = nom;
+            this.prenom = prenom;
+            this.age = age;
         }
         public Personnes(string nom,string prenom)
         {
