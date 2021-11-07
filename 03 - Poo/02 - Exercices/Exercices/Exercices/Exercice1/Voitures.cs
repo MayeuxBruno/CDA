@@ -35,7 +35,8 @@ namespace Exercices
 
         public override string ToString()
         {
-            return "\nCette voiture est une "+this.Modele+" de la marque "+this.Marque+" de couleur "+this.Couleur+" de motorisation "+this.Motorisation+", avec "+this.NbKilometres+" Kilomètres";
+            return "\nCette voiture est une "+this.Modele+" de la marque "+this.Marque+" de couleur "+this.Couleur+
+                   " de motorisation "+this.Motorisation+", avec "+this.NbKilometres+" Kilomètres";
         }
 
         public void Rouler(int NbKms)
@@ -43,4 +44,6 @@ namespace Exercices
             this.NbKilometres += NbKms;
         }
     }
+
+    
 }
