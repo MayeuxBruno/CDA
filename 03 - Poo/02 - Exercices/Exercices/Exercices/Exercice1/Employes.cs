@@ -14,16 +14,18 @@ namespace Exercices
         public string Fonction { get; set; }
         public double SalaireBrutAnnuel { get; set; }
         public string Service { get; set; }
+        public Agences Agence { get; set; }
 
         // Constructeur
-        public Employes(string nom, string prenom, DateTime date, string fonction, double salaireBrutAnnuel, string service)
+        public Employes(string nom, string prenom, DateTime date, string fonction, double salaireBrutAnnuel, string service, Agences agence)
         {
-            Nom = nom;
-            Prenom = prenom;
-            DateEmbauche = date;
-            Fonction = fonction;
-            SalaireBrutAnnuel = salaireBrutAnnuel;
-            Service = service;
+            this.Nom = nom;
+            this.Prenom = prenom;
+            this.DateEmbauche = date;
+            this.Fonction = fonction;
+            this.SalaireBrutAnnuel = salaireBrutAnnuel;
+            this.Service = service;
+            this.Agence = agence;
         }
 
         //Méthodes
@@ -31,13 +33,17 @@ namespace Exercices
         // Affiche la fiche d'un employé
         public override string ToString()
         {
-            return "\n************************" +
-                   "\n Fiche Employe" +
-                   "\n************************" +
-                   "\n Nom : " + this.Nom + "\n Prénom : " + this.Prenom +
-                   "\n Date d'embuache : "+this.DateEmbauche.ToString("dd/MM/yyyy")+
-                   "\n Fonction : " + this.Fonction + "\n Salaire Brut Annuel :" + this.SalaireBrutAnnuel +
-                   "\n Service : " + this.Service;
+            return "\n******************************************************" +
+                   "\n                     Fiche Employe" +
+                   "\n******************************************************" +
+                   "\n Nom                 : " + this.Nom + 
+                   "\n Prénom              : " + this.Prenom +
+                   "\n Date d'embuache     : "+this.DateEmbauche.ToString("dd/MM/yyyy")+
+                   "\n Fonction            : " + this.Fonction + 
+                   "\n Salaire Brut Annuel : " + this.SalaireBrutAnnuel +
+                   "\n Service             : " + this.Service+
+                   "\n Cet employe "+(this.ChequesVacances()?"bénéficie":"ne bénéficie pas")+" de chèques vacances."+
+                   "\n\n Agence : "+this.Agence+"\n";
         }
 
         // Retourne l'ancienneté de l'employé
@@ -56,20 +62,31 @@ namespace Exercices
             return prime;
         }
 
-        public string VirementPrime()
+        /// <summary>
+        /// Retourne la masse salariale de l'Employe
+        /// </summary>
+        /// <returns>masse salariale (double)</returns>
+        public double MasseSalariale()
         {
-            double prime = this.CalculPrime();
-            DateTime moment = DateTime.Today;
-            DateTime DateVirement = new DateTime(moment.Year, 11, 9);
-            if (moment>=DateVirement)
-            {
-                return "L'ordre de transfert a bien ete transmis à la banque pour la somme de " + prime + " Euros.";
-            }
-            else
-            {
-                return "L'ordre de virement n'a pas été transmis";
-            }
+            return this.SalaireBrutAnnuel + CalculPrime();
         }
+      
+        /// <summary>
+        /// Indique si l'employe à le droit aux chèques vacances
+        /// </summary>
+        /// <returns>boolen false n'a pas le droit, true a le droit</returns>
+        public bool ChequesVacances()
+        {
+            if (this.Anciennete() > 1) return true;
+            return false;
+        }
+
+        /// <summary>
+        /// Tri les employés par nom et prénom
+        /// </summary>
+        /// <param name="a">Employé a</param>
+        /// <param name="b">Employé b</param>
+        /// <returns>int -1;0;1</returns>
         public static int CompareByName(Employes a, Employes b)
         {
             if ((a.Nom.CompareTo(b.Nom)) > 0)
@@ -88,7 +105,30 @@ namespace Exercices
             {
                 return -1;
             }
-            
+
         }
+
+        /// <summary>
+        /// Compare les employes par Service puis par nom et prénom
+        /// </summary>
+        /// <param name="a">Employé a</param>
+        /// <param name="b">Employe b</param>
+        /// <returns>Int -1;0;1</returns>
+        public static int CompareByServiceNom(Employes a, Employes b)
+        {
+            if ((a.Service.CompareTo(b.Service)) > 0)
+            {
+                return 1;
+            }
+            else if((a.Service.CompareTo(b.Service)) < 0)
+            {
+                return -1;
+            }
+            else
+            {
+                return CompareByName(a,b);
+            }
+        }
+        
     }
 }

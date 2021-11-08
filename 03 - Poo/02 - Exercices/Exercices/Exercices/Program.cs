@@ -47,18 +47,55 @@ namespace Exercices
             //Console.WriteLine(e2.CalculPrime());
             //Console.WriteLine(e2.VirementPrime());
 
+            double masseSalariale=0;
             List<Employes>emp = new List<Employes> ();
-            emp.Add(new Employes("Dupont", "Jordan", new DateTime(1986, 12, 17), "Ouvrier", 17000, "Menuiserie"));
-            emp.Add(new Employes("Dupont", "Céline", new DateTime(2007, 05, 02), "Secrétaire", 27000, "Direction"));
-            emp.Add(new Employes("Morin", "Bernard", new DateTime(2001, 02, 02), "Comptable", 27500, "Comptabilité"));
-            emp.Add(new Employes("Dut", "Cécile", new DateTime(2004, 10, 12), "Secrétaire", 21000, "Comptabilité"));
-            emp.Add(new Employes("Billot", "Jacques", new DateTime(2007, 02, 07), "Commercial", 25600, "Commercial"));
-            Console.Write("\nLe nombre d'employés est de : " + emp.Count+"\n");
-            emp.Sort(Employes.CompareByName);
+            Agences a1 = new Agences("Agence 1", "12 Rue de Dunkerque", "59632", "Bergues","Restaurant Entreprise");
+            emp.Add(new Employes("Dupont", "Jordan", new DateTime(1986, 12, 17), "Ouvrier", 17000, "Menuiserie",a1));
+            emp.Add(new Employes("Dupont", "Céline", new DateTime(2007, 05, 02), "Secrétaire", 27000, "Direction",a1));
+            emp.Add(new Employes("Morin", "Bernard", new DateTime(2021, 11, 02), "Comptable", 27500, "Comptabilité",a1));
+            emp.Add(new Employes("Dul", "Cécile", new DateTime(2004, 10, 12), "Secrétaire", 21000, "Comptabilité",a1));
+            emp.Add(new Employes("Billot", "Jacques", new DateTime(2007, 02, 07), "Commercial", 25600, "Commercial",a1));
+
+
+            Enfants enf1 = new Enfants("Dupont", "Rémi", new DateTime(2006, 12, 11));
+            Console.WriteLine(enf1.ToString());
+            // Nombre d'employes dans l'entreprise
+            Console.WriteLine("\nLe nombre d'employés est de : " + emp.Count+"\n");
+
+            // Virement des Primes
+            DateTime moment = DateTime.Today;
+            DateTime DateVirement = new DateTime(moment.Year, 11, 8);
+            if (moment >= DateVirement)
+            {
+                foreach (var item in emp)
+                {
+                    Console.WriteLine("L'ordre de transfert a bien ete transmis à la banque pour la somme de " + item.CalculPrime() + " Euros.");
+
+                }
+            }
+            else
+            {
+                Console.WriteLine("L'ordre de virement n'a pas été transmis");
+            }
+
+
+            // Tri de la liste
+            //emp.Sort(Employes.CompareByName);
+            emp.Sort(Employes.CompareByServiceNom);
             foreach (Employes item in emp)
             {
                 Console.WriteLine(item.ToString());
             }
+
+            // Calcul de la masse salariale de l'entreprise
+            foreach (Employes item in emp)
+            {
+                masseSalariale += item.MasseSalariale();
+            }
+            Console.WriteLine("La Masse Salariale de l'entreprise est de " + masseSalariale + " Euros.");
+
+
+
         }
     }
 }
