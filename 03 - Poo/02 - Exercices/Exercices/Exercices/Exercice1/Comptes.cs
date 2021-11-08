@@ -8,16 +8,16 @@ namespace Exercices
 {
     class Comptes
     {
-        private  int NumCompte { get; set; }
-        private double Solde { get; set; }
-        private Clients Client { get; set; }
-        private static int Compteur=0;
+        public  int NumCompte { get; set; }
+        public Clients Client { get; set; }
+        public double Solde { get; private set; }
+        private static int Compteur { get; set; } = 0;
 
         // Constructeur
-        public Comptes(double solde, Clients client)
+        public Comptes(Clients client)
         {
             NumCompte = ++Compteur;
-            Solde = solde;
+            Solde = 0;
             Client = client;
         }
 
@@ -29,27 +29,40 @@ namespace Exercices
                    this.Client.Afficher()+"\n************************";
         }
 
+        // Méthode qui crédite le compte
         public void Crediter(double Somme)
         {
             this.Solde += Somme;
         }
+
+        /// <summary>
+        ///Méthode qui crédite une somme au compte et débite le compte passé en paramètre 
+        /// </summary>
+        /// <param name="Somme">Somme à créditer</param>
+        /// <param name="Compte">Compte à débiter</param>
         public void Crediter (double Somme, Comptes Compte)
         {
             this.Crediter(Somme);
             Compte.Debiter(Somme);
         }
+      
+        // Méthode qui débite une somme au compte
         public void Debiter(double Somme)
         {
             this.Solde -= Somme;
         }
+
+        // Méthode qui débite une somme au compte et crédite le compte passé en paramètre
         public void Debiter (double Somme, Comptes compte)
         {
             this.Debiter(Somme);
             compte.Crediter(Somme);
         }
-        public static int NbComptes ()
+
+        // Méthode qui retourne le nombre de comptes créés
+        public static void afficherNbComptes ()
         {
-            return Compteur;
+            Console.WriteLine("Le nombre de comptes crées est de : "+Compteur);
         }
     }
 }
