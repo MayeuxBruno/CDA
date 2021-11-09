@@ -50,17 +50,25 @@ namespace Exercices
             double masseSalariale=0;
             List<Employes>emp = new List<Employes> ();
             Agences a1 = new Agences("Agence 1", "12 Rue de Dunkerque", "59632", "Bergues","Restaurant Entreprise");
-            emp.Add(new Employes("Dupont", "Jordan", new DateTime(1986, 12, 17), "Ouvrier", 17000, "Menuiserie",a1));
-            emp.Add(new Employes("Dupont", "Céline", new DateTime(2007, 05, 02), "Secrétaire", 27000, "Direction",a1));
-            emp.Add(new Employes("Morin", "Bernard", new DateTime(2021, 11, 02), "Comptable", 27500, "Comptabilité",a1));
-            emp.Add(new Employes("Dul", "Cécile", new DateTime(2004, 10, 12), "Secrétaire", 21000, "Comptabilité",a1));
-            emp.Add(new Employes("Billot", "Jacques", new DateTime(2007, 02, 07), "Commercial", 25600, "Commercial",a1));
+            Agences a2 = new Agences("Agence 2", "25 Rue de Lille", "62400", "Béthune", "Tickets Restaurant");
+            Agences a3 = new Agences("Agence 3", "25 Rue de d'Amiens", "62000", "Arras", "Restaurant Entreprise");
 
+            Enfants enf1 = new Enfants("Dupont", "Rémi", new DateTime(2010, 12, 11));
+            Enfants enf2 = new Enfants("Dupont", "Eloise", new DateTime(2010, 12, 06));
+            Enfants enf3 = new Enfants("Billot", "Marc", new DateTime(2008, 01, 02));
+            Enfants enf4 = new Enfants("Morin", "Kévin", new DateTime(2002, 02, 02));
 
-            Enfants enf1 = new Enfants("Dupont", "Rémi", new DateTime(2006, 12, 11));
-            Console.WriteLine(enf1.ToString());
+            emp.Add(new Employes("Durand", "Jordan", new DateTime(1986, 12, 17), "Ouvrier", 17000, "Menuiserie", a1,new List<Enfants>() {}));
+            emp.Add(new Employes("Dupont", "Céline", new DateTime(2007, 05, 02), "Secrétaire", 27000, "Direction", a2, new List<Enfants>() { enf1, enf2 }));
+            emp.Add(new Employes("Morin", "Bernard", new DateTime(2021, 11, 02), "Comptable", 27500, "Comptabilité", a2, new List<Enfants>() { enf4 }));
+            emp.Add(new Employes("Dul", "Cécile", new DateTime(2004, 10, 12), "Secrétaire", 21000, "Comptabilité", a3, new List<Enfants>() { }));
+            emp.Add(new Employes("Billot", "Jacques", new DateTime(2007, 02, 07), "Commercial", 25600, "Commercial", a1, new List<Enfants>() { enf3 }));
+
+            //Console.WriteLine(enf1.ToString());
             // Nombre d'employes dans l'entreprise
-            Console.WriteLine("\nLe nombre d'employés est de : " + emp.Count+"\n");
+            //Console.WriteLine("\nLe nombre d'employés est de : " + emp.Count+"\n");
+            Console.WriteLine("\n Le nombre d'employés est de : " + Employes.Effectif() + "\n");
+
 
             // Virement des Primes
             DateTime moment = DateTime.Today;
@@ -69,13 +77,13 @@ namespace Exercices
             {
                 foreach (var item in emp)
                 {
-                    Console.WriteLine("L'ordre de transfert a bien ete transmis à la banque pour la somme de " + item.CalculPrime() + " Euros.");
+                    Console.WriteLine(" L'ordre de transfert a bien ete transmis à la banque pour la somme de " + item.CalculPrime() + " Euros.");
 
                 }
             }
             else
             {
-                Console.WriteLine("L'ordre de virement n'a pas été transmis");
+                Console.WriteLine(" L'ordre de virement n'a pas été transmis");
             }
 
 
@@ -92,7 +100,7 @@ namespace Exercices
             {
                 masseSalariale += item.MasseSalariale();
             }
-            Console.WriteLine("La Masse Salariale de l'entreprise est de " + masseSalariale + " Euros.");
+            Console.WriteLine(" La Masse Salariale de l'entreprise est de " + masseSalariale + " Euros.");
 
 
 

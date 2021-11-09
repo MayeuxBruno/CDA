@@ -20,10 +20,10 @@ namespace Exercices
         }
         public override string ToString()
         {
-            return "\nNom de l'enfant    : " + this.Nom +
-                   "\nPrenom de l'enfant : " + this.Prenom +
-                   "\nDate de Naissance  : " + this.DateDeNaissance.ToString("dd/MM/yyyy") +
-                   "\nChèque de Noel     : " + this.ChequeNoel();
+            return "\n Nom de l'enfant    : " + this.Nom +
+                   "\n Prenom de l'enfant : " + this.Prenom +
+                   "\n Date de Naissance  : " + this.DateDeNaissance.ToString("dd/MM/yyyy") +
+                   "\n Chèque de Noel     : " + this.ChequeNoel()+" Euros";
         }
 
         /// <summary>

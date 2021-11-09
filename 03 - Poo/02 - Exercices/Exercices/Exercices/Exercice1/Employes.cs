@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,8 +18,11 @@ namespace Exercices
         public string Service { get; set; }
         public Agences Agence { get; set; }
 
+        public List<Enfants>Enfant { get; set; }
+        private static int NbEmployes { get; set; } = 0;
+
         // Constructeur
-        public Employes(string nom, string prenom, DateTime date, string fonction, double salaireBrutAnnuel, string service, Agences agence)
+        public Employes(string nom, string prenom, DateTime date, string fonction, double salaireBrutAnnuel, string service, Agences agence,List<Enfants> enfant)
         {
             this.Nom = nom;
             this.Prenom = prenom;
@@ -26,6 +31,8 @@ namespace Exercices
             this.SalaireBrutAnnuel = salaireBrutAnnuel;
             this.Service = service;
             this.Agence = agence;
+            this.Enfant = enfant;
+            NbEmployes++;
         }
 
         //Méthodes
@@ -33,17 +40,39 @@ namespace Exercices
         // Affiche la fiche d'un employé
         public override string ToString()
         {
-            return "\n******************************************************" +
+            string reponse = "\n ******************************************************" +
                    "\n                     Fiche Employe" +
-                   "\n******************************************************" +
-                   "\n Nom                 : " + this.Nom + 
+                   "\n ******************************************************" +
+                   "\n Nom                 : " + this.Nom +
                    "\n Prénom              : " + this.Prenom +
-                   "\n Date d'embuache     : "+this.DateEmbauche.ToString("dd/MM/yyyy")+
-                   "\n Fonction            : " + this.Fonction + 
+                   "\n Date d'embuache     : " + this.DateEmbauche.ToString("dd/MM/yyyy") +
+                   "\n Fonction            : " + this.Fonction +
                    "\n Salaire Brut Annuel : " + this.SalaireBrutAnnuel +
-                   "\n Service             : " + this.Service+
-                   "\n Cet employe "+(this.ChequesVacances()?"bénéficie":"ne bénéficie pas")+" de chèques vacances."+
-                   "\n\n Agence : "+this.Agence+"\n";
+                   "\n Service             : " + this.Service +
+                   "\n Cet employe " + (this.ChequesVacances() ? "bénéficie" : "ne bénéficie pas") + " de chèques vacances." +
+                   "\n\n Agence : " + this.Agence + "\n";
+            if (Enfant.Count != 0)
+            {    
+                   int[] tabCheques = new int[3];
+                   tabCheques = this.ChequeNoel();
+                reponse += "\n Cheques de Noël :";
+                    if (tabCheques[0] != 0)
+                    {
+                        reponse += "\n " + tabCheques[0] + "chèque de 20 Euros";
+                    }
+                    if (tabCheques[1] != 0)
+                    {
+                        reponse += "\n " + tabCheques[1] + "chèque de 30 Euros";
+
+                    }
+                    if (tabCheques[2] != 0)
+                    {
+                        reponse += "\n " + tabCheques[2] + "chèque de 50 Euros";
+
+                    }
+                
+            }
+            return reponse;
         }
 
         // Retourne l'ancienneté de l'employé
@@ -59,7 +88,7 @@ namespace Exercices
         {
             double anciennete = Convert.ToDouble(this.Anciennete());
             double prime = (this.SalaireBrutAnnuel * 0.05) + ((this.SalaireBrutAnnuel*0.02)*anciennete);
-            return prime;
+            return Math.Round(prime,2);
         }
 
         /// <summary>
@@ -79,6 +108,30 @@ namespace Exercices
         {
             if (this.Anciennete() > 1) return true;
             return false;
+        }
+
+        public int[] ChequeNoel()
+        {
+            int[] cheques = new int[3] { 0, 0, 0 };
+            foreach (var item in Enfant)
+            {
+                int valeur = item.ChequeNoel();
+                switch (valeur)
+                {
+                    case 20:
+                        cheques[0]++;
+                        break;
+                    case 30:
+                        cheques[1]++;
+                        break;
+                    case 50:
+                        cheques[2]++;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            return cheques;
         }
 
         /// <summary>
@@ -124,11 +177,16 @@ namespace Exercices
             {
                 return -1;
             }
-            else
-            {
-                return CompareByName(a,b);
-            }
+            return CompareByName(a,b);
+        } 
+
+        /// <summary>
+        /// Indique le nombre d'employes crées
+        /// </summary>
+        /// <returns>int Nombre d'employés crées</returns>
+        public static int Effectif()
+        {
+            return NbEmployes;
         }
-        
     }
 }
