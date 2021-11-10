@@ -55,7 +55,7 @@ namespace Exercices
             {    
                    int[] tabCheques = new int[3];
                    tabCheques = this.ChequeNoel();
-                reponse += "\n Cheques de Noël :";
+                   reponse += "\n Cheques de Noël :";
                     if (tabCheques[0] != 0)
                     {
                         reponse += "\n " + tabCheques[0] + "chèque de 20 Euros";
@@ -106,7 +106,7 @@ namespace Exercices
         /// <returns>boolen false n'a pas le droit, true a le droit</returns>
         public bool ChequesVacances()
         {
-            if (this.Anciennete() > 1) return true;
+            if (this.Anciennete() >= 1) return true;
             return false;
         }
 
