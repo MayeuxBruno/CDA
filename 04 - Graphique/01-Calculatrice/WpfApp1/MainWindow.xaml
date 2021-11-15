@@ -35,23 +35,22 @@
             <ColumnDefinition Width="5*"/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
-        <TextBox Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Text="0" Grid.ColumnSpan="7" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontSize="35" FontWeight="Bold" Padding="0,0,10,0" TextChanged="TextBox_TextChanged"   Background="#FF0A0909" Foreground="#FFECE8E8"/>
-        <Button Content="7" Grid.Column="1" Margin="0" Grid.Row="3" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="{DynamicResource Touche}" BorderBrush="{DynamicResource BordureTouche}"/>
-        <Button Content="4" Grid.Column="1" Margin="0" Grid.Row="5" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
-        <Button Content="5" Grid.Column="3" Margin="0" Grid.Row="5" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
-        <Button Content="2" Grid.Column="3" Margin="0" Grid.Row="7" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
-        <Button Content="1" Grid.Column="1" Margin="0" Grid.Row="7" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
-        <Button Content="9" Grid.Column="5" Margin="0" Grid.Row="3" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
-        <Button Content="6" Grid.Column="5" Margin="0" Grid.Row="5" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
-        <Button Content="3" Grid.Column="5" Margin="0" Grid.Row="7" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
-        <Button Content="3" Grid.Column="7" Margin="0" Grid.Row="3" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
-        <Button Content="/" Grid.Column="7" Margin="0" Grid.Row="3" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
-        <Button Content="x" Grid.Column="7" Margin="0" Grid.Row="5" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
-        <Button Content="-" Grid.Column="7" Margin="0" Grid.Row="7" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
-        <Button Content="+/-" Grid.Column="1" Margin="0" Grid.Row="9" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
-        <Button Content="=" Grid.Column="3" Margin="0" Grid.Row="9" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
-        <Button Content="," Grid.Column="5" Margin="0" Grid.Row="9" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
-        <Button Content="+" Grid.Column="7" Margin="0" Grid.Row="9" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
-        <Button Content="8" Grid.Column="3" Margin="0" Grid.Row="3" Background="{DynamicResource Touche}" BorderBrush="{DynamicResource BordureTouche}" Click="Button_Click" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="affResult" Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Text="" Grid.ColumnSpan="7" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontSize="35" FontWeight="Bold" Background="#FF0A0909" Foreground="#FFECE8E8"/>
+        <Button x:Name="btn0" Content="0" Grid.Column="1" Grid.Row="9" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6" Click="Btn_Click"/>
+        <Button x:Name="btn1" Content="1" Grid.Column="1" Grid.Row="7" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
+        <Button x:Name="btn2" Content="2" Grid.Column="3" Grid.Row="7" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
+        <Button x:Name="btn3" Content="3" Grid.Column="5" Grid.Row="7" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
+        <Button x:Name="btn4" Content="4" Grid.Column="1" Grid.Row="5" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
+        <Button x:Name="btn5" Content="5" Grid.Column="3" Grid.Row="5" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
+        <Button x:Name="btn6" Content="6" Grid.Column="5" Grid.Row="5" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
+        <Button x:Name="btn7" Content="7" Grid.Column="1" Grid.Row="3" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
+        <Button x:Name="btn8" Content="8" Grid.Column="3" Grid.Row="3" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
+        <Button x:Name="btn9" Content="9" Grid.Column="5" Grid.Row="3" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
+        <Button x:Name="btnDiv" Content="/" Grid.Column="7" Grid.Row="3" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
+        <Button x:Name="btnMul" Content="x" Grid.Column="7" Grid.Row="5" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
+        <Button x:Name="btnSous" Content="-" Grid.Column="7" Grid.Row="7" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
+        <Button x:Name="btnEg" Content="=" Grid.Column="3" Grid.Row="9" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
+        <Button x:Name="btnVir" Content="," Grid.Column="5" Grid.Row="9" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
+        <Button x:Name="btnPlus" Content="+" Grid.Column="7" Grid.Row="9" BorderThickness="5" Foreground="Black" FontWeight="Bold" FontSize="20" Background="#FFB6B6B6"/>
     </Grid>
 </Window>

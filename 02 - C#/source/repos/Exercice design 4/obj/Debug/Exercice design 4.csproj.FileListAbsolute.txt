@@ -1,0 +1,15 @@
+U:\59011-07-08\CDA\02 - C#\source\repos\Exercice design 4\bin\Debug\Exercice design 4.exe.config
+U:\59011-07-08\CDA\02 - C#\source\repos\Exercice design 4\bin\Debug\Exercice design 4.exe
+U:\59011-07-08\CDA\02 - C#\source\repos\Exercice design 4\bin\Debug\Exercice design 4.pdb
+U:\59011-07-08\CDA\02 - C#\source\repos\Exercice design 4\obj\Debug\Exercice design 4.csproj.AssemblyReference.cache
+U:\59011-07-08\CDA\02 - C#\source\repos\Exercice design 4\obj\Debug\MainWindow.g.cs
+U:\59011-07-08\CDA\02 - C#\source\repos\Exercice design 4\obj\Debug\App.g.cs
+U:\59011-07-08\CDA\02 - C#\source\repos\Exercice design 4\obj\Debug\Exercice design 4_MarkupCompile.cache
+U:\59011-07-08\CDA\02 - C#\source\repos\Exercice design 4\obj\Debug\Exercice design 4_MarkupCompile.lref
+U:\59011-07-08\CDA\02 - C#\source\repos\Exercice design 4\obj\Debug\MainWindow.baml
+U:\59011-07-08\CDA\02 - C#\source\repos\Exercice design 4\obj\Debug\Exercice design 4.g.resources
+U:\59011-07-08\CDA\02 - C#\source\repos\Exercice design 4\obj\Debug\Exercice_design_4.Properties.Resources.resources
+U:\59011-07-08\CDA\02 - C#\source\repos\Exercice design 4\obj\Debug\Exercice design 4.csproj.GenerateResource.cache
+U:\59011-07-08\CDA\02 - C#\source\repos\Exercice design 4\obj\Debug\Exercice design 4.csproj.CoreCompileInputs.cache
+U:\59011-07-08\CDA\02 - C#\source\repos\Exercice design 4\obj\Debug\Exercice design 4.exe
+U:\59011-07-08\CDA\02 - C#\source\repos\Exercice design 4\obj\Debug\Exercice design 4.pdb

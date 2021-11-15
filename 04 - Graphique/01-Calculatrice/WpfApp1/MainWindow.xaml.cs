@@ -25,14 +25,11 @@ namespace WpfApp1
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            affResult.Text += sender.content;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+      
     }
 }
