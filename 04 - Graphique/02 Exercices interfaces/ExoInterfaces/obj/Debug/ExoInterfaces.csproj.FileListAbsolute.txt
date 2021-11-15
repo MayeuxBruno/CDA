@@ -1,0 +1,17 @@
+U:\59011-07-08\CDA\04 - Graphique\02 Exercices interfaces\ExoInterfaces\bin\Debug\ExoInterfaces.exe.config
+U:\59011-07-08\CDA\04 - Graphique\02 Exercices interfaces\ExoInterfaces\bin\Debug\ExoInterfaces.exe
+U:\59011-07-08\CDA\04 - Graphique\02 Exercices interfaces\ExoInterfaces\bin\Debug\ExoInterfaces.pdb
+U:\59011-07-08\CDA\04 - Graphique\02 Exercices interfaces\ExoInterfaces\obj\Debug\ExoInterfaces.csproj.AssemblyReference.cache
+U:\59011-07-08\CDA\04 - Graphique\02 Exercices interfaces\ExoInterfaces\obj\Debug\MainWindow.g.cs
+U:\59011-07-08\CDA\04 - Graphique\02 Exercices interfaces\ExoInterfaces\obj\Debug\App.g.cs
+U:\59011-07-08\CDA\04 - Graphique\02 Exercices interfaces\ExoInterfaces\obj\Debug\ExoInterfaces_MarkupCompile.cache
+U:\59011-07-08\CDA\04 - Graphique\02 Exercices interfaces\ExoInterfaces\obj\Debug\ExoInterfaces_MarkupCompile.lref
+U:\59011-07-08\CDA\04 - Graphique\02 Exercices interfaces\ExoInterfaces\obj\Debug\MainWindow.baml
+U:\59011-07-08\CDA\04 - Graphique\02 Exercices interfaces\ExoInterfaces\obj\Debug\ExoInterfaces.g.resources
+U:\59011-07-08\CDA\04 - Graphique\02 Exercices interfaces\ExoInterfaces\obj\Debug\ExoInterfaces.Properties.Resources.resources
+U:\59011-07-08\CDA\04 - Graphique\02 Exercices interfaces\ExoInterfaces\obj\Debug\ExoInterfaces.csproj.GenerateResource.cache
+U:\59011-07-08\CDA\04 - Graphique\02 Exercices interfaces\ExoInterfaces\obj\Debug\ExoInterfaces.csproj.CoreCompileInputs.cache
+U:\59011-07-08\CDA\04 - Graphique\02 Exercices interfaces\ExoInterfaces\obj\Debug\ExoInterfaces.exe
+U:\59011-07-08\CDA\04 - Graphique\02 Exercices interfaces\ExoInterfaces\obj\Debug\ExoInterfaces.pdb
+U:\59011-07-08\CDA\04 - Graphique\02 Exercices interfaces\ExoInterfaces\obj\Debug\Exercice4.g.cs
+U:\59011-07-08\CDA\04 - Graphique\02 Exercices interfaces\ExoInterfaces\obj\Debug\Exercice4.baml
