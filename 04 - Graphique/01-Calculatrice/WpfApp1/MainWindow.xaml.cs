@@ -27,7 +27,7 @@ namespace WpfApp1
 
         private void Btn_Click(object sender, RoutedEventArgs e)
         {
-            affResult.Text += sender.content;
+            affResult.Text += ((Button)sender).Content;
         }
 
       
