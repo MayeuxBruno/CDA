@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SaisieOperation"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="1000" Width="1000">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -16,12 +16,13 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="4*"/>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="16*"/>
+            <RowDefinition Height="15*"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="90*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Column="1" Grid.Row="1" Text="Opération de pêche" FontWeight="Bold" />
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="Opération de pêche" FontWeight="Bold" VerticalAlignment="center" />
+        <!-- Première Ligne -->
         <Grid Grid.Row="3" Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
@@ -34,10 +35,257 @@
                 <ColumnDefinition Width="50*"/>
                 <ColumnDefinition Width="4*"/>
             </Grid.ColumnDefinitions>
-            <GroupBox Grid.Column="1" Header="Navire"/>
-            <GroupBox Grid.Column="3" Header="Marée"/>
-            <GroupBox Grid.Column="5" Header="Programme d'observation"/>
-            <GroupBox Grid.Column="7" Header="Saisisseur"/>
+            <!-- Groupe Navire -->
+            <GroupBox Grid.Column="1" Header="Navire">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="25*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Column="1"  Grid.Row="1" Text="Immatriculation : " HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <TextBox Grid.Column="2" Grid.Row="1" Text="639451" VerticalAlignment="center" IsEnabled="False"/>
+                    <TextBlock Grid.Column="1"  Grid.Row="3" Text="Nom : " HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <TextBox Grid.Column="2" Grid.Row="3" Text="PHILCATHAN" VerticalAlignment="center" IsEnabled="False" />
+                </Grid>
+            </GroupBox>
+
+            <!-- Groupe Navire -->
+            <GroupBox Grid.Column="3" Header="Marée">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="6*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Column="1"  Grid.Row="1" Text="Départ : " HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <TextBox Grid.Column="2" Grid.Row="1" Text="22/01/2013-UCH-Granville" VerticalAlignment="center" IsEnabled="False" />
+                    <TextBlock Grid.Column="1"  Grid.Row="3" Text="Retour : " HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <TextBox Grid.Column="2" Grid.Row="3" Text="23/13/2013-UCH-Granville" VerticalAlignment="center" IsEnabled="False"/>
+                </Grid>
+            </GroupBox>
+
+            <!-- Groupe Programme d'observation -->
+            <GroupBox Grid.Column="5" Header="Programme d'observation">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="15*"/>
+                        <ColumnDefinition Width="25*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Column="1"  Grid.Row="1" Text="Programme : " HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="Red"/>
+                    <TextBox Grid.Column="2" Grid.Row="1" Text="SIH-OBSMER" VerticalAlignment="center" IsEnabled="False" />
+                    <TextBlock Grid.Column="1"  Grid.Row="3" Text="Stratégie : " HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <TextBox Grid.Column="2" Grid.Row="3" Text="OBSMER démarrage" VerticalAlignment="center" IsEnabled="False"/>
+                </Grid>
+            </GroupBox>
+            <!-- Groupe Saisisseur -->
+            <GroupBox Grid.Column="7" Header="Saisisseur">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="18*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Column="1"  Grid.Row="1" Text="Opérateur de saisie : " HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <TextBox Grid.Column="2" Grid.Row="1" Text="TETARD Xavier" VerticalAlignment="center" IsEnabled="False"/>
+                    <TextBlock Grid.Column="1"  Grid.Row="3" Text="Dernière modification : " HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <TextBox Grid.Column="2" Grid.Row="3" Text="25/11/2013 10:16:37" VerticalAlignment="center" IsEnabled="False"  />
+                </Grid>
+            </GroupBox>
         </Grid>
+        <!-- Deuxième ligne -->
+        <!-- Onglets -->
+        <TabControl Grid.Column="1" Grid.Row="5">
+            <!-- Operations -->
+            <TabItem Header="Opérations">
+                <Grid Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="120*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="4*"/>
+                        <RowDefinition Height="4*"/>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="60*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <!-- Premiere Ligne onglet Opération -->
+                    <Grid Grid.Row="1" Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <!-- Début de l'opération filage -->
+                        <GroupBox Header="Début de l'opération (Filage)">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="5*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="5*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="5*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="5*"/>
+                                    <RowDefinition Height="1*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="10*"/>
+                                    <ColumnDefinition Width="20*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="3" Content="Date et heure: " Foreground="Red" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                <!-- Date et Heure -->
+                                <Grid Grid.Row="3" Grid.Column="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <ComboBox >
+                                        <Label Content="22/01/2013" Selector.IsSelected="True"/>
+                                    </ComboBox>
+                                    <ComboBox Grid.Column="1">
+                                        <Label Content="18:30" Selector.IsSelected="True"/>
+                                    </ComboBox>
+                                </Grid>
+                                <!-- Latitude & Longitude -->
+                                <Label Grid.Row="5" Content="Latitude: " Foreground="Red" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                <TextBox Grid.Row="5" Grid.Column="1" Text="+4914.100" VerticalAlignment="Center"/>
+                                <Label Grid.Row="7" Content="Longitude: " Foreground="Red" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                <TextBox Grid.Row="7" Grid.Column="1" Text="-1 48.320" VerticalAlignment="Center"/>
+                                <Button Grid.Column="3" Grid.Row="5" BorderBrush="#FFFCFDFF" Background="{DynamicResource BtnAide}" />
+                                <Button Grid.Column="3" Grid.Row="7" BorderBrush="#FFFCFDFF" Background="{DynamicResource BtnAide}" />
+                                <Button Grid.Column="5" Grid.Row="5" Background="{DynamicResource BtnDupliquer}" />
+                                <Button Grid.Column="5" Grid.Row="7" Background="{DynamicResource BtnDupliquer}" />
+                            </Grid>
+                        </GroupBox>
+                        <!-- Fin de l'opération virage -->
+                        <GroupBox Header="Fin de l'opération (Virage)" Grid.Column="1">
+                            <Grid Grid.Column="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="5*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="5*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="5*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="5*"/>
+                                    <RowDefinition Height="1*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="10*"/>
+                                    <ColumnDefinition Width="20*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="1" Content="Durée (h) :" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+                                <TextBox Grid.Row="1" Grid.Column="1" Text="2:00" VerticalAlignment="Center" IsEnabled="False"/>
+                                <!-- Date et Heure -->
+                                <Label Grid.Row="3" Content="Date et heure: " Foreground="Red" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                <Grid Grid.Row="3" Grid.Column="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <ComboBox>
+                                        <Label Content="22/01/2013" Selector.IsSelected="True"/>
+                                    </ComboBox>
+                                    <ComboBox Grid.Column="1">
+                                        <Label Content="20:30" Selector.IsSelected="True"/>
+                                    </ComboBox>
+                                </Grid>
+                                <Label Grid.Row="5" Content="Latitude: " Foreground="Red" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                <TextBox Grid.Row="5" Grid.Column="1" Text="+4914.200" VerticalAlignment="Center"/>
+                                <Button Grid.Column="3" Grid.Row="5" BorderBrush="#FFFCFDFF" Background="{DynamicResource BtnAide}" />
+                                <Label Grid.Row="7" Content="Longitude: " Foreground="Red" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                <TextBox Grid.Row="7" Grid.Column="1" Text="-1 48.390" VerticalAlignment="Center"/>
+                                <Button Grid.Column="3" Grid.Row="7" BorderBrush="#FFFCFDFF" Background="{DynamicResource BtnAide}" />
+                            </Grid>
+                        </GroupBox>
+                    </Grid>
+                    <Label Grid.Row="3" Grid.Column="1" Content="Zone d'activite : 27E8" Foreground="Blue" VerticalAlignment="Center" FontWeight="Bold" Background="{DynamicResource degradeBarre}"/>
+                    <!-- Autre caractèristiques de l'opération -->
+                    <Label Grid.Row="4" Grid.Column="1" Content="Autres caractèristiques de l'opération" Foreground="Blue" VerticalAlignment="Center" FontWeight="Bold" Background="{DynamicResource degradeBarre}"/>
+                    <Grid Grid.Row="5" Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50*"/>
+                            <RowDefinition Height="3*"/>
+                        </Grid.RowDefinitions>
+                    </Grid>
+                    <Expander Grid.Column="1" Grid.Row="7" Header="Navire Associe" Foreground="Blue" FontWeight="Bold" >
+                        <Grid Background="White"/>
+                    </Expander>
+
+                </Grid>
+            </TabItem>
+
+            <!-- Engin -->
+            <TabItem Header="Engin">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Positions géographiques">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Commentaires">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
+
     </Grid>
 </Window>

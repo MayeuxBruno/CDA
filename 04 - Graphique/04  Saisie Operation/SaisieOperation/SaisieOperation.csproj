@@ -94,5 +94,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ressources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="aideIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ajoutIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="dupliquerIcon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
