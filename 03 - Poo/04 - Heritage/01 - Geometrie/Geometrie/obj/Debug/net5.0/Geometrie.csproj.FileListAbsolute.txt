@@ -1,0 +1,16 @@
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\01 - Geometrie\Geometrie\bin\Debug\net5.0\Geometrie.exe
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\01 - Geometrie\Geometrie\bin\Debug\net5.0\Geometrie.deps.json
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\01 - Geometrie\Geometrie\bin\Debug\net5.0\Geometrie.runtimeconfig.json
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\01 - Geometrie\Geometrie\bin\Debug\net5.0\Geometrie.runtimeconfig.dev.json
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\01 - Geometrie\Geometrie\bin\Debug\net5.0\Geometrie.dll
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\01 - Geometrie\Geometrie\bin\Debug\net5.0\ref\Geometrie.dll
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\01 - Geometrie\Geometrie\bin\Debug\net5.0\Geometrie.pdb
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\01 - Geometrie\Geometrie\obj\Debug\net5.0\Geometrie.csproj.AssemblyReference.cache
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\01 - Geometrie\Geometrie\obj\Debug\net5.0\Geometrie.GeneratedMSBuildEditorConfig.editorconfig
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\01 - Geometrie\Geometrie\obj\Debug\net5.0\Geometrie.AssemblyInfoInputs.cache
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\01 - Geometrie\Geometrie\obj\Debug\net5.0\Geometrie.AssemblyInfo.cs
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\01 - Geometrie\Geometrie\obj\Debug\net5.0\Geometrie.csproj.CoreCompileInputs.cache
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\01 - Geometrie\Geometrie\obj\Debug\net5.0\Geometrie.dll
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\01 - Geometrie\Geometrie\obj\Debug\net5.0\ref\Geometrie.dll
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\01 - Geometrie\Geometrie\obj\Debug\net5.0\Geometrie.pdb
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\01 - Geometrie\Geometrie\obj\Debug\net5.0\Geometrie.genruntimeconfig.cache
