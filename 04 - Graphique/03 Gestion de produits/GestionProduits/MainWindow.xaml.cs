@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,24 @@ namespace GestionProduits
         public MainWindow()
         {
             InitializeComponent();
+            RemplirGrid();
+        }
+
+        public void RemplirGrid()
+        {
+            dgProduits.ItemsSource = CreerListe();
+        }
+
+        private List<Produits> CreerListe()
+        {
+            List<Produits> liste = new List<Produits>();
+
+            for (int i = 0; i < 15; i++)
+            {
+                Produits p = new Produits(i, "Produit " + i, "Catégorie " + i * 2, "Rayon " + i * 3);
+                liste.Add(p);
+            }
+            return liste;
         }
     }
 }

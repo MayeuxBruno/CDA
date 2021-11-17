@@ -1,0 +1,16 @@
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\02 - Jeu de combat\JeuCombat\bin\Debug\net5.0\JeuCombat.exe
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\02 - Jeu de combat\JeuCombat\bin\Debug\net5.0\JeuCombat.deps.json
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\02 - Jeu de combat\JeuCombat\bin\Debug\net5.0\JeuCombat.runtimeconfig.json
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\02 - Jeu de combat\JeuCombat\bin\Debug\net5.0\JeuCombat.runtimeconfig.dev.json
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\02 - Jeu de combat\JeuCombat\bin\Debug\net5.0\JeuCombat.dll
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\02 - Jeu de combat\JeuCombat\bin\Debug\net5.0\ref\JeuCombat.dll
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\02 - Jeu de combat\JeuCombat\bin\Debug\net5.0\JeuCombat.pdb
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\02 - Jeu de combat\JeuCombat\obj\Debug\net5.0\JeuCombat.csproj.AssemblyReference.cache
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\02 - Jeu de combat\JeuCombat\obj\Debug\net5.0\JeuCombat.GeneratedMSBuildEditorConfig.editorconfig
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\02 - Jeu de combat\JeuCombat\obj\Debug\net5.0\JeuCombat.AssemblyInfoInputs.cache
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\02 - Jeu de combat\JeuCombat\obj\Debug\net5.0\JeuCombat.AssemblyInfo.cs
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\02 - Jeu de combat\JeuCombat\obj\Debug\net5.0\JeuCombat.csproj.CoreCompileInputs.cache
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\02 - Jeu de combat\JeuCombat\obj\Debug\net5.0\JeuCombat.dll
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\02 - Jeu de combat\JeuCombat\obj\Debug\net5.0\ref\JeuCombat.dll
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\02 - Jeu de combat\JeuCombat\obj\Debug\net5.0\JeuCombat.pdb
+U:\59011-07-08\CDA\03 - Poo\04 - Heritage\02 - Jeu de combat\JeuCombat\obj\Debug\net5.0\JeuCombat.genruntimeconfig.cache
