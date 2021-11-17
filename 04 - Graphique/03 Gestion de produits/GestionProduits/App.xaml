@@ -15,6 +15,7 @@
             <GradientStop Color="#FFA7A7A7" Offset="0.004"/>
             <GradientStop Color="#FFF5F5F0" Offset="0.989"/>
         </LinearGradientBrush>
+        <SolidColorBrush x:Key="bacckgroundPage" Color="#FFE5E6CB"/>
 
     </Application.Resources>
 </Application>

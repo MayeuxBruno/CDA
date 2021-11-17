@@ -21,21 +21,22 @@ namespace GestionProduits
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Produits> liste = new List<Produits>();
+        
         public MainWindow()
         {
             InitializeComponent();
+            liste = CreerListe();
             RemplirGrid();
         }
 
         public void RemplirGrid()
         {
-            dgProduits.ItemsSource = CreerListe();
+            dgProduits.ItemsSource = liste;
         }
 
         private List<Produits> CreerListe()
         {
-            List<Produits> liste = new List<Produits>();
-
             for (int i = 0; i < 15; i++)
             {
                 Produits p = new Produits(i, "Produit " + i, "Catégorie " + i * 2, "Rayon " + i * 3);
@@ -43,5 +44,15 @@ namespace GestionProduits
             }
             return liste;
         }
+
+        private void btnAjout_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 a = new Window1();
+            a.Show();
+
+        }
+        
+
+
     }
 }
