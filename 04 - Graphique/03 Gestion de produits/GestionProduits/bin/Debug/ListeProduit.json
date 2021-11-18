@@ -1,0 +1,104 @@
+[
+  {
+    "IdProduit": 0,
+    "LibelleProduit": "Pates",
+    "Categorie": "Epicerie",
+    "Rayon": "Rayon 1"
+  },
+  {
+    "IdProduit": 1,
+    "LibelleProduit": "Croquettes",
+    "Categorie": "Animalerie",
+    "Rayon": "Rayon 4"
+  },
+  {
+    "IdProduit": 2,
+    "LibelleProduit": "Produit 2",
+    "Categorie": "Animalerie",
+    "Rayon": "Rayon 4"
+  },
+  {
+    "IdProduit": 3,
+    "LibelleProduit": "Pain",
+    "Categorie": "Epicerie",
+    "Rayon": "Rayon 1"
+  },
+  {
+    "IdProduit": 4,
+    "LibelleProduit": "Terreau",
+    "Categorie": "Jardinerie",
+    "Rayon": "Rayon 6"
+  },
+  {
+    "IdProduit": 5,
+    "LibelleProduit": "Eponges",
+    "Categorie": "Droguerie",
+    "Rayon": "Rayon 7"
+  },
+  {
+    "IdProduit": 6,
+    "LibelleProduit": "Serpillères",
+    "Categorie": "Droguerie",
+    "Rayon": "Rayon 7"
+  },
+  {
+    "IdProduit": 7,
+    "LibelleProduit": "Televion",
+    "Categorie": "Hifi",
+    "Rayon": "Rayon 8"
+  },
+  {
+    "IdProduit": 8,
+    "LibelleProduit": "Lait",
+    "Categorie": "Crèmerie",
+    "Rayon": "Rayon 2"
+  },
+  {
+    "IdProduit": 9,
+    "LibelleProduit": "Coca-Cola",
+    "Categorie": "Liquides",
+    "Rayon": "Rayon 3"
+  },
+  {
+    "IdProduit": 10,
+    "LibelleProduit": "Javel",
+    "Categorie": "Droguerie",
+    "Rayon": "B20"
+  },
+  {
+    "IdProduit": 32,
+    "LibelleProduit": "Litière",
+    "Categorie": "Animalerie",
+    "Rayon": "A 12"
+  },
+  {
+    "IdProduit": 98,
+    "LibelleProduit": "Sel",
+    "Categorie": "Alimentation",
+    "Rayon": "A 1"
+  },
+  {
+    "IdProduit": 65,
+    "LibelleProduit": "Poivre",
+    "Categorie": "Alimentation",
+    "Rayon": "A 1"
+  },
+  {
+    "IdProduit": 45,
+    "LibelleProduit": "Pain",
+    "Categorie": "Jardinage",
+    "Rayon": "B 30"
+  },
+  {
+    "IdProduit": 123123,
+    "LibelleProduit": "Nutella",
+    "Categorie": "Alimentation",
+    "Rayon": "A 12"
+  },
+  {
+    "IdProduit": 7888,
+    "LibelleProduit": "hdfhdsf",
+    "Categorie": "Animalerie",
+    "Rayon": "B 20"
+  }
+]

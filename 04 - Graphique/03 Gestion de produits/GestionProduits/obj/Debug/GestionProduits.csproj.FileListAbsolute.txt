@@ -36,3 +36,5 @@ D:\Exercices\CDA\04 - Graphique\03 Gestion de produits\GestionProduits\obj\Debug
 D:\Exercices\CDA\04 - Graphique\03 Gestion de produits\GestionProduits\obj\Debug\GestionProduits.pdb
 D:\Exercices\CDA\04 - Graphique\03 Gestion de produits\GestionProduits\obj\Debug\Window1.g.cs
 D:\Exercices\CDA\04 - Graphique\03 Gestion de produits\GestionProduits\obj\Debug\Window1.baml
+U:\59011-07-08\CDA\04 - Graphique\03 Gestion de produits\GestionProduits\obj\Debug\FormAdd.g.cs
+U:\59011-07-08\CDA\04 - Graphique\03 Gestion de produits\GestionProduits\obj\Debug\FormAdd.baml

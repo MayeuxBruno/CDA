@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GestionProduits"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="900">
     <Window.Resources>
         <SolidColorBrush x:Key="BoutonDegrade" Color="#FF707070"/>
     </Window.Resources>
@@ -35,14 +35,14 @@
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="30*"/>
             </Grid.ColumnDefinitions>
-            <Button Content="Ajouter" x:Name="btnAjout" Background="{DynamicResource degradeBoutton}" Click="btnAjout_Click"/>
+            <Button Content="Ajouter" x:Name="btnAjout" Background="{DynamicResource degradeBoutton}" Click="BtnAjout_Click"/>
             <Button Content="Modifier" Grid.Column="2"  Background="{DynamicResource degradeBoutton}"/>
             <Button Content="Supprimer" Grid.Column="4" Background="{DynamicResource degradeBoutton}"/>
             <Button Content="Dupliquer" Grid.Column="6" Background="{DynamicResource degradeBoutton}"/>
             <Button Content="Vider" Grid.Column="8" Background="{DynamicResource degradeBoutton}"/>
         </Grid>
 
-        <DataGrid x:Name="dgProduits" Grid.Row="2" Grid.Column="1" AutoGenerateColumns="False">
+        <DataGrid x:Name="dgProduits" Grid.Row="2" Grid.Column="1" AutoGenerateColumns="False" >
                 <DataGrid.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="Black" Offset="0"/>
@@ -50,7 +50,6 @@
                     </LinearGradientBrush>
                 </DataGrid.Background>
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="IdProduit" Binding="{Binding IdProduit}" Width="5*"/>
                     <DataGridTextColumn Header="LibelleProduit" Binding="{Binding LibelleProduit}" Width="20*"/>
                     <DataGridTextColumn Header="Catégories" Binding="{Binding Categorie}" Width="10*"/>
                     <DataGridTextColumn Header="Rayons" Binding="{Binding Rayon}" Width="10*"/>

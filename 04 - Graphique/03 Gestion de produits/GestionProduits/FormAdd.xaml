@@ -1,4 +1,4 @@
-﻿<Window x:Class="GestionProduits.Window1"
+﻿<Window x:Class="GestionProduits.FormAdd"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -29,28 +29,28 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Content="Ajout Nouveau Produit" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="Titre" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Label Grid.Row="3" Grid.Column="1" Content="Id Produit : " HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
         <TextBox x:Name="IdProduit" Grid.Row="3" Grid.Column="3" FontSize="14" VerticalContentAlignment="center"/>
         <Label Grid.Row="5" Grid.Column="1" Content="Libélle du Produit : " HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
         <TextBox x:Name="LibelleProduit" Grid.Row="5" Grid.Column="3" VerticalContentAlignment="Center"/>
         <Label Grid.Row="7" Grid.Column="1" Content="Catégorie : " HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
-        <ComboBox x:Name="Categorie" Grid.Column="3" Grid.Row="7">
-            <Label Content="Alimentation"/>
-            <Label Content="Jardinage"/>
-            <Label Content="Animalerie"/>
-            <Label Content="Bricolage"/>
-            <Label Content="Textile"/>
+        <ComboBox x:Name="Categorie" Grid.Column="3" Grid.Row="7" >
+            <ComboBoxItem Content="Alimentation"></ComboBoxItem>
+            <ComboBoxItem Content="Jardinage"></ComboBoxItem>
+            <ComboBoxItem Content="Animalerie"></ComboBoxItem>
+            <ComboBoxItem Content="Bricolage"></ComboBoxItem>
+            <ComboBoxItem Content="Textile"></ComboBoxItem>
         </ComboBox>
         <Label Grid.Row="9" Grid.Column="1" Content="Rayon : " HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
         <ComboBox x:Name="Rayon" Grid.Column="3" Grid.Row="9">
-            <Label Content="A 1"/>
-            <Label Content="A 12"/>
-            <Label Content="B 20"/>
-            <Label Content="B 30"/>
-            <Label Content="T 40"/>
+            <ComboBoxItem Content="A 1"/>
+            <ComboBoxItem Content="A 12"/>
+            <ComboBoxItem Content="B 20"/>
+            <ComboBoxItem Content="B 30"/>
+            <ComboBoxItem Content="T 40"/>
         </ComboBox>
-        <Button x:Name="ajouter" Content="Ajouter" Grid.Column="1" Grid.Row="11" Background="{DynamicResource degradeBoutton}"/>
-        <Button x:Name="annuler" Content="Annuler" Grid.Column="3" Grid.Row="11" Background="{DynamicResource degradeBoutton}" Click="btnAnnule_Click"/>
+        <Button x:Name="ajouter" Content="Ajouter" Grid.Column="1" Grid.Row="11" Background="{DynamicResource degradeBoutton}" Click="BtnAction_Click"/>
+        <Button x:Name="annuler" Content="Annuler" Grid.Column="3" Grid.Row="11" Background="{DynamicResource degradeBoutton}" Click="BtnAnnule_Click"/>
     </Grid>
 </Window>

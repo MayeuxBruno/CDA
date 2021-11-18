@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,12 +22,14 @@ namespace GestionProduits
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<Produits> liste = new List<Produits>();
-        
+        List<Produits> liste;
+        string path = @"..*../../ListeProduit.json";
+       
         public MainWindow()
         {
             InitializeComponent();
-            liste = CreerListe();
+            liste = ConvertJsonList();
+            ConvertJsonList();
             RemplirGrid();
         }
 
@@ -35,24 +38,41 @@ namespace GestionProduits
             dgProduits.ItemsSource = liste;
         }
 
-        private List<Produits> CreerListe()
+        public void EcrireFichier(List<Produits> li)
         {
-            for (int i = 0; i < 15; i++)
+            File.WriteAllText(path, JsonConvert.SerializeObject(li,Formatting.Indented));
+        }
+
+        private string LireFichier()
+        {
+            string chaine="";
+            try
             {
-                Produits p = new Produits(i, "Produit " + i, "Catégorie " + i * 2, "Rayon " + i * 3);
-                liste.Add(p);
+                chaine = File.ReadAllText(path);
             }
+            catch (Exception e)
+            {
+                Console.WriteLine("Une exception s'est produite : " + e.Message);
+                Console.WriteLine("Entrez le Path : ");
+                path = Console.ReadLine();
+            }
+            return chaine;
+        }
+        public List<Produits> ConvertJsonList()
+        {
+            string chaine = LireFichier();
+            List<Produits> liste = JsonConvert.DeserializeObject<List<Produits>>(chaine);
             return liste;
         }
-
-        private void btnAjout_Click(object sender, RoutedEventArgs e)
+        private void BtnAjout_Click(object sender, RoutedEventArgs e)
         {
-            Window1 a = new Window1();
-            a.Show();
+            string param = "Ajouter"; 
+            this.Opacity = 0.5;
+            FormAdd a = new FormAdd(param,this);
 
+            a.ShowDialog();
+            this.Opacity = 1;
+           
         }
-        
-
-
     }
 }
