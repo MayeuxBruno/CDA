@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:maquettage"
         mc:Ignorable="d"
         Title="Gestion des interventions de maintenance" Height="950" Width="1200">
-    <Grid>
+    <Grid Background="{DynamicResource FondFenettre}">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.5*"/>
             <RowDefinition Height="2*"/>
@@ -27,7 +27,7 @@
             <ColumnDefinition Width="30*"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-        
+
         <!-- Entete de la page -->
         <Grid Grid.Row="1" Grid.Column="1">
             <Grid.ColumnDefinitions>
@@ -35,7 +35,7 @@
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
-            <GroupBox Header="Année d'interventions">
+            <GroupBox Header="Année d'interventions" FontWeight="Bold">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0.1*"/>
@@ -50,22 +50,70 @@
                 </Grid>
             </GroupBox>
         </Grid>
-       <!-- Liste des interventions -->
-        <Label Grid.Row="3" Grid.Column="1" Content="Liste des interventions" FontWeight="Bold"/>
+        <!-- Liste des interventions -->
+        <Label Grid.Row="3" Grid.Column="1" Content="Liste des interventions" FontWeight="Bold" Background="{DynamicResource DegradeTitre}"/>
         <!-- Affichage de la liste -->
-        <DataGrid Grid.Row="5" Grid.Column="1">
+        <DataGrid Grid.Row="5" Grid.Column="1" Background="{DynamicResource FondListe}" SelectionChanged="DataGrid_SelectionChanged">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Numéro" Width="1*"/>
-                <DataGridTextColumn Header="Prestataire" Width="2*"/>
-                <DataGridTextColumn Header="Code UEM" Width="2*"/>
-                <DataGridTextColumn Header="Type de travail" Width="3*"/>
-                <DataGridTextColumn Header="Point de km Debut" Width="1*"/>
-                <DataGridTextColumn Header="Point de km Fin" Width="1*"/>
-                <DataGridTextColumn Header="Prix Unitaire" Width="1*"/>
-                <DataGridTextColumn Header="Date de reception" Width="1*"/>
+                <DataGridTextColumn Header="Numéro" Width="1*">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="{StaticResource BgHeaderListe}"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Prestataire" Width="2*">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="{StaticResource BgHeaderListe}"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Code UEM" Width="2*">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="{StaticResource BgHeaderListe}"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Type de travail" Width="3*">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="{StaticResource BgHeaderListe}"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Point de km Debut" Width="1*">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="{StaticResource BgHeaderListe}"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Point de km Fin" Width="1*">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background" Value="{StaticResource BgHeaderListe}"/>
+                    </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn> 
+                <DataGridTextColumn Header="Prix Unitaire" Width="1*">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background" Value="{StaticResource BgHeaderListe}"/>
+                    </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn> 
+                <DataGridTextColumn Header="Date de reception" Width="1*">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background" Value="{StaticResource BgHeaderListe}"/>
+                    </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn> 
             </DataGrid.Columns>
         </DataGrid>
-        
+
         <!-- Barre de bouton -->
         <Grid Grid.Row="7" Grid.Column="1">
             <Grid.ColumnDefinitions>
@@ -85,9 +133,9 @@
             <Button Content="Sauvegarder" Grid.Column="6"/>
             <Button Content="Imprimer" Grid.Column="8"/>
         </Grid>
-        
+
         <!-- Detail de l'intervention -->
-        <Label Grid.Column="1" Grid.Row="9" Content="Détail de l'intervention" FontWeight="Bold"/>
+        <Label Grid.Column="1" Grid.Row="9" Content="Détail de l'intervention" FontWeight="Bold" Background="{DynamicResource DegradeTitre}"/>
         <Grid Grid.Column="1" Grid.Row="11">
             <Grid.RowDefinitions>
                 <RowDefinition Height="3*"/>
@@ -95,11 +143,12 @@
             </Grid.RowDefinitions>
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="0.05*"/>
+                    <ColumnDefinition Width="8*"/>
                 </Grid.ColumnDefinitions>
                 <!-- Partie UEM -->
-                <GroupBox Header="UEM">
+                <GroupBox Header="UEM" FontWeight="Bold">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*"/>
@@ -126,9 +175,9 @@
                         <TextBox Grid.Column="1" Grid.Row="7" />
                     </Grid>
                 </GroupBox>
-                
+
                 <!-- Partie Réalisations -->
-                <GroupBox Header="Réalisations" Grid.Column="4">
+                <GroupBox Header="Réalisations" FontWeight="Bold" Grid.Column="4">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*"/>
@@ -170,9 +219,9 @@
                     </Grid>
                 </GroupBox>
             </Grid>
-            
-            <!-- Partie Réalisation -->
-            <GroupBox Header="Réalisations" Grid.Row="1">
+
+            <!-- Partie Prévisions -->
+            <GroupBox Header="Prévisions" Grid.Row="1" FontWeight="Bold">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="0.5*"/>

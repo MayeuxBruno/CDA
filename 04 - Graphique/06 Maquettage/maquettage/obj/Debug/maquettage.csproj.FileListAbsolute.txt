@@ -13,3 +13,4 @@ D:\Exercices\CDA\04 - Graphique\06 Maquettage\maquettage\obj\Debug\maquettage.cs
 D:\Exercices\CDA\04 - Graphique\06 Maquettage\maquettage\obj\Debug\maquettage.csproj.CoreCompileInputs.cache
 D:\Exercices\CDA\04 - Graphique\06 Maquettage\maquettage\obj\Debug\maquettage.exe
 D:\Exercices\CDA\04 - Graphique\06 Maquettage\maquettage\obj\Debug\maquettage.pdb
+D:\Exercices\CDA\04 - Graphique\06 Maquettage\maquettage\obj\Debug\App.baml

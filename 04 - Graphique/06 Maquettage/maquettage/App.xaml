@@ -4,6 +4,18 @@
              xmlns:local="clr-namespace:maquettage"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <SolidColorBrush x:Key="FondFenettre" Color="#FF7A90A4"/>
+        <LinearGradientBrush x:Key="DegradeTitre" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF137C8B" Offset="0"/>
+            <GradientStop Color="#FF7A90A4" Offset="1"/>
+        </LinearGradientBrush>
+        <SolidColorBrush x:Key="FondListe" Color="#FFB8CBD0"/>
+        <SolidColorBrush x:Key="FondColonneHeader" Color="#FF137C8B"/>
+        <LinearGradientBrush x:Key="BgHeaderListe" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF137C8B" Offset="0"/>
+            <GradientStop Color="#FFB8CBD0" Offset="1"/>
+        </LinearGradientBrush>
+
     </Application.Resources>
 </Application>
