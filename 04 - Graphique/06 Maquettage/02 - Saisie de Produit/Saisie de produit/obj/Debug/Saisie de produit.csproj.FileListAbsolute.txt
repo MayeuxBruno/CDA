@@ -1,0 +1,15 @@
+U:\59011-07-08\CDA\04 - Graphique\06 Maquettage\02 - Saisie de Produit\Saisie de produit\bin\Debug\Saisie de produit.exe.config
+U:\59011-07-08\CDA\04 - Graphique\06 Maquettage\02 - Saisie de Produit\Saisie de produit\bin\Debug\Saisie de produit.exe
+U:\59011-07-08\CDA\04 - Graphique\06 Maquettage\02 - Saisie de Produit\Saisie de produit\bin\Debug\Saisie de produit.pdb
+U:\59011-07-08\CDA\04 - Graphique\06 Maquettage\02 - Saisie de Produit\Saisie de produit\obj\Debug\Saisie de produit.csproj.AssemblyReference.cache
+U:\59011-07-08\CDA\04 - Graphique\06 Maquettage\02 - Saisie de Produit\Saisie de produit\obj\Debug\MainWindow.g.cs
+U:\59011-07-08\CDA\04 - Graphique\06 Maquettage\02 - Saisie de Produit\Saisie de produit\obj\Debug\App.g.cs
+U:\59011-07-08\CDA\04 - Graphique\06 Maquettage\02 - Saisie de Produit\Saisie de produit\obj\Debug\Saisie de produit_MarkupCompile.cache
+U:\59011-07-08\CDA\04 - Graphique\06 Maquettage\02 - Saisie de Produit\Saisie de produit\obj\Debug\Saisie de produit_MarkupCompile.lref
+U:\59011-07-08\CDA\04 - Graphique\06 Maquettage\02 - Saisie de Produit\Saisie de produit\obj\Debug\MainWindow.baml
+U:\59011-07-08\CDA\04 - Graphique\06 Maquettage\02 - Saisie de Produit\Saisie de produit\obj\Debug\Saisie de produit.g.resources
+U:\59011-07-08\CDA\04 - Graphique\06 Maquettage\02 - Saisie de Produit\Saisie de produit\obj\Debug\Saisie_de_produit.Properties.Resources.resources
+U:\59011-07-08\CDA\04 - Graphique\06 Maquettage\02 - Saisie de Produit\Saisie de produit\obj\Debug\Saisie de produit.csproj.GenerateResource.cache
+U:\59011-07-08\CDA\04 - Graphique\06 Maquettage\02 - Saisie de Produit\Saisie de produit\obj\Debug\Saisie de produit.csproj.CoreCompileInputs.cache
+U:\59011-07-08\CDA\04 - Graphique\06 Maquettage\02 - Saisie de Produit\Saisie de produit\obj\Debug\Saisie de produit.exe
+U:\59011-07-08\CDA\04 - Graphique\06 Maquettage\02 - Saisie de Produit\Saisie de produit\obj\Debug\Saisie de produit.pdb

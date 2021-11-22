@@ -1,0 +1,311 @@
+﻿<Window x:Class="Saisie_de_produit.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Saisie_de_produit"
+        mc:Ignorable="d"
+        Title="Saisie d'un nouvel article" Height="800" Width="1000">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Saisie d'un nouvel article" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="1" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" />
+        <GroupBox Header="Catégorie" Grid.Row="3" Grid.Column="1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Sélectionnez une Catégorie : " HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+                <ComboBox Grid.Column="1" VerticalContentAlignment="Center">
+                    <ComboBoxItem Content=" Ecran PC" IsSelected="True"/>
+                </ComboBox>
+            </Grid>
+        </GroupBox>
+        <TabControl Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" SelectionChanged="TabControl_SelectionChanged">
+            <!-- Onglet Général -->
+            <TabItem Header="Général">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="12*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Vendeur : " Grid.Row="1" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                    <TextBox Text="Koorui" Grid.Row="1" Grid.Column="2" VerticalContentAlignment="Center"/>
+                    <Label Content="Prix : " Grid.Row="3" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                    <TextBox Text="269,99€" Grid.Row="3" Grid.Column="2" VerticalContentAlignment="Center"/>
+                    <Label Content="Quantité disponible : " Grid.Row="5" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                    <TextBox Text="156" Grid.Row="5" Grid.Column="2" VerticalContentAlignment="Center"/>
+                    <Label Content="Marque : " Grid.Row="1" Grid.Column="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                    <TextBox Text="Koorui" Grid.Row="1" Grid.Column="5" VerticalContentAlignment="Center"/>
+                    <Label Content="Série : " Grid.Row="3" Grid.Column="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                    <TextBox Text="27E1" Grid.Row="3" Grid.Column="5" VerticalContentAlignment="Center"/>
+                    <Label Content="Couleur : " Grid.Row="5" Grid.Column="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                    <TextBox Text="Noir" Grid.Row="5" Grid.Column="5" VerticalContentAlignment="Center"/>
+                    <GroupBox Header="Mots Clé" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="4*"/>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="2*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="3*"/>
+                                <RowDefinition Height="2*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="2*"/>
+                                <RowDefinition Height="1*"/>
+                            </Grid.RowDefinitions>
+                            <DataGrid Grid.Row="1" Grid.Column="1" Grid.RowSpan="4">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Liste des mots clé" Width="1*"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                            <Label Content="Saisissez un mot clé" Grid.Row="1" Grid.Column="3" VerticalContentAlignment="Bottom"/>
+                            <TextBox Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="3" VerticalContentAlignment="Center"/>
+                            <Button Content="Ajouter" Grid.Column="3" Grid.Row="4"/>
+                            <Button Content="Retirer" Grid.Column="5" Grid.Row="4"/>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <!-- Onglet Caractéristiques -->
+            <TabItem Header="Caractéristiques">
+                <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <GroupBox Header="Usage" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+                            <RadioButton Content="Professionnel" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <RadioButton Content="Personnel" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Dimensions" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="5">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="2*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="2*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="2*"/>
+                                <RowDefinition Height="1*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="Longueur : " Grid.Row="1" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                            <Label Content="Largeur : " Grid.Row="3" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                            <Label Content="Hauteurs : " Grid.Row="5" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                            <TextBox Grid.Row="1" Grid.Column="2" VerticalContentAlignment="Center"/>
+                            <TextBox Grid.Row="3" Grid.Column="2" VerticalContentAlignment="Center"/>
+                            <TextBox Grid.Row="5" Grid.Column="2" VerticalContentAlignment="Center"/>
+                            <Label Content=" Cms" Grid.Row="1" Grid.Column="3" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"/>
+                            <Label Content=" Cms" Grid.Row="3" Grid.Column="3" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"/>
+                            <Label Content=" Cms" Grid.Row="5" Grid.Column="3" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"/>
+                         </Grid>
+                      </GroupBox>
+                    <Label Content="Taille de l'écran : " Grid.Row="9" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                    <ComboBox Grid.Row="9" Grid.Column="2"/>
+                    <Label Content="Résolution : " Grid.Row="11" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                    <ComboBox Grid.Row="11" Grid.Column="2"/>
+                    <Label Content="Résolution Native : " Grid.Row="13" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                    <ComboBox Grid.Row="13" Grid.Column="2"/>
+                    <Label Content="Rapport Hauteur Largeur : " Grid.Row="15" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                    <ComboBox Grid.Row="15" Grid.Column="2"/>
+                    <Label Content="Technologie d'Affichage : " Grid.Row="1" Grid.Column="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                    <ComboBox Grid.Row="1" Grid.Column="5"/>
+                    <Label Content="Luminausité de l'image : " Grid.Row="3" Grid.Column="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                    <ComboBox Grid.Row="3" Grid.Column="5"/>
+                    <Label Content="Contraste de l'image : " Grid.Row="5" Grid.Column="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                    <ComboBox Grid.Row="5" Grid.Column="5"/>
+                    <Label Content="Angle de vue réel : " Grid.Row="7" Grid.Column="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                    <ComboBox Grid.Row="7" Grid.Column="5"/>
+                    <Label Content="Temps de réponse : " Grid.Row="9" Grid.Column="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                    <ComboBox Grid.Row="9" Grid.Column="5"/>
+                    <Label Content="Fréquence de rafraichissement : " Grid.Row="11" Grid.Column="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                    <ComboBox Grid.Row="11" Grid.Column="5"/>
+                    <Label Content="Type de connecteur : " Grid.Row="13" Grid.Column="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                    <ComboBox Grid.Row="13" Grid.Column="5"/>
+                    <Label Content="Interface du matériel informatique : " Grid.Row="15" Grid.Column="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+                    <ComboBox Grid.Row="15" Grid.Column="5"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Descriptions">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="70*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="40*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Label Content="Veuillez Saisir la déscription de votre article : " Grid.Row="1" Grid.Column="1"/>
+                    <RichTextBox Grid.Column="1" Grid.Row="3"></RichTextBox>
+                </Grid>
+            </TabItem>
+            <!-- Onglet Photos-->
+            <TabItem Header="Photos">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="2*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="Ajouter une photo" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2"/>
+                    <Button Content="Supprimer une photo" Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="2"/>
+                    <Grid Grid.Column="1" Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="5*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Image Source="Image1.jpg" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+                        <CheckBox Grid.Row="2" Grid.Column="2"/>
+                    </Grid>
+                    <Grid Grid.Column="3" Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="5*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Image Source="Image2.jpg" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+                        <CheckBox Grid.Row="2" Grid.Column="2"/>
+                    </Grid>
+                    <Grid Grid.Column="5" Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="5*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Image Source="Image3.jpg" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+                        <CheckBox Grid.Row="2" Grid.Column="2"/>
+                    </Grid>
+                    <Grid Grid.Column="7" Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="5*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Image Source="Image4.jpg" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+                        <CheckBox Grid.Row="2" Grid.Column="2"/>
+                    </Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Grid Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Enregistrer" Grid.Column="2"/>
+            <Button Content="Retour" Grid.Column="4"/>
+        </Grid>
+    </Grid>
+</Window>
