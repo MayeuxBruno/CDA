@@ -48,6 +48,50 @@ namespace Garage.Data.Controllers
             _service.AddVoiture(voiture);
             return CreatedAtRoute(nameof(GetVoitureByID),new { id = voiture.IdVoiture },voiture);
         }
+
+        [HttpDelete("{id}")]
+        public ActionResult DeleteVoiture(int id)
+        {
+            var voitureModelFromRepro = _service.GetVoitureById(id);
+            if (voitureModelFromRepro==null)
+            {
+                return NotFound();
+            }
+            _service.DeleteVoiture(voitureModelFromRepro);
+            return NoContent();
+        }
+
+        [HttpPut ("{id}")]
+        public ActionResult ModifVoiture(int id,VoituresDTO voiture)
+        {
+            var voitureFromRepro = _service.GetVoitureById(id);
+            if (voitureFromRepro==null)
+            {
+                return NotFound();
+            }
+            _mapper.Map(voiture,voitureFromRepro);
+            _service.UpdateVoiture(voitureFromRepro);
+            return NoContent();
+        }
+
+        [HttpPatch("{id}")]
+        public ActionResult ModifPartielVoiture(int id,JsonPatchDocument<Voiture> patchDoc)
+        {
+            var voitureFromRepro=_service.GetVoitureById(id);
+            if (voitureFromRepro==null)
+            {
+                return NotFound();
+            }
+            var voitureToPatch = _mapper.Map<Voiture>(voitureFromRepro);
+            patchDoc.ApplyTo(voitureToPatch, ModelState);
+            if (!TryValidateModel(voitureToPatch))
+            {
+                return ValidationProblem(ModelState);
+            }
+            _mapper.Map(voitureToPatch, voitureFromRepro);
+            _service.UpdateVoiture(voitureFromRepro);
+            return NoContent();
+        }
     }
 
     

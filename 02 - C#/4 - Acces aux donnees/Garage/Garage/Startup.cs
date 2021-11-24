@@ -31,6 +31,7 @@ namespace Garage
         {
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddTransient<VoituresServices>();
+            services.AddTransient<ClientsServices>();
             services.AddDbContext<MyDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("Default")));
             services.AddControllers();
             services.AddSwaggerGen(c =>
