@@ -17,5 +17,21 @@ namespace VillesRegions.Data
         {
 
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Departement>(e2 =>
+            {
+                e2.ToTable("departement");
+                e2.Property(e => e.IdDepartement).HasColumnName("idDepartement");
+            });
+
+            modelBuilder.Entity<Ville>(e1 =>
+            {
+                e1.ToTable("ville");
+                e1.Property(e => e.IdVille).HasColumnName("idVille");
+                e1.HasOne(e => e.Dep).WithOne().HasForeignKey<Departement>(e => e.IdDepartement);
+            });
+        }
     }
 }

@@ -7,5 +7,7 @@ namespace VillesRegions.Data.Dtos
 {
     public class VilleDTOIn
     {
+        public string LibelleVille { get; set; }
+        public int IdDepartement { get; set; }
     }
 }
