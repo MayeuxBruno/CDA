@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -11,6 +12,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TablesRelation.Data.Services;
+using TablesRelation.Models.DbModels;
 
 namespace TablesRelation
 {
@@ -26,7 +29,11 @@ namespace TablesRelation
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddDbContext<gestionstockContext>(options => options.UseMySQL(Configuration.GetConnectionString("Default")));
+            services.AddTransient<ArticleServices>();
+            services.AddTransient<TypesproduitServices>();
+            services.AddTransient<CategoryServices>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

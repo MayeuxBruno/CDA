@@ -8,49 +8,51 @@ using TablesRelation.Models.DbModels;
 
 namespace TablesRelation.Data.Services
 {
-    public class ArticleServices
+    public class TypesproduitServices
     {
 
         private readonly gestionstockContext _context;
 
-        public ArticleServices(gestionstockContext context)
+        public TypesproduitServices(gestionstockContext context)
         {
             _context = context;
         }
 
-        public void AddArticle(Article obj)
+        public void AddTypeProduit(Typesproduit obj)
         {
             if (obj == null)
             {
                 throw new ArgumentNullException(nameof(obj));
             }
-            _context.Articles.Add(obj);
+            _context.Typesproduits.Add(obj);
             _context.SaveChanges();
         }
 
-        public void DeleteArticle(Article obj)
+        public void DeleteTypeProduit(Typesproduit obj)
         {
             if (obj == null)
             {
                 throw new ArgumentNullException(nameof(obj));
             }
-            _context.Articles.Remove(obj);
+            _context.Typesproduits.Remove(obj);
             _context.SaveChanges();
         }
 
-        public IEnumerable<Article> GetAllArticle()
+        public IEnumerable<Typesproduit> GetAllTypesProduit()
         {
-            return _context.Articles.ToList();
+            return _context.Typesproduits.Include("Categories").ToList();
         }
 
-        public Article GetArticleById(int id)
+        public Typesproduit GetTypeProduitById(int id)
         {
-            return _context.Articles.FirstOrDefault(obj => obj.IdArticle == id);
+            return _context.Typesproduits.FirstOrDefault(obj => obj.IdTypeProduit == id);
         }
 
-        public void UpdateArticle(Article obj)
+        public void UpdateTypeProduit(Typesproduit obj)
         {
             _context.SaveChanges();
         }
+
+
     }
 }

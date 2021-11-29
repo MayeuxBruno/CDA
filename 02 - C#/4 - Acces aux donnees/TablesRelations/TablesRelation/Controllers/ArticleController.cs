@@ -4,14 +4,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TablesRelation.Data.Dto;
 using TablesRelation.Data.Models;
 using TablesRelation.Data.Services;
 
 namespace TablesRelation.Controllers
 {
+    [Route("api/Article")]
+    [ApiController]
     public class ArticleController:ControllerBase
     {
-
+        
         private readonly ArticleServices _service;
         private readonly IMapper _mapper;
 
@@ -23,10 +26,10 @@ namespace TablesRelation.Controllers
 
         //GET api/Article
         [HttpGet]
-        public ActionResult<IEnumerable<Article>> GetAllArticle()
+        public ActionResult<IEnumerable<ArticleDTO>> GetAllArticle()
         {
             IEnumerable<Article> listeArticle = _service.GetAllArticle();
-            return Ok(_mapper.Map<IEnumerable<Article>>(listeArticle));
+            return Ok(_mapper.Map<IEnumerable<ArticleDTO>>(listeArticle));
         }
 
         //GET api/Article/{i}
