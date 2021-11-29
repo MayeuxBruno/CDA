@@ -14,6 +14,8 @@ namespace VillesRegions.Profiles
         {
             CreateMap<VilleDTO, Ville>();
             CreateMap<Ville, VilleDTO>();
+            CreateMap<VilleDTOIn, Ville>();
+            CreateMap<Ville, VilleDTOIn>();
         }
     }
 }

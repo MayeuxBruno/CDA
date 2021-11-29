@@ -10,5 +10,6 @@ namespace VillesRegions.Data.Models
         [Key]
         public int IdDepartement { get; set; }
         public string LibelleDepartement { get; set; }
+        public ICollection<Ville> LesVilles { get; set; }
     }
 }

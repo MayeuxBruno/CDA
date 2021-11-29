@@ -32,6 +32,11 @@ namespace VillesRegions.Data
                 e1.Property(e => e.IdVille).HasColumnName("idVille");
                 e1.HasOne(e => e.Dep).WithOne().HasForeignKey<Departement>(e => e.IdDepartement);
             });
+
+            modelBuilder.Entity<Ville>()
+           .HasOne<Departement>(v => v.Dep)
+           .WithMany(d => d.LesVilles)
+           .HasForeignKey(v => v.IdDepartement);
         }
     }
 }

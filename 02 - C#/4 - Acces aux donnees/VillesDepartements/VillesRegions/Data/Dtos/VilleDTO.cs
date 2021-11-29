@@ -8,6 +8,6 @@ namespace VillesRegions.Data.Dtos
     public class VilleDTO
     {
         public string LibelleVille { get; set; }
-        public DepartementDTO Dep { get; set; }
+        public DepartementDTOOut Dep { get; set; }
     }
 }

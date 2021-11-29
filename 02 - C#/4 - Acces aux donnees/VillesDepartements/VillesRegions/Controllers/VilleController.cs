@@ -33,7 +33,7 @@ namespace VillesRegions.Controllers
         }
 
         [HttpGet("{id}", Name = "GetVilleById")]
-        public ActionResult<VilleDTOUpdate> GetVilleById(int id)
+        public ActionResult<VilleDTO> GetVilleById(int id)
         {
             Ville v = _service.GetVilleById(id);
             return Ok(_mapper.Map<VilleDTO>(v));

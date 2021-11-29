@@ -100,3 +100,7 @@ D:\Exercices\CDA\02 - C#\4 - Acces aux donnees\VillesDepartements\VillesRegions\
 D:\Exercices\CDA\02 - C#\4 - Acces aux donnees\VillesDepartements\VillesRegions\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\Exercices\CDA\02 - C#\4 - Acces aux donnees\VillesDepartements\VillesRegions\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\Exercices\CDA\02 - C#\4 - Acces aux donnees\VillesDepartements\VillesRegions\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+U:\59011-07-08\CDA\02 - C#\4 - Acces aux donnees\VillesDepartements\VillesRegions\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+U:\59011-07-08\CDA\02 - C#\4 - Acces aux donnees\VillesDepartements\VillesRegions\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+U:\59011-07-08\CDA\02 - C#\4 - Acces aux donnees\VillesDepartements\VillesRegions\bin\Debug\net5.0\Newtonsoft.Json.dll
+U:\59011-07-08\CDA\02 - C#\4 - Acces aux donnees\VillesDepartements\VillesRegions\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll

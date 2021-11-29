@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace VillesRegions.Data.Dtos
 {
-    public class VilleDTOUpdate
+    public class DepartementDTOOut
     {
-        public int IdVille { get; set; }
-        public string LibelleVille { get; set; }
         public int IdDepartement { get; set; }
+        public string LibelleDepartement { get; set; }
+        //public ICollection<VilleDTO> LesVilles { get; set; }
     }
 }
