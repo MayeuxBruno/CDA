@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using School.Data.Dtos;
 using School.Data.Models;
@@ -10,6 +11,8 @@ using System.Threading.Tasks;
 
 namespace School.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class StudentscourseController:ControllerBase
     {
 
@@ -27,40 +30,41 @@ namespace School.Controllers
         public ActionResult<IEnumerable<StudentscourseDtoOutAvecStudentsCourses>> GetAllStudentscourse()
         {
             IEnumerable<Studentscourse> listeStudentscourse = _service.GetAllStudentscourse();
-            return Ok(_mapper.Map<IEnumerable<StudentscourseDto>>(listeStudentscourse));
+            return Ok(_mapper.Map<IEnumerable<StudentscourseDtoOutAvecStudentsCourses>>(listeStudentscourse));
         }
 
         //GET api/Studentscourse/{i}
-        [HttpGet("{id}", Name = "GetNomModelById")]
-        public ActionResult<StudentscourseDTO> GetNomModelById(int id)
+        [HttpGet("{id}", Name = "GetStudentCourseById")]
+        public ActionResult<StudentscourseDtoOutAvecStudentsCourses> GetStudentCourseById(int id)
         {
-            NomModel commandItem = _service.GetNomModelById(id);
+            Studentscourse commandItem = _service.GetStudentCourseById(id);
             if (commandItem != null)
             {
-                return Ok(_mapper.Map<StudentscourseDTO>(commandItem));
+                return Ok(_mapper.Map<StudentscourseDtoOutAvecStudentsCourses>(commandItem));
             }
             return NotFound();
         }
 
         //POST api/Studentscourse
         [HttpPost]
-        public ActionResult<StudentscourseDTO> CreateNomModel(NomModel obj)
+        public ActionResult<StudentscourseDtoOutAvecStudentsCourses> CreateNomModel(StudentscourseDtoIn obj)
         {
-            _service.AddNomModel(obj);
-            return CreatedAtRoute(nameof(GetNomModelById), new { Id = obj.Id }, obj);
+            Studentscourse newStudentscourse = _mapper.Map<Studentscourse>(obj);
+            _service.AddStudentCourse(newStudentscourse);
+            return CreatedAtRoute(nameof(GetStudentCourseById), new { Id = newStudentscourse.StudentCourseId }, newStudentscourse);
         }
 
         //POST api/Studentscourse/{id}
         [HttpPut("{id}")]
-        public ActionResult UpdateNomModel(int id, StudentscourseDTO obj)
+        public ActionResult UpdateNomModel(int id, StudentscourseDtoIn obj)
         {
-            NomModel objFromRepo = _service.GetNomModelById(id);
+            Studentscourse objFromRepo = _service.GetStudentCourseById(id);
             if (objFromRepo == null)
             {
                 return NotFound();
             }
             _mapper.Map(obj, objFromRepo);
-            _service.UpdateNomModel(objFromRepo);
+            _service.UpdateStudentCourse(objFromRepo);
             return NoContent();
         }
 
@@ -72,21 +76,21 @@ namespace School.Controllers
         // }]
         //PATCH api/Studentscourse/{id}
         [HttpPatch("{id}")]
-        public ActionResult PartialNomModelUpdate(int id, JsonPatchDocument<NomModel> patchDoc)
+        public ActionResult PartialNomModelUpdate(int id, JsonPatchDocument<Studentscourse> patchDoc)
         {
-            NomModel objFromRepo = _service.GetNomModelById(id);
+            Studentscourse objFromRepo = _service.GetStudentCourseById(id);
             if (objFromRepo == null)
             {
                 return NotFound();
             }
-            NomModel objToPatch = _mapper.Map<NomModel>(objFromRepo);
+            Studentscourse objToPatch = _mapper.Map<Studentscourse>(objFromRepo);
             patchDoc.ApplyTo(objToPatch, ModelState);
             if (!TryValidateModel(objToPatch))
             {
                 return ValidationProblem(ModelState);
             }
             _mapper.Map(objToPatch, objFromRepo);
-            _service.UpdateNomModel(objFromRepo);
+            _service.UpdateStudentCourse(objFromRepo);
             return NoContent();
         }
 
@@ -94,12 +98,12 @@ namespace School.Controllers
         [HttpDelete("{id}")]
         public ActionResult DeleteNomModel(int id)
         {
-            NomModel obj = _service.GetNomModelById(id);
+            Studentscourse obj = _service.GetStudentCourseById(id);
             if (obj == null)
             {
                 return NotFound();
             }
-            _service.DeleteNomModel(obj);
+            _service.DeleteStudentCourse(obj);
             return NoContent();
         }
 

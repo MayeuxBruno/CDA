@@ -1,4 +1,5 @@
-﻿using School.Data.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using School.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace School.Data.Services
             _context = context;
         }
 
-        public void AddStudentscourse(Studentscourse obj)
+        public void AddStudentCourse(Studentscourse obj)
         {
             if (obj == null)
             {
@@ -26,7 +27,7 @@ namespace School.Data.Services
             _context.SaveChanges();
         }
 
-        public void DeleteStudentcourse(Studentscourse obj)
+        public void DeleteStudentCourse(Studentscourse obj)
         {
             if (obj == null)
             {
@@ -38,7 +39,7 @@ namespace School.Data.Services
 
         public IEnumerable<Studentscourse> GetAllStudentscourse()
         {
-            return _context.Studentscourses.ToList();
+            return _context.Studentscourses.Include("Student").Include("Course").ToList();
         }
 
         public Studentscourse GetStudentCourseById(int id)
@@ -46,7 +47,7 @@ namespace School.Data.Services
             return _context.Studentscourses.FirstOrDefault(obj => obj.StudentCourseId == id);
         }
 
-        public void UpdatenomModel(Studentscourse obj)
+        public void UpdateStudentCourse(Studentscourse obj)
         {
             _context.SaveChanges();
         }

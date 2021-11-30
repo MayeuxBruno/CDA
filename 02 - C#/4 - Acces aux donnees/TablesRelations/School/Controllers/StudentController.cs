@@ -55,7 +55,7 @@ namespace School.Controllers
 
         //POST api/Student/{id}
         [HttpPut("{id}")]
-        public ActionResult UpdateNomModel(int id, StudentDtoIn obj)
+        public ActionResult UpdateStudent(int id, StudentDtoIn obj)
         {
             Student objFromRepo = _service.GetStudentById(id);
             if (objFromRepo == null)
@@ -75,7 +75,7 @@ namespace School.Controllers
         // }]
         //PATCH api/Student/{id}
         [HttpPatch("{id}")]
-        public ActionResult PartialNomModelUpdate(int id, JsonPatchDocument<Student> patchDoc)
+        public ActionResult PartialStudentCourseUpdate(int id, JsonPatchDocument<Student> patchDoc)
         {
             Student objFromRepo = _service.GetStudentById(id);
             if (objFromRepo == null)
@@ -95,7 +95,7 @@ namespace School.Controllers
 
         //DELETE api/Student/{id}
         [HttpDelete("{id}")]
-        public ActionResult DeleteNomModel(int id)
+        public ActionResult DeleteStudentCourse(int id)
         {
             Student obj = _service.GetStudentById(id);
             if (obj == null)
