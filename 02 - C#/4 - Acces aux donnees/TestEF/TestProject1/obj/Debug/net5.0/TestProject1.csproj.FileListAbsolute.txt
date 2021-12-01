@@ -1,0 +1,6 @@
+U:\59011-07-08\CDA\02 - C#\4 - Acces aux donnees\TestEF\TestProject1\bin\Debug\net5.0\CoverletSourceRootsMapping
+U:\59011-07-08\CDA\02 - C#\4 - Acces aux donnees\TestEF\TestProject1\obj\Debug\net5.0\TestProject1.csproj.AssemblyReference.cache
+U:\59011-07-08\CDA\02 - C#\4 - Acces aux donnees\TestEF\TestProject1\obj\Debug\net5.0\TestProject1.GeneratedMSBuildEditorConfig.editorconfig
+U:\59011-07-08\CDA\02 - C#\4 - Acces aux donnees\TestEF\TestProject1\obj\Debug\net5.0\TestProject1.AssemblyInfoInputs.cache
+U:\59011-07-08\CDA\02 - C#\4 - Acces aux donnees\TestEF\TestProject1\obj\Debug\net5.0\TestProject1.AssemblyInfo.cs
+U:\59011-07-08\CDA\02 - C#\4 - Acces aux donnees\TestEF\TestProject1\obj\Debug\net5.0\TestProject1.csproj.CoreCompileInputs.cache

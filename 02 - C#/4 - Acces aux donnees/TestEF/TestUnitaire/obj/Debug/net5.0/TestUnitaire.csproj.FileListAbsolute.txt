@@ -1,0 +1,5 @@
+U:\59011-07-08\CDA\02 - C#\4 - Acces aux donnees\TestEF\TestUnitaire\obj\Debug\net5.0\TestUnitaire.csproj.AssemblyReference.cache
+U:\59011-07-08\CDA\02 - C#\4 - Acces aux donnees\TestEF\TestUnitaire\obj\Debug\net5.0\TestUnitaire.GeneratedMSBuildEditorConfig.editorconfig
+U:\59011-07-08\CDA\02 - C#\4 - Acces aux donnees\TestEF\TestUnitaire\obj\Debug\net5.0\TestUnitaire.AssemblyInfoInputs.cache
+U:\59011-07-08\CDA\02 - C#\4 - Acces aux donnees\TestEF\TestUnitaire\obj\Debug\net5.0\TestUnitaire.AssemblyInfo.cs
+U:\59011-07-08\CDA\02 - C#\4 - Acces aux donnees\TestEF\TestUnitaire\obj\Debug\net5.0\TestUnitaire.csproj.CoreCompileInputs.cache

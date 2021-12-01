@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using static School.Data.Dtos.StudentsCoursesDTO;
 
 namespace School.Controllers
 {
@@ -106,7 +107,5 @@ namespace School.Controllers
             _service.DeleteStudentCourse(obj);
             return NoContent();
         }
-
-
     }
 }

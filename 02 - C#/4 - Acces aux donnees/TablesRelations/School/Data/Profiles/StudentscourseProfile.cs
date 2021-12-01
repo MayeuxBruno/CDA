@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using static School.Data.Dtos.StudentsCoursesDTO;
 
 namespace School.Data.Profiles
 {
@@ -20,6 +21,9 @@ namespace School.Data.Profiles
             CreateMap<StudentscourseDtoOutAvecStudents, Studentscourse>();
             CreateMap<Studentscourse, StudentscourseDtoOutAvecStudentsCourses>();
             CreateMap<StudentscourseDtoOutAvecStudentsCourses, Studentscourse>();
+            CreateMap<Studentscourse, StudentscourseDtoOutAvecCourses>();
+            CreateMap<StudentscourseDtoOutAvecCourses, Studentscourse>();
+            
         }
     }
 }

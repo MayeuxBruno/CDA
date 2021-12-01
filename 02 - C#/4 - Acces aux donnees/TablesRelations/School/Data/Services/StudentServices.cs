@@ -38,7 +38,7 @@ namespace School.Data.Services
 
         public IEnumerable<Student> GetAllStudents()
         {
-            return _context.Students.Include("Grade").ToList();
+            return _context.Students.Include("Studentscourses.Course").Include("Grade").ToList();
         }
 
         public Student GetStudentById(int id)

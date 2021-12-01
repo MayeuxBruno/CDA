@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using static School.Data.Dtos.CourseDTO;
 
 namespace School.Controllers
 {
@@ -27,10 +28,10 @@ namespace School.Controllers
 
         //GET api/Course
         [HttpGet]
-        public ActionResult<IEnumerable<CourseDtoOut>> GetAllCourse()
+        public ActionResult<IEnumerable<CourseDtoOutavecStudentCourse>> GetAllCourse()
         {
             IEnumerable<Course> listeCourse = _service.GetAllCourses();
-            return Ok(_mapper.Map<IEnumerable<CourseDtoOut>>(listeCourse));
+            return Ok(_mapper.Map<IEnumerable<CourseDtoOutavecStudentCourse>>(listeCourse));
         }
 
         //GET api/Course/{i}

@@ -1,4 +1,5 @@
-﻿using School.Data.Dtos;
+﻿using Microsoft.EntityFrameworkCore;
+using School.Data.Dtos;
 using School.Data.Models;
 using System;
 using System.Collections.Generic;
@@ -39,7 +40,7 @@ namespace School.Data.Services
 
         public IEnumerable<Course> GetAllCourses()
         {
-            return _context.Courses.ToList();
+            return _context.Courses.Include("Studentscourses.Student").ToList();
         }
 
         public Course GetCourseById(int id)

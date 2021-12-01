@@ -28,7 +28,7 @@ namespace TestEF.Controllers
         public ActionResult<IEnumerable<PersonnesDTO>> getAllPersonnes()
         {
             var listePersonnes = _service.GetAllPersonnes();
-          [  return Ok(_mapper.Map<IEnumerable<PersonnesDTO>>(listePersonnes));]
+            return Ok(_mapper.Map<IEnumerable<PersonnesDTO>>(listePersonnes));
         }
 
         [HttpGet("{id}",Name ="GetPersonneById")]
