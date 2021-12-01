@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GestionStock.Controller;
+using GestionStock.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,10 @@ namespace GestionStock
         public MainWindow()
         {
             InitializeComponent();
+        }
+        public void RemplirGrid()
+        {
+            dgListe.ItemsSource = GetAllArticles();
         }
     }
 }
