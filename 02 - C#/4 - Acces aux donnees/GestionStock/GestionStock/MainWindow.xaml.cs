@@ -1,5 +1,7 @@
-﻿using GestionStock.Controller;
+﻿using AutoMapper;
+using GestionStock.Controller;
 using GestionStock.Data;
+using GestionStock.Data.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,13 +24,13 @@ namespace GestionStock
     /// </summary>
     public partial class MainWindow : Window
     {
+       
         public MainWindow()
         {
             InitializeComponent();
-        }
-        public void RemplirGrid()
-        {
-            dgListe.ItemsSource = GetAllArticles();
+            var context = new MyDbContext();
+            var service = new ArticleServices(context);
+            dgListe.ItemsSource = service.GetAllArticles();
         }
     }
 }

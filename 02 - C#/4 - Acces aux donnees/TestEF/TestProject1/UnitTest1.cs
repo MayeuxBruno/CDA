@@ -19,7 +19,7 @@ namespace TestProject1
         [Test]
         public void Test1()
         {
-            
+            var context = new MyDbContext();
             Assert.Pass();
         }
     }
