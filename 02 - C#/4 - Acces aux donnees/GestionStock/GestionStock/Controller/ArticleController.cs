@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
+using GestionStock.Data;
 using GestionStock.Data.Models;
+using GestionStock.Data.Profiles;
 using GestionStock.Data.Services;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -16,20 +18,22 @@ namespace GestionStock.Controller
         private readonly ArticleServices _service;
         private readonly IMapper _mapper;
 
-        public ArticleController(ArticleServices service, IMapper mapper)
+        public ArticleController(MyDbContext _context)
         {
-            _service = service;
-            _mapper = mapper;
+            _service = new ArticleServices(_context);
+            var config = new MapperConfiguration(cfg =>
+            {
+                cfg.AddProfile<ArticleProfile>();
+            });
+            _mapper = config.CreateMapper();
         }
 
-        
         public ActionResult<IEnumerable<Article>> GetAllArticles()
         {
             IEnumerable<Article> listeCourse = _service.GetAllArticles();
             return Ok(_mapper.Map<IEnumerable<Article>>(listeCourse));
         }
 
-        
         public ActionResult<Article> GetCourseById(int id)
         {
             Article commandItem = _service.GetArticleById(id);
@@ -39,14 +43,12 @@ namespace GestionStock.Controller
             }
             return NotFound();
         }
-
         public ActionResult<Article> CreateArticle(Article obj)
         {
             Article newCourse = _mapper.Map<Article>(obj);
             _service.AddArticle(newCourse);
             return CreatedAtRoute(nameof(GetCourseById), new { Id = newCourse.IdArticle }, newCourse);
         }
-
         public ActionResult UpdateArticle(int id, Article obj)
         {
             Article objFromRepo = _service.GetArticleById(id);

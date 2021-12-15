@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using GestionStock.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -28,6 +29,7 @@ namespace GestionStock.Data
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseMySQL("server=localhost;user=root;database=gestionstock;ssl mode=none");
+
             }
         }
 
@@ -44,7 +46,7 @@ namespace GestionStock.Data
 
                 entity.Property(e => e.IdArticle)
                     .HasColumnType("int(11)")
-                    .HasColumnName("idArticle");
+                   .HasColumnName("idArticle");
 
                 entity.Property(e => e.IdCategorie)
                     .HasColumnType("int(11)")
