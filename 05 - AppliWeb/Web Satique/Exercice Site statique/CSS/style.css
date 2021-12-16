@@ -1,0 +1,42 @@
+/****  GENERAL ****/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+div, body,header{
+    display: flex;
+    flex: 1;
+    border:1px dotted blue;
+}
+
+body{
+    justify-content:center;
+    background-image:url("../IMG/fondvert.jpg");
+}
+nav{
+    position:sticky;
+    top:0;
+}
+
+/* DIV - Espaces - FLEX */
+.colonne{
+    flex-direction: column;
+}
+.double{
+    flex:2;
+}
+.demi{
+    flex:0.5;
+}
+.espaceH{
+    flex:none;
+    height:2vh;
+}
+
+.main{
+    flex:none;
+    width:60%;
+}
+
+

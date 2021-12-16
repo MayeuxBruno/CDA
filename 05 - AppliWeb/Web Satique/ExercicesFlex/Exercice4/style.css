@@ -1,0 +1,71 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+div,body {
+    display: flex;
+    flex: 1;
+}
+img, video {
+    width: 100%;
+}
+.contain{
+    flex:none;
+    height:15vh;
+}
+.bouton{
+    flex:none;
+    height:5vh;
+}
+.main{
+    flex:none;
+    height:60vh;
+}
+.spaceAround{
+    justify-content: space-around;
+}
+.spaceBetween{
+    justify-content:space-between;
+}
+.bordure{
+    border : 5px solid;
+}
+.bleu1{
+    border-color:blue;
+}
+.bleu2{
+    border-color:blueviolet;
+}
+.marron{
+    border-color: brown;
+}
+.vert{
+    border-color:green;
+}
+.colonne {
+    flex-direction: column;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+.grand{
+    flex:20;
+}
+.double{
+    flex:2;
+}
+.demi{
+    flex:0.5;
+}
+.mini{
+    flex:0.2;
+}
+.espaceH{
+    flex:none;
+    height:1vh;
+}
+.grandespaceH{
+    flex:none;
+    height:5vh;
+}

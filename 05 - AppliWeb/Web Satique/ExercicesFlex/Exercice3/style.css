@@ -1,0 +1,61 @@
+/****  GENERAL ****/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: flex;
+    flex: 1;
+}
+
+body{
+    padding:1em;
+}
+
+.contain{
+    flex:none;
+    height:15vh;
+}
+.bleu{
+    background-color:blue;
+}
+.orange{
+    background-color:orange;
+}
+.gris{
+    background-color:grey;
+}
+.vert{
+    background-color:green;
+}
+.jaune{
+    background-color:yellow;
+}
+
+.colonne {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.double{
+    flex:2;
+}
+
+.demi{
+    flex:0.5;
+}
+
+.mini{
+    flex:0.1;
+}
+
+.espaceH{
+    flex:none;
+    height:2vh;
+}
