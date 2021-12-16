@@ -1,0 +1,83 @@
+/****  GENERAL ****/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+div, header, footer, nav, article, section,body,iframe {
+    display: flex;
+    flex: 1;
+   /* border:1px dotted red; */
+}
+body{
+    padding: 5em 0 5em 0;
+    background-image: url("../fondgris.jpg");
+}
+header{
+    background-image: url("../spectacle1.jpg");
+    background-position: bottom;
+    background-size:cover;
+    background-repeat: no-repeat; 
+}
+footer, header{
+    background-color: var(--FondHeader);
+}
+
+img, video {
+    width: 100%;
+   
+}
+
+.pad{
+    padding:1em;
+}
+.borduredouble
+{
+    border: 2px double black;
+}
+
+.txtBlanc{
+    color:var(--TxtBlanc);
+}
+.fondblanc{
+    background-color: var(--FondContainer);
+}
+
+.colonne {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+.double{
+    flex:2;
+}
+
+.demi{
+    flex:0.5;
+}
+
+.mini{
+    flex:0.2;
+}
+
+.espaceH{
+    flex:none;
+    height:5vh;
+}
+
+.petitespaceH{
+    flex:none;
+    height:2vh;
+}
+
+.blocOpaque { /* Astuce de création d'un bloc à 60% opaque à l'image de fond */
+    width:100%;
+    height:100%;
+    margin:0px 0px;
+    background-color:lightgray;
+    filter:Alpha(opacity=70);-moz-opacity:0.70;opacity: 0.70; 
+}
