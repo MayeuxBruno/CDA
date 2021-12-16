@@ -1,0 +1,49 @@
+/****  GENERAL ****/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+div,body {
+    display: flex;
+    flex: 1;
+}
+.bleu{
+    background-color:blue; 
+}
+.vert{
+    background-color: green;
+}
+.orange{
+    background-color: orangered;
+}
+.jaune{
+    background-color:yellow;
+}
+.nav{
+    flex:1;
+    background-color:grey;
+}
+.cat{
+    flex:3;
+    margin-left:1vw;
+    justify-content:space-between ;
+}
+.main{
+    flex:none;
+    height:60vh;
+    margin:1em;
+}
+.baniere{
+    flex:none;
+    margin:1em;
+    height:10vh;
+}
+.article{
+    flex:none;
+    height:10vh;
+}
+
+.colonne{
+    flex-direction: column;
+}
