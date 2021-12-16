@@ -4,21 +4,43 @@ html, body {
     padding: 0;
 }
 
-div, body,header{
+div, body,header,nav,footer{
     display: flex;
     flex: 1;
-    border:1px dotted blue;
+    /* border:1px dotted blue;  */
 }
 
 body{
     justify-content:center;
-    background-image:url("../IMG/fondvert.jpg");
+    background-image:url("../IMG/gauffre.jpg");
 }
 nav{
+    background-color:var(--FondNav);
     position:sticky;
     top:0;
+    flex:none;
+    height:5vh
+}
+IMG{
+    width:100%;
 }
 
+@font-face{
+    font-family:'ma police';
+    src:url('../Police/alex-brush/AlexBrush-Regular.ttf')
+}
+.item:hover{
+    background-color:var(--FondMain);
+    font-weight:bold;
+}
+.centre{
+    align-items:center;
+    justify-content:center;
+}
+.titre{
+    font-family:"ma police";
+    font-size:3rem;
+}
 /* DIV - Espaces - FLEX */
 .colonne{
     flex-direction: column;
@@ -33,10 +55,16 @@ nav{
     flex:none;
     height:2vh;
 }
-
+.mini{
+    flex:0.1;
+}
 .main{
+    background-color:var(--FondMain);
     flex:none;
     width:60%;
 }
-
+.justify{
+    text-align: justify;
+    line-height: 1.5em;
+}
 
