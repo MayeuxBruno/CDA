@@ -1,0 +1,50 @@
+/****  GENERAL ****/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image:url("../image/fond.jpg");
+    background-size:cover;
+}
+div,body,header{
+    display: flex;
+    flex: 1;
+    border : 1px dotted red;
+}
+
+img, video {
+    width: 100%;
+}
+.contain{
+    flex:none;
+    width:70vw;
+    background-color:antiquewhite;
+}
+.colonne {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.double{
+    flex:2;
+}
+
+.demi{
+    flex:0.5;
+}
+
+.mini{
+    flex:0.2;
+}
+
+.espaceH{
+    flex:none;
+    height:1vh;
+}

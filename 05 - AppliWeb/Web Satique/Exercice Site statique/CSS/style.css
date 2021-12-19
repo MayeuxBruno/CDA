@@ -7,7 +7,6 @@ html, body {
 div, body,header,nav,footer{
     display: flex;
     flex: 1;
-    /* border:1px dotted blue;  */
 }
 
 body{
