@@ -1,0 +1,98 @@
+/****  GENERAL ****/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+div,body,header,nav,footer{
+    display: flex;
+    flex: 1;
+    /* border:1px dotted red; */
+}
+img, video {
+    width: 100%;
+}
+.colonne {
+    flex-direction: column;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-image:url("../image/fond.jpg");
+    background-size: cover;
+}
+header,footer{
+    background-image: url("../image/header.jpg");
+}
+a{
+    text-decoration: none;
+    color:var(--TextColor);
+}
+/***** Espacements *****/
+.double{
+    flex:2;
+}
+.demi{
+    flex:0.5;
+}
+.mini{
+    flex:0.1;
+}
+.espaceH{
+    flex:none;
+    height:5vh;
+}
+.justify{
+    text-align: justify;
+}
+
+/***** Menu *****/
+nav{
+    flex:none;
+    position:sticky;
+    top:0;
+    height:4vh;
+    background-color: var(--FondNav);
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+}
+.menu{
+    
+    position:relative;
+}
+.sousmenu
+{
+    background-color:var(--HoverMenu);
+    display:none;
+    position:absolute;
+    margin-top: 11.8em;
+    margin-left: -3vw;
+}
+.item{
+    padding:0.6em;
+}
+.item:hover{
+    background-color: var(--FondContainer);
+    border: 1px solid #ccc;
+    /*padding : 0.7em;*/
+}
+.menu:hover{
+    background-color:var(--HoverMenu);
+    font-weight: bold;
+    font-size:1.1em;
+} 
+.menu:hover .sousmenu{
+    display:flex;
+}
+/***** Container ******/
+.titre{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+.contain{
+    flex:none;
+    width:70%;
+    background-color: var(--FondContainer);
+}
