@@ -1,0 +1,60 @@
+@media screen and (max-width:800px)
+{
+    .contain{
+        width:98vw;
+    }
+    
+    .colonnePhone{
+        flex-direction:column;
+    }
+    
+    .noPhone{
+        display:none;
+    }
+    .video,img{
+        width : 50%;
+        align-self:center;
+    }
+
+    .demi{
+        flex:0.05;
+    }
+    .espaceH{
+        height:1vh;
+    }
+
+    /* Ordre d'affichage des images*/
+    .phoneHaut{
+        order:1;
+    }
+    .phoneBas{
+        order:2;
+    }
+    /*menu*/
+    .logomenu{
+        flex:0.2;
+    }
+    .tout{
+        display:block;
+    }
+    .menumobile{
+        display:flex;
+    }
+    .menu{
+        display:none;
+    }
+    .tout:hover .menu{
+        display:block;
+    }
+    .sousmenu{
+        position:unset;
+        width:100%;
+        margin-top:0;
+        margin-left: 0vw;
+    }
+    .item{
+        padding:0;
+        font-size: 1em;
+        font-weight: normal;
+    }
+}

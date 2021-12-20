@@ -6,37 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/root.css">
+    <link rel="stylesheet" href="./CSS/phone.css">
     <link rel="shortcut icon" href="./image/cookie.png" type="image/x-icon">
     <title>La Maison du Cookies!!!</title>
 </head>
 
 <body class="center colonne">
-    <div class="espaceH"></div>
+    <div class="espaceH noPhone" id="top"></div>
     <div class="contain colonne">
         <header>
-            <div class="demi">
-                <div class="demi"></div>
-                <div><img src="./image/cookie.png" alt="Phto de cookie"></div>
-                <div class="demi"></div>
+            <div class="logo center">
+                <img src="./image/cookie.png" alt="Phto de cookie">
             </div>
-            <div></div>
-            <div class="demi"></div>
+            <div class="double colonne">
+                <div class="espaceH"></div>
+                <div class="center"><h1>La Maison du Cookie.</h1></div>
+                <div class="espaceH"></div>
+            </div>
+            <div class="logo"></div>
         </header>
+        <!-- Menu Classique -->
+        <!-- <nav class="menu"> -->
+            <!-- <div class="demi"></div> -->
+            <!-- <div class="center menu">Accueil</div> -->
+            <!-- <div class="center menu">Recettes -->
+                <!-- <div class="sousmenu colonne"> -->
+                    <!-- <div class="item">Simple</div> -->
+                    <!-- <div class="item">Pour les enfants</div> -->
+                    <!-- <div class="item">Quelques variantes</div> -->
+                    <!-- <div class="item">Ma recette</div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="center menu">Photos</div> -->
+            <!-- <div class="center menu"><a href="https://fr.wikipedia.org/wiki/Cookie_(cuisine)" target ="_blank">References</a></div> -->
+            <!-- <div class="center menu">Contact</div> -->
+            <!-- <div class="demi"></div> -->
+        <!-- </nav> -->
+        <!--Menu Hamburger-->
         <nav>
-            <div class="demi"></div>
-            <div class="center menu">Accueil</div>
-            <div class="center menu">Recettes
-                <div class="sousmenu colonne">
-                    <div class="item">Simple</div>
-                    <div class="item">Pour les enfants</div>
-                    <div class="item">Quelques variantes</div>
-                    <div class="item">Ma recette</div>
+            <div class="tout">
+                <div class="demi"></div>
+                <div class="menumobile center">
+                    <div class="double"></div>
+                    <div class="logomenu center"><img src="./image/IconeHamburger.png" alt=""></div>
+                    <div class="double"></div>
                 </div>
+                <div class="menu center">Accueil
+                    <div class="sousmenu colonne">
+                        <div class="item">Recette</div>
+                        <div class="item"><a href="#histoire">Histoire</a></div>
+                    </div>
+                </div>
+                <div class="center menu">Recettes
+                    <div class="sousmenu colonne">
+                        <div class="item">Simple</div>
+                        <div class="item">Pour les enfants</div>
+                        <div class="item">Quelsues variantes</div>
+                        <div class="item">Ma recette</div>
+                    </div>
+                </div>
+                <div class="menu center">Photos</div>
+                <div class="menu center"><a href="https://fr.wikipedia.org/wiki/Cookie_(cuisine)" target ="_blank">References</a></div>
+                <div class="menu center"><a href="./pages/contact.html">Contact</a></div>
+                <div class="demi"></div>
             </div>
-            <div class="center menu">Photos</div>
-            <div class="center menu"><a href="https://fr.wikipedia.org/wiki/Cookie_(cuisine)" target ="_blank">References</a></div>
-            <div class="center menu">Contact</div>
-            <div class="demi"></div>
         </nav>
         <section class="colonne center">
            <div class="espaceH"></div>
@@ -44,6 +77,7 @@
            <!-- Texte de Bienvenue + photo -->
            <div>
                <div class="demi"></div>
+               <div class="colonnePhone">
                     <div class="colonne">
                         <div class="center titre">Bienvenue sur notre site dédié aux Amoureux du cookie.</div>
                         <div> Vous trouverez les Recettes
@@ -52,8 +86,9 @@
                        </div>
                     </div>
                <div class="mini"></div>
-               <div class="demi">
-                   <video src="./image/Cookie casse.mp4" autoplay loop></video>
+               <div class="demi center">
+                   <video class="video" src="./image/Cookie casse.mp4" autoplay loop></video>
+               </div>
                </div>
                <div class="demi"></div>
            </div>
@@ -68,8 +103,8 @@
                 <div class="colonne">
                      <div class="center titre">Recette de la semaine</div>
                      <div class="espaceH"></div>
-                     <div>
-                         <div>
+                     <div class="colonnePhone">
+                         <div class="phoneBas">
                             <span>Ingrédients : </span> 
                             <ul>
                                 <li>170g de farine;</li>
@@ -82,7 +117,7 @@
                                 <li>1 petite poignée de framboises</li>
                             </ul>
                          </div>
-                         <div class="demi">
+                         <div class="demi center phoneHaut">
                              <img src="./image/cookies-chocolat-blanc.jpg" alt="Cookie chocolat blanc">
                          </div>
                      </div>
@@ -107,7 +142,7 @@
            <div class="espaceH"></div>
 
            <!-- Origines -->
-           <div>
+           <div >
             <div class="demi"></div>
             <div class="colonne">
                 <div class="center titre"> Histoire du cookie</div>
@@ -136,6 +171,7 @@
 
         </section>
         <div class="espaceH"></div>
+        
         <!-- Footer -->
         <footer class="colonne">
             <div class="espaceH"></div>
@@ -144,7 +180,16 @@
             <div class="espaceH"></div>
         </footer>
     </div>
-    <div class="espaceH"></div>
+    <div class="espaceH noPhone"></div>
+    <div class="footfix noPhone">
+        <div class="double"></div>
+        <div class="double"></div>
+       
+        <div class="demi center">
+            <a class="button" href="#top">Haut de la page</a>
+        </div>
+        <div class="mini"></div>
+    </div>
     <!-- <script src="./js/script.js"></script> -->
 </body>
 
