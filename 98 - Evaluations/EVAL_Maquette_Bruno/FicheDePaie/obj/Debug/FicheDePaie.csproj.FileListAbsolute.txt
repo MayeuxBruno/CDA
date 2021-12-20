@@ -1,0 +1,15 @@
+U:\59011-07-08\EVAL-Maquette_Bruno\FicheDePaie\bin\Debug\FicheDePaie.exe.config
+U:\59011-07-08\EVAL-Maquette_Bruno\FicheDePaie\bin\Debug\FicheDePaie.exe
+U:\59011-07-08\EVAL-Maquette_Bruno\FicheDePaie\bin\Debug\FicheDePaie.pdb
+U:\59011-07-08\EVAL-Maquette_Bruno\FicheDePaie\obj\Debug\FicheDePaie.csproj.AssemblyReference.cache
+U:\59011-07-08\EVAL-Maquette_Bruno\FicheDePaie\obj\Debug\MainWindow.g.cs
+U:\59011-07-08\EVAL-Maquette_Bruno\FicheDePaie\obj\Debug\App.g.cs
+U:\59011-07-08\EVAL-Maquette_Bruno\FicheDePaie\obj\Debug\FicheDePaie_MarkupCompile.cache
+U:\59011-07-08\EVAL-Maquette_Bruno\FicheDePaie\obj\Debug\FicheDePaie_MarkupCompile.lref
+U:\59011-07-08\EVAL-Maquette_Bruno\FicheDePaie\obj\Debug\MainWindow.baml
+U:\59011-07-08\EVAL-Maquette_Bruno\FicheDePaie\obj\Debug\FicheDePaie.g.resources
+U:\59011-07-08\EVAL-Maquette_Bruno\FicheDePaie\obj\Debug\FicheDePaie.Properties.Resources.resources
+U:\59011-07-08\EVAL-Maquette_Bruno\FicheDePaie\obj\Debug\FicheDePaie.csproj.GenerateResource.cache
+U:\59011-07-08\EVAL-Maquette_Bruno\FicheDePaie\obj\Debug\FicheDePaie.csproj.CoreCompileInputs.cache
+U:\59011-07-08\EVAL-Maquette_Bruno\FicheDePaie\obj\Debug\FicheDePaie.exe
+U:\59011-07-08\EVAL-Maquette_Bruno\FicheDePaie\obj\Debug\FicheDePaie.pdb
