@@ -7,7 +7,6 @@
     .colonnePhone{
         flex-direction:column;
     }
-    
     .noPhone{
         display:none;
     }
@@ -15,14 +14,12 @@
         width : 50%;
         align-self:center;
     }
-
     .demi{
         flex:0.05;
     }
     .espaceH{
         height:1vh;
     }
-
     /* Ordre d'affichage des images*/
     .phoneHaut{
         order:1;

@@ -1,0 +1,42 @@
+/****  GENERAL ****/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+div, header, footer, nav, section,body,main,.item {
+    display: flex;
+    flex: 1;
+    /* border : 1px dotted red; */
+}
+img, video {
+    width: 100%;
+}
+.colonne {
+    flex-direction: column;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+.grand{
+    flex:5;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    padding:0.5em;
+    border:1px solid black;
+}
+
+.sousmenu{
+    display:none;
+    margin-left:5%;
+}
+.arrondi{
+    border-bottom-left-radius:1em ;
+    border-bottom-right-radius:1em ;
+}
+
