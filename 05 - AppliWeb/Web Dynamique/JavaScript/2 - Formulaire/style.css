@@ -5,16 +5,24 @@ html, body {
     padding: 0;
 }
 
-div,body{
+div,body,input,button{
     display: flex;
     flex: 1;
-    border : 1px dotted red;
+    /* border : 1px dotted red; */
 }
 
 img, video {
     width: 100%;
 }
-
+.double{
+    flex:2;
+}
+.demi{
+    flex:0.5;
+}
+.mini{
+    flex:0.1;
+}
 body{
     background-color: black;
 }
@@ -29,16 +37,37 @@ body{
 
 .espaceH{
     flex:none;
-    Height:30em;
+    Height:10em;
 }
-.petitespaceH{
+.doublepetitespaceH{
     flex:none;
     height:2em;
 }
-.contain{
+.petitespaceH{
     flex:none;
-    width: 30%;
+    height:1em;
 }
 .formulaire{
+    flex:none;
+    width: 50%;
     background-color:lightgrey;
+}
+button{
+    padding:0.5em;
+    justify-content:center;
+}
+.rouge{
+    color:red;
+}
+.vert{
+    color:green
+}
+.ok{
+    display:none;
+}
+input:invalid{
+   border:1px solid red;
+}
+input:valid{
+    border:1px solid green;
 }

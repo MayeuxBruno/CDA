@@ -5,22 +5,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>NOM DU SITE</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Formulaire</title>
 </head>
 
-<body class="center">
+<body class="center colonne">
     <div class="espaceH"></div>
-    <div class="contain">
-        
-        <div class="formulaire colonne">
+    <div class="formulaire colonne">
+        <div class="center"><h1>Formulaire de Contact</h1></div>
+        <div class="doublepetitespaceH"></div>
+        <form>
+            <div class="ligne">
+                <div></div>
+                <div><label for="nom"> Nom :</label></div>
+                <div><input type="text" id="nom" required pattern="[a-z,A-Z]{2,}" title="Toto"></div>
+                <div class="mini"></div>
+                <div class="mini ko">
+                    <i class="fas fa-times rouge"></i>
+                </div>
+                <div class="mini ok">
+                    <i class="fas fa-check vert"></i>
+                </div>
+                <div class="mini"></div>
+                <div class="mini">
+                    <i class="far fa-question-circle"></i>
+                </div>
+                <div></div>
+            </div>
             <div class="petitespaceH"></div>
-            <div class="center">Formulaire de Contact</div>
+            <div class="ligne">
+                <div></div>
+                <div><label for="prenom"> Prénom :</label></div>
+                <div><input type="text" id="prenom" required pattern="[a-z,A-Z]{2,}"></div>
+                <div class="mini"></div>
+                <div class="mini ko">
+                    <i class="fas fa-times rouge"></i>
+                </div>
+                <div class="mini ok">
+                    <i class="fas fa-check vert"></i>
+                </div>
+                <div class="mini"></div>
+                <div class="mini">
+                    <i class="far fa-question-circle"></i>
+                </div>
+                <div></div>
+            </div>
             <div class="petitespaceH"></div>
-            <form>
-                
-            </form>
-        </div>
+            <div class="ligne">
+                <div></div>
+                <div><label for="telephone"> Téléphone:</label></div>
+                <div><input type="text" id="telephone" pattern="[0-9]{10}" required></div>
+                <div class="mini"></div>
+                <div class="mini ko">
+                    <i class="fas fa-times rouge"></i>
+                </div>
+                <div class="mini ok">
+                    <i class="fas fa-check vert"></i>
+                </div>
+                <div class="mini"></div>
+                <div class="mini">
+                    <i class="far fa-question-circle"></i>
+                </div>
+                <div></div>
+            </div>
+            <div class="petitespaceH"></div>
+            <div class="ligne">
+                <div></div>
+                <div><label for="mail"> Adresse Mail:</label></div>
+                <div><input type="text" id="mail" required pattern="[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}"></div>
+                <div class="mini"></div>
+                <div class="mini ko">
+                    <i class="fas fa-times rouge"></i>
+                </div>
+                <div class="mini ok">
+                    <i class="fas fa-check vert"></i>
+                </div>
+                <div class="mini"></div>
+                <div class="mini">
+                    <i class="far fa-question-circle"></i>
+                </div>
+                <div></div>
+            </div>
+            <div class="petitespaceH"></div>
+            <div class="ligne">
+                <div></div>
+                <div><label for="mdp"> Mot de Passe:</label></div>
+                <div><input type="password" id="mdp" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{8,15})$"></div>
+                <div class="mini"></div>
+                <div class="mini ko">
+                    <i class="fas fa-times rouge"></i>
+                </div>
+                <div class="mini ok">
+                    <i class="fas fa-check vert"></i>
+                </div>
+                <div class="mini"></div>
+                <div class="mini">
+                    <i class="far fa-question-circle"></i>
+                </div>
+                <div></div>
+            </div>
+            <div class="petitespaceH"></div>
+            <div class="petitespaceH"></div>
+            <div class="buttonbox">
+                <div class="double"></div>
+                <div><button type="submit" id="btnsubmit">Valider</button></div>
+                <div class="mini"></div>
+                <div><button>Annuler</button></div>
+                <div class="double"></div>
+            </div>
+            <div class="doublepetitespaceH"></div>
+        </form>
     </div>
+    <div class="espaceH"></div>
     <script src="script.js"></script>
 </body>
 
