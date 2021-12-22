@@ -7,7 +7,7 @@ html, body {
 div, header, footer, nav, section,body,main,.item {
     display: flex;
     flex: 1;
-    border : 1px dotted red;
+    /* border : 1px dotted red; */
 }
 img, video {
     width: 100%;

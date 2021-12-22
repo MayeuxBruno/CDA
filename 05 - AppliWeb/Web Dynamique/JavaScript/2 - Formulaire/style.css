@@ -1,0 +1,44 @@
+/****  GENERAL ****/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+div,body{
+    display: flex;
+    flex: 1;
+    border : 1px dotted red;
+}
+
+img, video {
+    width: 100%;
+}
+
+body{
+    background-color: black;
+}
+.colonne {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.espaceH{
+    flex:none;
+    Height:30em;
+}
+.petitespaceH{
+    flex:none;
+    height:2em;
+}
+.contain{
+    flex:none;
+    width: 30%;
+}
+.formulaire{
+    background-color:lightgrey;
+}

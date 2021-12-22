@@ -7,6 +7,7 @@ for(i=0;i<tabmenu.length;i++)
 
 function AffSousMenu (e)
 {
+    console.log(e.target.parentNode.parentNode);
     var listesousmenu=document.getElementsByClassName("sousmenu");
     for (let i=0;i<listesousmenu.length;i++)
     {
