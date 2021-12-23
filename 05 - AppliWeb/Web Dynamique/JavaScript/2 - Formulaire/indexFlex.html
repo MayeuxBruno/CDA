@@ -18,7 +18,7 @@
             <div class="ligne">
                 <div></div>
                 <div><label for="nom"> Nom :</label></div>
-                <div><input type="text" id="nom" required pattern="[a-z,A-Z]{2,}" title="Toto"></div>
+                <div><input name="nom" type="text" id="nom" required pattern="[a-z,A-Z]{2,}" title="Toto"></div>
                 <div class="mini"></div>
                 <div class="mini ko">
                     <i class="fas fa-times rouge"></i>
@@ -36,7 +36,7 @@
             <div class="ligne">
                 <div></div>
                 <div><label for="prenom"> Prénom :</label></div>
-                <div><input type="text" id="prenom" required pattern="[a-z,A-Z]{2,}"></div>
+                <div><input name="prenom" type="text" id="prenom" required pattern="[a-z,A-Z]{2,}"></div>
                 <div class="mini"></div>
                 <div class="mini ko">
                     <i class="fas fa-times rouge"></i>
@@ -54,7 +54,7 @@
             <div class="ligne">
                 <div></div>
                 <div><label for="telephone"> Téléphone:</label></div>
-                <div><input type="text" id="telephone" pattern="[0-9]{10}" required></div>
+                <div><input name="telephone" type="text" id="telephone" pattern="0[1-9]([-\/ \.]?[0-9]{2}){4}" required></div>
                 <div class="mini"></div>
                 <div class="mini ko">
                     <i class="fas fa-times rouge"></i>
@@ -72,7 +72,7 @@
             <div class="ligne">
                 <div></div>
                 <div><label for="mail"> Adresse Mail:</label></div>
-                <div><input type="text" id="mail" required pattern="[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}"></div>
+                <div><input name="mail" type="text" id="mail" required pattern="[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}"></div>
                 <div class="mini"></div>
                 <div class="mini ko">
                     <i class="fas fa-times rouge"></i>
@@ -90,10 +90,14 @@
             <div class="ligne">
                 <div></div>
                 <div><label for="mdp"> Mot de Passe:</label></div>
-                <div><input type="password" id="mdp" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{8,15})$"></div>
+                <div><input class="mdp" name="mdp" type="password" id="mdp" required pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}"></div>
                 <div class="mini"></div>
-                <div class="mini ko">
+                <div class="mini ko relative">
                     <i class="fas fa-times rouge"></i>
+                    <div class="absolute">
+                        <div>Une Majuscule</div>
+                    </div>
+
                 </div>
                 <div class="mini ok">
                     <i class="fas fa-check vert"></i>
@@ -108,7 +112,7 @@
             <div class="petitespaceH"></div>
             <div class="buttonbox">
                 <div class="double"></div>
-                <div><button type="submit" id="btnsubmit">Valider</button></div>
+                <div><button type="submit" id="btnsubmit" disabled>Valider</button></div>
                 <div class="mini"></div>
                 <div><button>Annuler</button></div>
                 <div class="double"></div>

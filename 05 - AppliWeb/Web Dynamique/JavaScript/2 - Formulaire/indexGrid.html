@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Formulaire Avec Grid</title>
+</head>
+
+<body>
+    <body class="center colonne">
+        <div class="espaceH"></div>
+        <div class="formulaire colonne">
+            <div class="center"><h1>Formulaire de Contact</h1></div>
+            <div class="doublepetitespaceH"></div>
+            <form action="" method="GET">
+                <div></div>
+                <div><label for="nom">Nom :</label></div>
+                <div><input name="nom" type="text" id="nom" required pattern="[a-z,A-Z]{2,}"></div>
+                <div class="center">
+                    <i class="fas fa-times rouge"></i>
+                </div>
+                <div></div>
+                <div></div>
+                <div><label for="prenom">Prenom : </label></div>
+                <div><input name="prenom" type="text" id="prenom" required pattern="[a-z,A-Z]{2,}"></div>
+                <div class="center">
+                        <i class="fas fa-times rouge"></i>
+                </div>
+                <div></div>
+                <div></div>
+                <div><label for="naissance">Date de Naissance : </label></div>
+                <div><input name="naissance" type="date" id="naissance" required></div>
+                <div class="center">
+                        <i class="fas fa-times rouge"></i>
+                </div>
+                <div></div>
+                <div></div>
+                <div><label for="telephone">Telephone : </label></div>
+                <div><input name="telephone" type="text" id="telephone" pattern="0[1-9]([-\/ \.]?[0-9]{2}){4}" required></div>
+                <div class="center">
+                        <i class="fas fa-times rouge"></i>
+                </div>
+                <div></div>
+                <div></div>
+                <div><label for="mail">Mail : </label></div>
+                <div><input name="mail" type="text" id="mail" required pattern="[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}"></div>
+                <div class="center">
+                        <i class="fas fa-times rouge"></i>
+                </div>
+                <div></div>
+                <div></div>
+                <div><label for="mdp">Mot de passe : </label></div>
+                <div><input name="mdp" type="password" id="mdp" required pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}"></div>
+                <div class="center">
+                        <i class="fas fa-times rouge"></i>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div><button type="submit" id="btnsubmit" disabled>Valider</button></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </form>
+        </div>
+        <div class="espaceH"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

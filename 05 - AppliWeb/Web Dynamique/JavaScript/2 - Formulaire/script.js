@@ -1,26 +1,73 @@
-var inputNom = document.getElementById("nom");
-var inputPrenom = document.getElementById("prenom");
-var inputMail = document.getElementById("mail");
-var inputPhone = document.getElementById("telephone");
+var lesInputs=document.querySelectorAll('input:not([id*="mdp"],[id*="naissance"])');
 var inputMdp = document.getElementById("mdp");
-inputNom.addEventListener("input",testValid);
-inputPrenom.addEventListener("input",testValid);
-inputMail.addEventListener("input",testValid);
-inputPhone.addEventListener("input",testValid);
-inputMdp.addEventListener("input",testValid);
+var inputNaissance = document.getElementById("naissance");
+var btnValide=document.getElementById("btnsubmit");
+var validation={};
 
+lesInputs.forEach(element => {
+    element.addEventListener("input",testValid);
+    validation[element.name]=false;
+});
 
-
+inputMdp.addEventListener("input",testValidMdp);
+validation["mdp"]=true;
+inputNaissance.addEventListener("change",testValidNaissance);
+validation["naissance"]=false;
+console.log(validation);
 function testValid(e)
 {
-    var inputvalidity=e.target.checkValidity();
+    inputActif=e.target;
+    inputvalidity=inputActif.checkValidity();
+    voyant=e.target.parentNode.nextElementSibling;
+    icone = voyant.firstElementChild;
+    inputvalidity=inputActif.checkValidity();
+
     if(inputvalidity)
     {
-        e.target.parentNode.parentNode.querySelector(".ok").style.display="flex";
-        e.target.parentNode.parentNode.querySelector(".ko").style.display="none";
+        icone.classList.remove("fa-times","rouge");
+        icone.classList.add("fa-check","vert");
+        validation[inputActif.name]=true;
     }
     else{
-        e.target.parentNode.parentNode.querySelector(".ko").style.display="flex";
-        e.target.parentNode.parentNode.querySelector(".ok").style.display="none";
+        icone.classList.add("fa-times","rouge");
+        icone.classList.remove("fa-check","vert");
+        validation[inputActif.name]=false;
+    }
+    ValidForm();
+    console.log(validation);
+}
+
+function testValidMdp()
+{
+
+}
+
+function testValidNaissance(e)
+{
+    let inputDate=e.target;
+    voyant=e.target.parentNode.nextElementSibling;
+    icone = voyant.firstElementChild;
+    let ladate=new Date();
+    let dateNaissance=new Date(e.target.value);
+    if (dateNaissance<ladate)
+    {
+        icone.classList.remove("fa-times","rouge");
+        icone.classList.add("fa-check","vert");
+        validation[inputDate.name]=true;
+    }
+    else{
+        icone.classList.add("fa-times","rouge");
+        icone.classList.remove("fa-check","vert");
+        validation[inputDate.name]=false;
+    }
+    console.log(validation);
+}
+function ValidForm()
+{
+    btnValide.disabled=true;
+    if(Object.values(validation).indexOf(false)==-1)
+    {
+        btnValide.disabled=false;
     }
 }
+
