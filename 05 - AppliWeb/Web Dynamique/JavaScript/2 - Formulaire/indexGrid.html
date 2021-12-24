@@ -53,7 +53,56 @@
                 <div></div>
                 <div></div>
                 <div><label for="mdp">Mot de passe : </label></div>
-                <div><input name="mdp" type="password" id="mdp" required pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}"></div>
+                <div class="psw">
+                    <input name="mdp" type="password" id="mdp" required pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}">
+                    <i class="far fa-eye"></i>
+                </div>
+              
+                <div>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div>
+                    <fieldset>
+                        <div class="center">
+                            <i class="fas fa-times rouge" id="maj"></i>
+                        </div>
+                        <div>
+                            Une Majuscule
+                        </div>
+                        <div class="center">
+                            <i class="fas fa-times rouge" id="min"></i>
+                        </div>
+                        <div>
+                            Une Minuscule
+                        </div>
+                        <div class="center" id=>
+                            <i class="fas fa-times rouge" id="chiffre"></i>
+                        </div>
+                        <div>
+                            Un Chiffre
+                        </div>
+                        <div class="center">
+                            <i class="fas fa-times rouge" id="carSpe"></i>
+                        </div>
+                        <div>
+                            Un Caractere special
+                        </div>
+                        
+                        <div class="center">
+                            <i class="fas fa-times rouge" id="taille"></i>
+                        </div>
+                        <div>
+                            8 Caracteres minimum
+                        </div>
+                    </fieldset>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div><label for="confirmation">Confirmation : </label></div>
+                <div><input name="confirmation" type="password" id="confirmation" required pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}"></div>
                 <div class="center">
                         <i class="fas fa-times rouge"></i>
                 </div>
@@ -68,7 +117,7 @@
             </form>
         </div>
         <div class="espaceH"></div>
-    <script src="script.js"></script>
+    <script src="scriptgrid.js"></script>
 </body>
 
 </html>
