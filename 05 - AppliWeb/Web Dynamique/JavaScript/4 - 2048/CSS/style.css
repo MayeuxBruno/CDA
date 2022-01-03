@@ -1,0 +1,47 @@
+div{
+    display:flex;
+    flex:1;
+}
+
+.colonne{
+    flex-direction:column;
+}
+
+.espacehor{
+    flex:none;
+    height:25vh;
+}
+
+.ligne{
+    justify-content:center;
+}
+
+button{
+    width:5em;
+    height:5em;
+    margin:0.1em;
+    font-weight: bold;
+    font-size:1.5em;
+}
+.plateau{
+    padding:0.3em 0.2em;
+    background-color:var(--FondPlateau);
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(8em, auto);
+}
+.cell{
+    margin : 0.1em;
+    justify-content:center;
+    align-items:center;
+    font-size: 3em;
+    font-weight: bold;
+    color:var(--CouleuText);
+}
+.vide{
+    background-color:var(--FondCaseVide);
+}
+
+.deux{
+    background-color:var(--Fond2);
+}
