@@ -155,7 +155,7 @@ class Employe
                 $rep.="<br>***** Cheques Noel *****";
                 foreach ($cheques as  $key=>$value) 
                 {
-                    if($value>0)
+                    if($value>0&&$key!="0")
                     {
                         $rep.="<br>".$value." chèque(s) de ".$key.".";
                     }
