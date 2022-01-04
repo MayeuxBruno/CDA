@@ -9,6 +9,7 @@ class Employe
     private $_salaireAnnuel;
     private $_service;
     private $_agence;
+    private $_enfants=[];
     private static $nbEmployes=0;
 
     /*****************Accesseurs***************** */
@@ -71,6 +72,25 @@ class Employe
         $this->_service = $service;
     }
 
+    public function getAgence()
+    {
+        return $this->_agence;
+    }
+
+    public function setAgence(Agence $agence)
+    {
+        $this->_agence = $agence;
+    }
+    public function getEnfants()
+    {
+        return $this->_enfants;
+    }
+
+    public function setEnfants(array $enfants)
+    {
+        $this->_enfants = $enfants;
+    }
+
     public static function getNbEmployes()
     {
         return self::$nbEmployes;
@@ -81,16 +101,7 @@ class Employe
         self::$nbEmployes = $nbEmployes;
     }
 
-    public function getAgence()
-    {
-        return $this->_agence;
-    }
-
-    public function setAgence(Agence $agence)
-    {
-        $this->_agence = $agence;
-    }
-    
+   
     /*****************Constructeur***************** */
 
     public function __construct(array $options = [])
@@ -123,14 +134,37 @@ class Employe
 
     public function toString()
     {
-        return  "<br>****** Salarie ******
+        $rep =  "<br>****** Salarie ******
                  <br> Nom : ".$this->getNom().
                 "<br> Prenom : ".$this->getPrenom().
                 "<br> Date Embauche : ".$this->getDateEmbauche()->format('d-m-Y').
                 "<br> Fonction : ".$this->getFonction().
                 "<br> Salaire brut Annuel : ".$this->getSalaireAnnuel().
                 "<br> Service : ".$this->getService().
-                $this->getAgence()->ToString();;
+                $this->getAgence()->ToString();
+            if($this->chequesVacances())
+            {
+                $rep.="<br>Dispose de chèques vacances";
+            }
+            else{
+                $rep.="<br>Ne dispose pas de chèques vacances";
+            }
+            $cheques=$this->chequesNoel();
+            if (array_sum($cheques)>0)
+            {
+                $rep.="<br>***** Cheques Noel *****";
+                foreach ($cheques as  $key=>$value) 
+                {
+                    if($value>0)
+                    {
+                        $rep.="<br>".$value." chèque(s) de ".$key.".";
+                    }
+                }
+            }
+            else{
+                $rep.="<br>Ne bénéficie pas de cheques Noel";
+            }
+            return $rep;
     }
 
     public function anciennete()
@@ -147,6 +181,25 @@ class Employe
     public function masseSalariale()
     {
         return $this->getSalaireAnnuel()*1000+$this->prime();
+    }
+
+    public function chequesVacances()
+    {
+        if($this->anciennete()>1)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    public function chequesNoel()
+    {
+       $cheque = ["0"=>0,"20"=>0,"30"=>0,"50"=>0];
+       foreach ($this->getEnfants() as $enfant) 
+       {
+           $cheque[$enfant->chequesNoel()] += 1;
+       }
+       return $cheque;
     }
 
     public static function triParNomPrenom($empA,$empB)
@@ -187,4 +240,6 @@ class Employe
 
 
    
+
+    
 }
