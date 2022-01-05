@@ -33,8 +33,8 @@ $routes = [
     "deconnection" => ["PHP/CONTROLLER/ACTION/", "Actiondeconnection", "Erreur", 0, false],
 
     "listeProduit" => ["PHP/VIEW/LISTE/", "ListeProduit", "listeProduit", 1, false],
-    "formProduit" => ["PHP/VIEW/FORM/", "FormProduit", "Détail du produit", 1, false],
-    "actionProduit" => ["PHP/CONTROLLER/ACTION/", "ActionProduit", "Mise à jour du produit", 1, false],
+    "formProduit" => ["PHP/VIEW/FORM/", "FormProduit", "detailProduit", 1, false],
+    "actionProduit" => ["PHP/CONTROLLER/ACTION/", "ActionProduit", "majProduit", 1, false],
 
     "listeCategorie" => ["PHP/VIEW/LISTE/", "ListeCategorie", "Liste des Catégories", 2, false],
     "formCategorie" => ["PHP/VIEW/FORM/", "FormCategorie", "Gestion des catégories", 2, false],
