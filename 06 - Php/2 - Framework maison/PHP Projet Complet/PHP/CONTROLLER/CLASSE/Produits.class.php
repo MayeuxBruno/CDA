@@ -1,6 +1,7 @@
 <?php
 class Produits
 {
+    private static $attributs=["idProduit","libelleProduit","prix","dateDePeremption","idCategorie"];
     private $_idProduit;
     private $_libelleProduit;
     private $_prix;
@@ -47,6 +48,11 @@ class Produits
     public function setIdCategorie(int $idCategorie)
     {
         $this->_idCategorie = $idCategorie;
+    }
+
+    public static function getAttributes()
+    {
+        return self::$attributs;
     }
     public function __construct(array $options = [])
     {

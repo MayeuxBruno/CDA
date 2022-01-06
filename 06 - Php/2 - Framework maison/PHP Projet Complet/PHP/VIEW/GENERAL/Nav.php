@@ -9,7 +9,9 @@ if (isset($_SESSION['utilisateur'])) {
     }
 
     echo '<nav>
-    <button class="crudBtn crudBtnRetour ' . $classeCouleur . '"><a href="index.php?page=listeProduit">'.texte("produits").'</a></button>
-    <button class="crudBtn crudBtnRetour ' . $classeCouleur . '"><a href="index.php?page=listeCategorie">Categories</a></button>
-        </nav>';
+    <button class="crudBtn crudBtnRetour ' . $classeCouleur . '"><a href="index.php?page=listeProduit">'.texte("produits").'</a></button>';
+    if ($_SESSION['utilisateur']->getRole() == 2) {
+        echo '<button class="crudBtn crudBtnRetour ' . $classeCouleur . '"><a href="index.php?page=listeCategorie">Categories</a></button>';
+    }
+    echo'</nav>';
 }

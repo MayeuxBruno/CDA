@@ -4,7 +4,7 @@ class Categories
 {
 
 	/*****************Attributs***************** */
-
+	private static $attributs=["idCategorie","libelleCategorie"];
 	private $_idCategorie;
 	private $_LibelleCategorie;
 
@@ -30,6 +30,11 @@ class Categories
 	{
 		$this->_LibelleCategorie=$LibelleCategorie;
 	}
+
+	public static function getAttributes()
+    {
+        return self::$attributs;
+    }
 
 	/*****************Constructeur***************** */
 
