@@ -11,7 +11,7 @@ switch ($mode) {
         $disabled = " disabled ";
         break;
 }
-echo '  <h5>'.$mode.' une catégorie</h5></div>
+echo '  <h5>'.texte($mode).' '.texte("uneCategorie").'</h5></div>
         <form id="formulaire" method="post" action="index.php?page=actionCategorie&mode='.$mode.'">';
 
 if (isset($_GET['id'])) {
@@ -22,9 +22,9 @@ else{
 }
 
 echo '  <input type="hidden" name="idCategorie" value="' . $categ->getIdCategorie() . '">';
-echo '  <label> Libelle :</label>
+echo '  <label> '.texte("libelle").' :</label>
         <input type="text" name="libelleCategorie" value="' . $categ->getLibelleCategorie() . '"' .$disabled.'>';
-echo '<input type="submit" value="'.$mode.'" class=" crudBtn crudBtn'.$mode.'"/>';
+echo '<input type="submit" value="'.texte($mode).'" class=" crudBtn crudBtn'.$mode.'"/>';
 
-echo '<a href="index.php?page=listeCategorie" class=" crudBtn crudBtnRetour">Annuler</a>
+echo '<a href="index.php?page=listeCategorie" class=" crudBtn crudBtnRetour">'.texte("Annuler").'</a>
 </form>';

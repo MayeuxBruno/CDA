@@ -11,7 +11,7 @@ switch ($mode) {
         break;
 }
 
-echo '<h5>' . $mode . ' un nouveau produit</h5></div>
+echo '<h5>' .texte($mode) . ' '.texte("unProduit").'</h5></div>
 <form id="formulaire" method="post" action="index.php?page=actionProduit&mode=' . $mode . '">';
 if (isset($_GET['id'])) {
     $prod = ProduitsManager::findById($_GET['id']);
@@ -27,11 +27,11 @@ $listeCateg = CategoriesManager::getList();
 // il faut que les name des input correspondent aux attributs de la class
 // si on a les informations (cas Editer, Modifier, supp) on les mets à jour
 echo '  <input type="hidden" name="idProduit" value="' . $prod->getIdProduit() . '">';
-echo '  <label> Libelle :</label>
+echo '  <label> '.texte("libelle").' :</label>
         <input type="text" name="libelleProduit" value="' . $prod->getLibelleProduit() . '"' . $disabled . '>';
-echo '  <label>Prix :</label>
+echo '  <label>'.texte("prix").' :</label>
         <input type="number" name="prix" value="' . $prod->getPrix() . '"' . $disabled . '>';
-echo '  <label>Date de peremption :</label>
+echo '  <label>'.texte("datePeremption").' :</label>
         <input type="date" name="dateDePeremption" value="' . $prod->getDateDePeremption() . '"' . $disabled . '>';
 echo '  <label>Categorie :</label>
         <select name="idCategorie" '.$disabled.'>';
@@ -48,9 +48,9 @@ echo '
     </select>
     </div>';
 
-echo '<div class="ligneDetail"><input type="submit" value="' . $mode . '" class=" crudBtn crudBtn' . $mode . '"/>';
+echo '<div class="ligneDetail"><input type="submit" value="' . texte($mode) . '" class=" crudBtn crudBtn' . $mode . '"/>';
 echo '
-<a href="index.php?page=listeProduit" class=" crudBtn crudBtnRetour">Annuler</a>
+<a href="index.php?page=listeProduit" class=" crudBtn crudBtnRetour">'.texte("annuler").'</a>
 </div>
 </div>
 </form>';

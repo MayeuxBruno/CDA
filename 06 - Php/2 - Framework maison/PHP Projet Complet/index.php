@@ -36,9 +36,9 @@ $routes = [
     "formProduit" => ["PHP/VIEW/FORM/", "FormProduit", "detailProduit", 1, false],
     "actionProduit" => ["PHP/CONTROLLER/ACTION/", "ActionProduit", "majProduit", 1, false],
 
-    "listeCategorie" => ["PHP/VIEW/LISTE/", "ListeCategorie", "Liste des Catégories", 2, false],
-    "formCategorie" => ["PHP/VIEW/FORM/", "FormCategorie", "Gestion des catégories", 2, false],
-    "actionCategorie" => ["PHP/CONTROLLER/ACTION/", "ActionCategorie", "Mise à jour du produit", 2, false]
+    "listeCategorie" => ["PHP/VIEW/LISTE/", "ListeCategorie", "listeCategorie", 2, false],
+    "formCategorie" => ["PHP/VIEW/FORM/", "FormCategorie", "gestionCategorie", 2, false],
+    "actionCategorie" => ["PHP/CONTROLLER/ACTION/", "ActionCategorie", "majCategorie", 2, false]
 ];
 
 if (isset($_GET["page"])) {
