@@ -41,11 +41,10 @@ $tabReunions=getReunionsByDate($firstDay,$dateFin); // On recherche toutes les r
     </div>
 </div>
 
-<table class="calendar">
-    <?php 
+<div class="calendar">
+    <?php
         for ($i=0;$i<$nbSemaines;$i++)
         {
-            echo '<tr>';
             foreach($month->getTabJours() as $k => $unjour)
             {
                 $string="+".($k+$i*7)." days";
@@ -53,29 +52,71 @@ $tabReunions=getReunionsByDate($firstDay,$dateFin); // On recherche toutes les r
                 $reuniondujour=$tabReunions[$date->format('Y-m-d')]??[]; //Si pas de date dans le tableau on envoi un tableau vide
                 if ($month->estDansLeMois($date)) // Si la date est dans le mois elle est affichée normalement
                 {
-                    $class="";
+                     $class="";
                 }
                 else{ // Si non elle est mise en opacité
-                    $class="dansLeMois";
+                     $class="dansLeMois";
                 }
-                echo '
-                      <td class="'.$class.'">
-                        <br>';
+                echo '<div class="colonne calendarborder block '.$class.'">
+                        <div class="petitespaceH"></div>';
                         if($i==0)
                         {
-                            echo '<div class="nomJour">'.$unjour.'</div><br>';
-                        }     // Affichage nom du jour
-                        echo '<div class="numJour">'.$date->format('d').'</div>';  // Affichage du numéro du jour
+                            echo'<div class="nomJour">'.$unjour.'</div>';
+                        }
+                        echo '<div class="numJour">'.$date->format('d').'</div>
+                                <div class="petitespaceH"></div>';
                         foreach($reuniondujour as $reunion)
                         {
                             $heure=new DateTime($reunion->getHoraireDebut());
-                            echo '<div class="reunionagenda">'.
-                                    ($heure->format('H:i')).' - '. $reunion->getTitreReunion().
-                                 '</div>' ;
+                            echo '<div class="reunionagenda">
+                                    <div class="mini"></div>
+                                    <div class="mini">'. ($heure->format('H:i')).'</div>
+                                    <div class="mini">-</div>
+                                    <div class="alignergauche">'. $reunion->getTitreReunion().'</div>
+                                    <div class="mini"></div>
+                                  </div>' ;
                         }
-                        echo '</td>';
+                      echo'</div>';
             }
-            echo '</tr>';
         }
+    ?>
+</div>
+
+<!-- <table class="calendar"> -->
+<?php
+        // for ($i=0;$i<$nbSemaines;$i++)
+        // {
+            // echo '<tr>';
+            // foreach($month->getTabJours() as $k => $unjour)
+            // {
+                // $string="+".($k+$i*7)." days";
+                // $date=(clone $firstDay)->modify($string);
+                // $reuniondujour=$tabReunions[$date->format('Y-m-d')]??[]; //Si pas de date dans le tableau on envoi un tableau vide
+                // if ($month->estDansLeMois($date)) // Si la date est dans le mois elle est affichée normalement
+                // {
+                    // $class="";
+                // }
+                // else{ // Si non elle est mise en opacité
+                    // $class="dansLeMois";
+                // }
+                // echo '
+                    //   <td class="'.$class.'">
+                        // <br>';
+                        // if($i==0)
+                        // {
+                            // echo '<div class="nomJour">'.$unjour.'</div><br>';
+                        // }     // Affichage nom du jour
+                        // echo '<div class="numJour">'.$date->format('d').'</div>';  // Affichage du numéro du jour
+                        // foreach($reuniondujour as $reunion)
+                        // {
+                            // $heure=new DateTime($reunion->getHoraireDebut());
+                            // echo '<div class="reunionagenda">'.
+                                    // ($heure->format('H:i')).' - '. $reunion->getTitreReunion().
+                                //  '</div>' ;
+                        // }
+                        // echo '</td>';
+            // }
+            // echo '</tr>';
+        // }
         ?>
-</table>
+<!-- </table> -->

@@ -2,7 +2,7 @@ html,body{
 	margin: 0;
 	padding: 0;
 }
-body, header,div, nav, main, section, .flex{
+body, header, nav,div, main, section, .flex{
     display: flex;
 	flex: 1;
 	justify-content: center;
@@ -16,9 +16,13 @@ img {
 	width: 100%;
 }
 
-.flexNone
+.flexnone
 {
 	flex:none;
+}
+.block
+{
+	display:block;
 }
 .colonne{
     flex-direction: column;
@@ -28,6 +32,11 @@ img {
 }
 .demi{
 	flex:0.5;
+}
+.petitespaceH
+{
+	flex:none;
+	height:0.3em;
 }
 .texteColore{
 	
@@ -168,3 +177,24 @@ form{
     font-weight:bold;
 }
 
+.calendar{
+	display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+	grid-auto-rows: minmax(8em, auto);
+}
+
+.calendarborder
+{
+	border:1px solid black;
+}
+ .reunionagenda
+ {
+	 text-align:left;
+ }
+ .alignergauche
+ {
+	 /* align-items: flex-start; */
+	 /* text-align: left; */
+	 justify-content: left;
+ }
