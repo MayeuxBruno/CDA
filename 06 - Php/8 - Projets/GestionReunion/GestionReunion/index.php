@@ -28,6 +28,7 @@ setcookie("lang", $_SESSION['lang'], time()+36000, '/');
 $routes = [
     "default" => ["PHP/VIEW/PAGE/", "Agenda", "Agenda", 0, false],
     "formreunion"=>["PHP/VIEW/FORM/", "FormReunion", "FormReunion", 0, false],
+    "actionReunion" => ["PHP/CONTROLLER/ACTION/", "ActionReunion", "Action Reunion", 0, false],
     //"default" => ["PHP/VIEW/PAGE/", "Agenda", "Agenda", 0, false],
     //"agenda"=> ["PHP/VIEW/PAGE/", "Agenda", "Agenda", 0, false],
     //"default"=>["PHP/MODEL/","TestManager","Test de reunions",0,false],
@@ -46,7 +47,7 @@ $routes = [
     // "formCategorie" => ["PHP/VIEW/FORM/", "FormCategorie", "GestionCategories", 2, false],
     // "actionCategorie" => ["PHP/CONTROLLER/ACTION/", "ActionCategorie", "Mise à jour du produit", 2, false],
     //"TestManager" => ["PHP/MODEL/MANAGER/", "TestManager.Class", "titretest", 0, false]
-    // "erreur" => ["PHP/VIEW/GENERAL/", "Erreur", "titreErreur", 0, false]
+     "erreur" => ["PHP/VIEW/GENERAL/", "Erreur", "titreErreur", 0, false]
 ];
 
 if (isset($_GET["page"])) {

@@ -18,7 +18,7 @@ class ReunionsManager
 		$q->bindValue(":idTypeReunion", $obj->getIdTypeReunion());
 		$q->bindValue(":idEtatAvancement", $obj->getIdEtatAvancement());
 		$q->bindValue(":idSalle", $obj->getIdSalle());
-		$q->execute();
+		return $q->execute();
     }
 
     public static function update(Reunions $obj)
@@ -39,7 +39,7 @@ class ReunionsManager
 		$q->bindValue(":idTypeReunion", $obj->getIdTypeReunion());
 		$q->bindValue(":idEtatAvancement", $obj->getIdEtatAvancement());
 		$q->bindValue(":idSalle", $obj->getIdSalle());
-		$q->execute();
+		return $q->execute();
 	}
 
     public static function getList()
@@ -72,6 +72,7 @@ class ReunionsManager
 			return false;
 		}
 	}
+	
 	public static function findByDateBetween(DateTime $start, DateTime $end)
 	{
 		$db=DbConnect::getDb();

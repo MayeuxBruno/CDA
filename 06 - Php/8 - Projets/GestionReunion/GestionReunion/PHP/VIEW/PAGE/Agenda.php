@@ -36,6 +36,9 @@ $tabReunions=getReunionsByDate($firstDay,$dateFin); // On recherche toutes les r
 <div>
     <div><h1><?php echo $month->ToString();?></h1></div>
     <div>
+        <a class=" crudBtn crudBtnOutil" href='index.php?page=formreunion&mode=Ajouter'>Ajouter une réunion</a>
+    </div>
+    <div>
        <div class="mini centrer"><a href="/index.php?page=agenda&month=<?php echo $month->moisPrecedent()->getMois();?>&year=<?php echo $month->moisPrecedent()->getAnnee();?>"><i class="fas fa-arrow-circle-left"></i></a></div> 
        <div class="mini centrer"><a href="/index.php?page=agenda&month=<?php echo $month->moisSuivant()->getMois();?>&year=<?php echo $month->moisSuivant()->getAnnee();?>"><i class="fas fa-arrow-circle-right"></i></a></div>
     </div>
@@ -72,7 +75,7 @@ $tabReunions=getReunionsByDate($firstDay,$dateFin); // On recherche toutes les r
                                     <div class="mini"></div>
                                     <div class="mini">'. ($heure->format('H:i')).'</div>
                                     <div class="mini">-</div>
-                                    <div class="alignergauche">'. $reunion->getTitreReunion().'</div>
+                                    <div class="alignergauche reunion" etat="'.$reunion->getIdEtatAvancement().'">'. $reunion->getTitreReunion().'</div>
                                     <div class="mini"></div>
                                   </div>' ;
                         }
@@ -82,41 +85,3 @@ $tabReunions=getReunionsByDate($firstDay,$dateFin); // On recherche toutes les r
     ?>
 </div>
 
-<!-- <table class="calendar"> -->
-<?php
-        // for ($i=0;$i<$nbSemaines;$i++)
-        // {
-            // echo '<tr>';
-            // foreach($month->getTabJours() as $k => $unjour)
-            // {
-                // $string="+".($k+$i*7)." days";
-                // $date=(clone $firstDay)->modify($string);
-                // $reuniondujour=$tabReunions[$date->format('Y-m-d')]??[]; //Si pas de date dans le tableau on envoi un tableau vide
-                // if ($month->estDansLeMois($date)) // Si la date est dans le mois elle est affichée normalement
-                // {
-                    // $class="";
-                // }
-                // else{ // Si non elle est mise en opacité
-                    // $class="dansLeMois";
-                // }
-                // echo '
-                    //   <td class="'.$class.'">
-                        // <br>';
-                        // if($i==0)
-                        // {
-                            // echo '<div class="nomJour">'.$unjour.'</div><br>';
-                        // }     // Affichage nom du jour
-                        // echo '<div class="numJour">'.$date->format('d').'</div>';  // Affichage du numéro du jour
-                        // foreach($reuniondujour as $reunion)
-                        // {
-                            // $heure=new DateTime($reunion->getHoraireDebut());
-                            // echo '<div class="reunionagenda">'.
-                                    // ($heure->format('H:i')).' - '. $reunion->getTitreReunion().
-                                //  '</div>' ;
-                        // }
-                        // echo '</td>';
-            // }
-            // echo '</tr>';
-        // }
-        ?>
-<!-- </table> -->
