@@ -7,6 +7,7 @@ class StudentsCourses
 	private $_idUtilisateur;
 	private $_nom;
 	private $_prenom;
+	private $_pseudo;
     private $_adresseMail;
     private $_motDePasse;
     private $_role;
@@ -42,6 +43,16 @@ class StudentsCourses
 	public function setPrenom($prenom)
 	{
 		$this->_prenom = $prenom;
+	}
+
+	public function getPseudo()
+	{
+		return $this->_pseudo;
+	}
+
+	public function setPseudo($pseudo)
+	{
+		$this->_pseudo = $pseudo;
 	}
 
     public function getAdresseMail()
@@ -109,6 +120,7 @@ class StudentsCourses
 	*/
 	public function toString()
 	{
-		return "idUtilisateur: ".$this->getIdUtilisateur()."<br>Nom : ".$this->getNom()."<br>Prenom : ".$this->getPrenom()."<br>adresseMail : ".$this->getAdresseMail()."Mot de passe : ".$this->getMotDePasse()."Role : ".$this->getRole();
+		return "idUtilisateur: ".$this->getIdUtilisateur().
+				"<br>Nom : ".$this->getNom()."<br>Prenom : ".$this->getPrenom()."<br>Pseudo : ".$this->getPseudo()."<br>adresseMail : ".$this->getAdresseMail()."Mot de passe : ".$this->getMotDePasse()."Role : ".$this->getRole();
 	}
 }
