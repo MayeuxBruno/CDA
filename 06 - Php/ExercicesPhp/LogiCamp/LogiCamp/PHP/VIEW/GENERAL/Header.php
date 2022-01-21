@@ -1,9 +1,12 @@
 <body class="colonne">
     <header>
         <div class="demi"></div>
-        <div><img src="" alt=""></div>
-        <div class="titre"><?php echo $titre; ?></div>
-        <div class="colonne">
+        <div class="demi"><img src="IMG/logo.png" alt="logo"></div>
+        <div class="titre center double colonne">
+            <div><h1>LogiCamp</h1></div>
+            <div><?php echo $titre; ?></div>
+        </div>
+        <div class="colonne demi">
             <?php
 
             if (isset($_SESSION['utilisateur'])) {

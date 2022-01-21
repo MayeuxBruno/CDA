@@ -47,8 +47,10 @@ echo '<div class="caseForm"><i class="fas fa-question-circle"></i></div>';
 echo '<div class="caseForm"><i class="fas fa-check-circle"></i></div>';
 
 echo '<div class="caseForm">IdTypeEmplacement</div>';
-echo '<div class="caseForm"><input type="text" '.$disabled;
-echo ($mode == "Ajouter") ? "" : " value=".$elm->getIdTypeEmplacement(); echo ' name=IdTypeEmplacement pattern="'.$regex["*"].'"></div>';
+echo '<div class="caseForm">'.creerSelect(($mode == "Ajouter") ? 1 : $elm->getIdTypeEmplacement(),'typesemplacements',['libelleTypeEmplacement'],($mode == "Ajouter"||$mode=="Modifier") ?' ':'disabled').'</div>';
+
+// echo '<div class="caseForm"><input type="text" '.$disabled;
+//echo ($mode == "Ajouter") ? "" : " value=".$elm->getIdTypeEmplacement(); echo ' name=IdTypeEmplacement pattern="'.$regex["*"].'"></div>';
 echo '<div class="caseForm"><i class="fas fa-question-circle"></i></div>';
 echo '<div class="caseForm"><i class="fas fa-check-circle"></i></div>';
 

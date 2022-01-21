@@ -15,7 +15,9 @@ html, main, body, div, a, header, footer, nav, article, section, aside, fieldset
     margin: 0;
     padding: 0;
 }
-
+div{
+    border:1px dotted blue;
+}
 img, video, button {
     width: 100%;
 }
@@ -72,4 +74,13 @@ img, video, button {
 a {
     text-decoration : none;
     color : var(--linkColor);
+}
+
+.green
+{
+    color:green;
+}
+.red
+{
+    color:red;
 }

@@ -136,10 +136,10 @@ function appelGet($obj, $chaine)
  * @param boolean $api false par défaut, mettre true si on souhaite recevoir la réponse sous forme de tableau de string sinon sous forme de tableau d'objets.
  * @return void
  */
-function creerSelect(int $valeur, string $table, array $nomColonnes, string $attributs = "", array $condition = null, string $orderBy = null, $api = false)
+function creerSelect(?int $valeur, string $table, array $nomColonnes, string $attributs = "", array $condition = null, string $orderBy = null, $api = false)
 {
 		$nomId= $table::getAttributes()[0];
-		$select = '<select id="' . $nomId . '" name="' . $nomId . '"' . $attributs . '">';
+		$select = '<select id="' . $nomId . '" name="' . $nomId . '"' . $attributs . '>';
 		$methode = $table . 'Manager';
 		$libelle= $nomColonnes;
 		array_push($nomColonnes, $nomId);
