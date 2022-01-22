@@ -5,8 +5,9 @@
 
 
 //Si le titre est indiqué, on l'affiche entre les balises <title>
-echo (!empty($titre)) ? '<title>' . $titre . '</title>' : '<title> Titre de la page </title>';
+echo (!empty($titre)) ? '<title>LogiCamp - ' . $titre . '</title>' : '<title> LogiCamp </title>';
 echo '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" type="image/png" href="IMG/logo.png"/>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 <link rel="stylesheet" href="CSS/root.css">

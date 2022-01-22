@@ -3,7 +3,8 @@
 
 .grid-col-9 {
 	display : grid;
-	border : 0.5px solid #ff0080;
+	/* border : 0.5px solid #ff0080; */
+	grid-auto-rows: minmax(2em, auto);
 	grid-template-columns : 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr 0.5fr 0.5fr;}
 
 .grid-columns-span-9 { 
@@ -12,7 +13,8 @@
 
 .grid-col-8 {
 	display : grid;
-	border : 0.5px solid #ff0080;
+	/* border : 0.5px solid #ff0080; */
+	grid-auto-rows: minmax(2em, auto);
 	grid-template-columns : 2fr 2fr 2fr 2fr 2fr 0.5fr 0.5fr 0.5fr;}
 
 .grid-columns-span-8 { 
@@ -37,13 +39,14 @@
 	grid-column:1/6;
 }
 
+
 .gridListe div,button,a {
 	justify-content: center;
 	align-items: center;
 }
 
 .caseListe {
-	border: 1px solid #ff0080;
+	border: 1px solid black;
 	padding : 0.2em;
 }
 
@@ -70,3 +73,4 @@
 .gridForm-col-span {
 	grid-column: 1/5 ;
 }
+

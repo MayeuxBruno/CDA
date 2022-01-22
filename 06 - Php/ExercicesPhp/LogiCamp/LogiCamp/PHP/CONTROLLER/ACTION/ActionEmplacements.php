@@ -1,4 +1,5 @@
 <?php
+// die(var_dump($_POST));
 $elm = new Emplacements($_POST);
 
 switch ($_GET['mode']) {

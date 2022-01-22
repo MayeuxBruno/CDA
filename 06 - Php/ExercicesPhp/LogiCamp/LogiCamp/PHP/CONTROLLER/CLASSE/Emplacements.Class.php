@@ -50,7 +50,7 @@ class Emplacements
 		return $this->_eau;
 	}
 
-	public function setEau(?int $eau)
+	public function setEau(?string $eau)
 	{
 		$this->_eau=$eau;
 	}
@@ -60,7 +60,7 @@ class Emplacements
 		return $this->_electricite;
 	}
 
-	public function setElectricite(?int $electricite)
+	public function setElectricite(?string $electricite)
 	{
 		$this->_electricite=$electricite;
 	}

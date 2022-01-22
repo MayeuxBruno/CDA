@@ -15,10 +15,6 @@
     box-shadow: 2px 2px 3px var(--inputIncorrect);
 }
 
-.inputVide {
-}
-
-
 input, select {
     box-shadow: 2px 2px 3px black;
     padding: 0.5em;
@@ -35,10 +31,10 @@ fieldset {
 
 form {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 2fr;
     grid-gap: 0.5em;
     grid-auto-rows: minmax(1em, auto);
-    width: 75%;
+    width: 60%;
 }
 .colSpan2{
     grid-column: 1 / span 2;
@@ -69,4 +65,8 @@ form {
     grid-gap: 0.2em;
     grid-auto-rows: minmax(1em, auto);
     width: 75%;
+}
+
+.petitForm{
+    width:40%;
 }

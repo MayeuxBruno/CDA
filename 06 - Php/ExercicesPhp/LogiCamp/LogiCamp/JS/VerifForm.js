@@ -5,6 +5,7 @@ const red = "inputIncorrect";
 const requ = new XMLHttpRequest();
 var listemail = [];
 
+
 /************* API Mail **************/
 requ.onreadystatechange = function (event) {
     // XMLHttpRequest.DONE === 4
@@ -37,7 +38,7 @@ var listForms = document.querySelectorAll('form');
 //Récupère tous les inputs du formulaire et effectue une première vérification & ajoute les eventListener sur chacun d'entre eux.
 listForms.forEach(formulaire => {
     // pour chaque formulaire, on récupère les inputs
-    let listInputs = formulaire.querySelectorAll("input:not([type='submit']):not([type='reset']:not([type='button']),select,textarea");
+    let listInputs = formulaire.querySelectorAll("input:not([type='submit']):not([type='reset']:not([type='button']):not([type='checkbox']),select,textarea");
     let submit = formulaire.querySelector("input[type='submit'], button[type='submit']");
     let reset = formulaire.querySelector("input[type='reset']");
     let listInputsValidity = {}; // tableau qui contient pour chaque input : vrai si l'input est valide, faux sinon

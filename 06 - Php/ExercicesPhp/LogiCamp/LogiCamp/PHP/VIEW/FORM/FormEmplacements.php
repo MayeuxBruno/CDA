@@ -14,6 +14,7 @@ if (isset($_GET['id'])) {
 } else {
 	$elm = new Emplacements();
 }
+// die(var_dump($elm));
 echo '<main class="center">';
 
 echo '<form class="GridForm" action="index.php?page=ActionEmplacements&mode='.$_GET['mode'].'" method="post"/>';
@@ -35,22 +36,21 @@ echo '<div class="caseForm"><i class="fas fa-question-circle"></i></div>';
 echo '<div class="caseForm"><i class="fas fa-check-circle"></i></div>';
 
 echo '<div class="caseForm">Eau</div>';
-echo '<div class="caseForm"><input type="text" '.$disabled;
-echo ($mode == "Ajouter") ? "" : " value=".$elm->getEau(); echo ' name=Eau pattern="'.$regex["*"].'"></div>';
+echo '';
+echo '<div class="caseForm"><input type="checkbox" class="checknochange"';
+echo ($elm->getEau() == "on") ? "checked" : ""; echo ' name=Eau value="on"></div>';
 echo '<div class="caseForm"><i class="fas fa-question-circle"></i></div>';
 echo '<div class="caseForm"><i class="fas fa-check-circle"></i></div>';
 
 echo '<div class="caseForm">Electricite</div>';
-echo '<div class="caseForm"><input type="text" '.$disabled;
-echo ($mode == "Ajouter") ? "" : " value=".$elm->getElectricite(); echo ' name=Electricite pattern="'.$regex["*"].'"></div>';
+echo '<div class="caseForm"><input type="checkbox" '.$disabled;
+echo ($elm->getElectricite() == "on") ? "checked" : ""; echo ' name=Electricite ></div>';
 echo '<div class="caseForm"><i class="fas fa-question-circle"></i></div>';
 echo '<div class="caseForm"><i class="fas fa-check-circle"></i></div>';
 
 echo '<div class="caseForm">IdTypeEmplacement</div>';
-echo '<div class="caseForm">'.creerSelect(($mode == "Ajouter") ? 1 : $elm->getIdTypeEmplacement(),'typesemplacements',['libelleTypeEmplacement'],($mode == "Ajouter"||$mode=="Modifier") ?' ':'disabled').'</div>';
+echo '<div class="caseForm">'.creerSelect(($mode == "Ajouter") ? 1 : $elm->getIdTypeEmplacement(),'typesemplacements',['libelleTypeEmplacement'],$disabled).'</div>';
 
-// echo '<div class="caseForm"><input type="text" '.$disabled;
-//echo ($mode == "Ajouter") ? "" : " value=".$elm->getIdTypeEmplacement(); echo ' name=IdTypeEmplacement pattern="'.$regex["*"].'"></div>';
 echo '<div class="caseForm"><i class="fas fa-question-circle"></i></div>';
 echo '<div class="caseForm"><i class="fas fa-check-circle"></i></div>';
 
