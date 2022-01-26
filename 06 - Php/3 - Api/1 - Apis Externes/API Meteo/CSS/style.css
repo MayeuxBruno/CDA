@@ -16,7 +16,6 @@ div,img{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	
 	padding-left: 2%;
 	padding-right: 2%;
 }
@@ -27,61 +26,16 @@ div,img{
 	width: 60%;
 	justify-content: center;
 }
-.ligne{
-	display: flex;
-	justify-content: space-between;
-}
 
+.bold{
+	font-weight:bold;
+}
 .espaceHorizon {
 	flex:none;
-	height: 10vh;
+	height: 2.5vh;
 }
 .espaceVertical {
 	flex: 0.5;
-}
-#entete {
-	background-color: #b7e0f8;
-	display: flex;
-	width: 100%;
-	flex-direction: column;
-}
-
-#titre {
-	display: flex;
-	justify-content: space-between;
-	flex: 1.5;
-}
-
-#logo {
-	flex: 1;
-	padding-top: 2%;
-	padding-left: 2%;
-}
-
-#titre_page {
-	display: flex;
-	flex: 5;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-#divSousTitre{
-	text-align: center;
-}
-.nom , .commune ,.etat  {
-	flex: 1;
-}
-.nbVeloDispo, .adresse, .nbPlaces{
-	flex: 1;
-	padding-left: 2vw;
-}
-.titreLigne{
-	font-weight: bold;
-}
-.detail{
-	display: flex;
-	justify-content: space-between;
-	background-color: darkgrey;
 }
 
 
@@ -93,9 +47,6 @@ div,img{
 	background-color: rgb(32, 32, 32);
 }
 
-.colSpan2{
-	grid-column: 2;
-}
 .case{
 	border : 1px solid white;
 }
@@ -121,3 +72,9 @@ div,img{
 .rouge{
 	color:red;
 }
+
+footer{
+	position:fixed;
+	Bottom:0;
+}
+

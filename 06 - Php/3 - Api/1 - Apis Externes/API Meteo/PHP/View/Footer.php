@@ -1,15 +1,9 @@
 <!--  Referme les balises ouvertes dans le Header -->
 
 </div>
-<div class="piedDePage">
-<div class="espaceHorizon"></div>
-<div class="espaceHorizon"></div>
-<div class="espaceHorizon"></div>
-
-
-</div>
-</div>
-</div>
+<footer class="colonne">
+    <div class="bold">MAYEUX Bruno CDA Dunkerque 2022</div>
+</footer>
 <script src="JS/ajax.js"></script>
 </body>
 

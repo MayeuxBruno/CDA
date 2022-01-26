@@ -1,24 +1,17 @@
 // Utilisation de l'Ajax pour appeler l'API et récuperer les enregistrements
 var contenu = document.getElementById("station");
-var enregs; // contient la reponse de l'API
 var input=document.getElementById("ville");
 var bouton=document.getElementById("bouton");
-// on définit une requete
+var affVille=document.getElementById("affVille");
 const req = new XMLHttpRequest();
 
 bouton.addEventListener("click",rechercheMeteo);
-
-//on envoi la requête
-
 
 //on vérifie les changements d'états de la requête
 req.onreadystatechange = function (event) {
     if (this.readyState === XMLHttpRequest.DONE) {
         if (this.status === 200) {
-            // la requete a abouti et a fournit une reponse
-            //on décode la réponse, pour obtenir un objet
             reponse = JSON.parse(this.responseText);
-            console.log(this.responseText);
             console.log(reponse);
             AfficheMeteo(reponse);
 
@@ -39,6 +32,7 @@ function rechercheMeteo()
 
 function AfficheMeteo(tabMeteo)
 {
+    document.getElementById("affVille").innerHTML="Météo pour la ville de "+tabMeteo.name+" ("+tabMeteo.sys.country+")";
     document.getElementById("tempMax").innerHTML=tabMeteo.main.temp_max+"°C";
     document.getElementById("temp").innerHTML=tabMeteo.main.temp+"°C";
     document.getElementById("pression").innerHTML=tabMeteo.main.pressure+" hPa";

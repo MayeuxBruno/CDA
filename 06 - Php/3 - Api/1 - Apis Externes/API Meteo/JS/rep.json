@@ -1,43 +1,44 @@
 {
     "coord": {
-        "lon": 3.0586,
-        "lat": 50.633
+        "lon": 2.3605,
+        "lat": 50.5729
     },
-    "weather": [
-        {
-            "id": 741,
-            "main": "Fog",
-            "description": "brouillard",
-            "icon": "50d"
-        }
-    ],
+    "weather": [{
+        "id": 804,
+        "main": "Clouds",
+        "description": "couvert",
+        "icon": "04n"
+    }],
     "base": "stations",
     "main": {
-        "temp": -2.04,
-        "feels_like": -2.04,
-        "temp_min": -2.88,
-        "temp_max": -0.17,
-        "pressure": 1032,
-        "humidity": 87
+        "temp": 4.54,
+        "feels_like": 0.31,
+        "temp_min": 2.77,
+        "temp_max": 5.55,
+        "pressure": 1031,
+        "humidity": 88,
+        "sea_level": 1031,
+        "grnd_level": 1019
     },
-    "visibility": 1700,
+    "visibility": 10000,
     "wind": {
-        "speed": 0.51,
-        "deg": 0
+        "speed": 6,
+        "deg": 264,
+        "gust": 10.42
     },
     "clouds": {
-        "all": 0
+        "all": 92
     },
-    "dt": 1643097301,
+    "dt": 1643238031,
     "sys": {
         "type": 2,
-        "id": 2011132,
+        "id": 2005338,
         "country": "FR",
-        "sunrise": 1643095977,
-        "sunset": 1643128012
+        "sunrise": 1643268782,
+        "sunset": 1643301197
     },
     "timezone": 3600,
-    "id": 2998324,
-    "name": "Lille",
+    "id": 3033002,
+    "name": "Rely",
     "cod": 200
 }

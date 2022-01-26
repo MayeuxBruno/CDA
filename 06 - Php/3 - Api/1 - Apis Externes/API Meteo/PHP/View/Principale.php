@@ -13,6 +13,12 @@
 		<div></div>
 	</div>
 	<div class="espaceHorizon"></div>
+	<div>
+		<div></div>
+		<div id="affVille" class="centre bold"></div>
+		<div></div>
+    </div>
+	<div class="espaceHorizon"></div>
 	<div  id="station">
 		<div id="tempMax" class="case centre afficheur rouge"></div>
 		<div id="temp" class="case centre afficheur blanc"></div>
