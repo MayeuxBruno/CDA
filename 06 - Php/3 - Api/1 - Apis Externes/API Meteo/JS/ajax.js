@@ -1,13 +1,15 @@
 // Utilisation de l'Ajax pour appeler l'API et récuperer les enregistrements
-var contenu = document.getElementById("contenu");
+var contenu = document.getElementById("station");
 var enregs; // contient la reponse de l'API
+var input=document.getElementById("ville");
+var bouton=document.getElementById("bouton");
 // on définit une requete
 const req = new XMLHttpRequest();
 
+bouton.addEventListener("click",rechercheMeteo);
+
 //on envoi la requête
-var ville="Lille";
-req.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=' + ville + '&appid=f3a403a44666a424dd3ca7da175aabce&lang=fr&units=metric', true);
-req.send(null);
+
 
 //on vérifie les changements d'états de la requête
 req.onreadystatechange = function (event) {
@@ -18,40 +20,47 @@ req.onreadystatechange = function (event) {
             reponse = JSON.parse(this.responseText);
             console.log(this.responseText);
             console.log(reponse);
-            temp=document.getElementById("temperature");
-            console.log(temp);
-            temp.innerHTML=reponse.main.temp;
-            // for (let i = 0; i < enregs.length; i++) {
-            //     // on crée la ligne et les div internes
-            //     ligne = document.createElement("div");
-            //     ligne.setAttribute("class", "ligne");
-            //     ligne.id = i;
-            //     ville = document.createElement("div");
-            //     ville.setAttribute("class", "commune");
-            //     ligne.appendChild(ville);
-            //     libelle = document.createElement("div");
-            //     libelle.setAttribute("class", "nom");
-            //     ligne.appendChild(libelle);
-            //     etat = document.createElement("div");
-            //     etat.setAttribute("class", "etat");
-            //     ligne.appendChild(etat);
-            //     contenu.appendChild(ligne);
-            //     espace = document.createElement("div");
-            //     espace.setAttribute("class","espaceHorizon");
-            //     contenu.appendChild(espace);
-            //     //on met à jour le contenu
-            //     ville.innerHTML = enregs[i].fields.commune;
-            //     libelle.innerHTML = enregs[i].fields.nom;
-            //     etat.innerHTML = enregs[i].fields.etat;
+            AfficheMeteo(reponse);
 
-            //     // on ajoute un evenement sur ligne pour afficher le detail
-            //     ligne.addEventListener("click", afficheDetail);
-            // }
+            
             console.log("Réponse reçue: %s", this.responseText);
         } else {
             console.log("Status de la réponse: %d (%s)", this.status, this.statusText);
         }
     }
 };
+
+function rechercheMeteo()
+{
+    var ville=input.value;
+    req.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=' + ville + '&appid=f3a403a44666a424dd3ca7da175aabce&lang=fr&units=metric', true);
+    req.send(null);
+}
+
+function AfficheMeteo(tabMeteo)
+{
+    document.getElementById("tempMax").innerHTML=tabMeteo.main.temp_max+"°C";
+    document.getElementById("temp").innerHTML=tabMeteo.main.temp+"°C";
+    document.getElementById("pression").innerHTML=tabMeteo.main.pressure+" hPa";
+    document.getElementById("tempMin").innerHTML=tabMeteo.main.temp_min+"°C";
+    document.getElementById("humidite").innerHTML=tabMeteo.main.humidity+" %";
+    document.getElementById("img").src="Images/"+reponse.weather[0].icon+".png";
+    document.getElementById("leve").innerHTML=RecupHeure(tabMeteo.sys.sunrise);
+    document.getElementById("couche").innerHTML=RecupHeure(tabMeteo.sys.sunset);
+    document.getElementById("vent").innerHTML=tabMeteo.wind.speed+" KM/H";
+}
+
+function RecupHeure(date)
+{
+    let timeTemp=new Date(date*1000)
+    let heures=timeTemp.getHours();
+    if(heures<10){heures="0"+heures}
+    let minutes=timeTemp.getMinutes();
+    if(minutes<10){minutes="0"+minutes}
+    affichage=heures+" h "+minutes+" mns";
+    console.log(affichage);
+    return affichage;
+}
+
 
 
