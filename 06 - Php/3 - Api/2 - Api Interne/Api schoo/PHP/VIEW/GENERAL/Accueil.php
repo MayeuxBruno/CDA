@@ -14,7 +14,7 @@ $lesCours=CoursesManager ::getList();
 //Création du template de la grid
 echo '<div class="grid-col-5 gridListe">';
 
-echo '<div class="caseListe grid-columns-span-5">Liste des Student </div>';
+echo '<div class="caseListe grid-columns-span-5">Liste des Etudiants</div>';
 echo '<div>Selectionnez un cours : </div>';
 echo '<select id="selectCours">
         <option value="default" selected> -- Choisissez un cours --</option>';
