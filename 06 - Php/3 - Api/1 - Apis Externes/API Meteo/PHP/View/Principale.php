@@ -2,7 +2,19 @@
 <div id="divContenu">
 	<div class="gridMeteo">
 		<div></div>
-		<div>Température : </label>
+		<div>Température : </div>
+		<div id="temperature"></div>
+		<div></div>
+		<div></div>
+		<div>Température : </div>
+		<div id="temperature"></div>
+		<div></div>
+		<div></div>
+		<div>Température : </div>
+		<div id="temperature"></div>
+		<div></div>
+		<div></div>
+		<div>Température : </div>
 		<div id="temperature"></div>
 		<div></div>
 <	/div>
