@@ -1,0 +1,66 @@
+[{
+    "idAnimal": 1,
+    "nomAnimal": "Lion",
+    "idRegimeAlimentaire": 2,
+    "idHabitat": 3,
+    "sonHabitat": {
+        "idHabitat": 3,
+        "libelleHabitat": "Savane"
+    },
+    "sonRegimeAlimentaire": {
+        "idRegimeAlimentaire": 2,
+        "libelleRegimeAlimentaire": "Carnivore"
+    }
+}, {
+    "idAnimal": 2,
+    "nomAnimal": "Vache",
+    "idRegimeAlimentaire": 1,
+    "idHabitat": 1,
+    "sonHabitat": {
+        "idHabitat": 1,
+        "libelleHabitat": "Marécages"
+    },
+    "sonRegimeAlimentaire": {
+        "idRegimeAlimentaire": 1,
+        "libelleRegimeAlimentaire": "Végétarien"
+    }
+}, {
+    "idAnimal": 3,
+    "nomAnimal": "Tortue",
+    "idRegimeAlimentaire": 1,
+    "idHabitat": 2,
+    "sonHabitat": {
+        "idHabitat": 2,
+        "libelleHabitat": "Tundra"
+    },
+    "sonRegimeAlimentaire": {
+        "idRegimeAlimentaire": 1,
+        "libelleRegimeAlimentaire": "Végétarien"
+    }
+}, {
+    "idAnimal": 4,
+    "nomAnimal": "Poule",
+    "idRegimeAlimentaire": 3,
+    "idHabitat": 1,
+    "sonHabitat": {
+        "idHabitat": 1,
+        "libelleHabitat": "Marécages"
+    },
+    "sonRegimeAlimentaire": {
+        "idRegimeAlimentaire": 3,
+        "libelleRegimeAlimentaire": "Omnivore"
+    }
+}, {
+    "idAnimal": 5,
+    "nomAnimal": "Chien",
+    "idRegimeAlimentaire": 2,
+    "idHabitat": 9,
+    "sonHabitat": {
+        "idHabitat": 9,
+        "libelleHabitat": "Montagne"
+    },
+    "sonRegimeAlimentaire": {
+        "idRegimeAlimentaire": 2,
+        "libelleRegimeAlimentaire": "Carnivore"
+    }
+}]

@@ -9,7 +9,7 @@
 
 //$objets = AnimauxManager::getList();
 //Création du template de la grid
-echo '<div class="grid-col-6 gridListe">';
+echo '<div class="grid-col-6 gridListe" id="contenu">';
 
 echo '<div class="caseListe grid-columns-span-6">Liste des Animaux </div>';
 echo '<div class="caseListe grid-columns-span-6">
@@ -28,17 +28,16 @@ echo '<div class="caseListe"></div>';
 echo '<div class="caseListe"></div>';
 
 // Affichage des ennregistrements de la base de données
-foreach($objets as $unObjet)
-{
-echo '<div class="caseListe">'.$unObjet->getNomAnimal().'</div>';
-echo '<div class="caseListe">'.$unObjet->getIdRegimeAlimentaire().'</div>';
-echo '<div class="caseListe">'.$unObjet->getIdHabitat().'</div>';
-echo '<div class="caseListe"> <a href="index.php?page=FormAnimaux&mode=Afficher&id='.$unObjet->getIdAnimal().'"><i class="fas fa-file-contract"></i></a></div>';
+// foreach($objets as $unObjet)
+// {
+// echo '<div class="caseListe">'.$unObjet->getNomAnimal().'</div>';
+// echo '<div class="caseListe">'.$unObjet->getIdRegimeAlimentaire().'</div>';
+// echo '<div class="caseListe">'.$unObjet->getIdHabitat().'</div>';
+// echo '<div class="caseListe"> <a href="index.php?page=FormAnimaux&mode=Afficher&id='.$unObjet->getIdAnimal().'"><i class="fas fa-file-contract"></i></a></div>';
                                                     
-echo '<div class="caseListe"> <a href="index.php?page=FormAnimaux&mode=Modifier&id='.$unObjet->getIdAnimal().'"><i class="fas fa-pen"></i></a></div>';
+// echo '<div class="caseListe"> <a href="index.php?page=FormAnimaux&mode=Modifier&id='.$unObjet->getIdAnimal().'"><i class="fas fa-pen"></i></a></div>';
                                                     
-echo '<div class="caseListe"> <a href="index.php?page=FormAnimaux&mode=Supprimer&id='.$unObjet->getIdAnimal().'"><i class="fas fa-trash-alt"></i></a></div>';
-}
+// }
 //Derniere ligne du tableau (bouton retour)
 echo '<div class="caseListe grid-columns-span-6">
 	<div></div>

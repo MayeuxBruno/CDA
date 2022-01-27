@@ -43,7 +43,7 @@ namespace AnimauxMulticouche.Data.Services
 
         public Animal GetAnimalById(int id)
         {
-            return _context.Animaux.FirstOrDefault(obj => obj.IdAnimal == id);
+            return _context.Animaux.Include("SonHabitat").Include("SonRegimeAlimentaire").FirstOrDefault(obj => obj.IdAnimal == id);
         }
 
         public void UpdateAnimal(Animal obj)

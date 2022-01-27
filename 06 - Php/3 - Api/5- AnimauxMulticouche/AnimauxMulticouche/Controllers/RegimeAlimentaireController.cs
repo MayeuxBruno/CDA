@@ -50,7 +50,7 @@ namespace AnimauxMulticouche.Controllers
         //POST api/RegimeAlimentaire
         [EnableCors("toto")]
         [HttpPost]
-        public ActionResult<RegimeAlimentaireDTO> CreateNomModel(Regimesalimentaire obj)
+        public ActionResult<RegimeAlimentaireDTO> CreateRegimeAlimentaire(Regimesalimentaire obj)
         {
             _service.AddRegimeAlimentaire(obj);
             return CreatedAtRoute(nameof(GetRegimeAlimentaireById), new { Id = obj.IdRegimeAlimentaire }, obj);
@@ -59,7 +59,7 @@ namespace AnimauxMulticouche.Controllers
         //POST api/RegimeAlimentaire/{id}
         [EnableCors("toto")]
         [HttpPut("{id}")]
-        public ActionResult UpdateNomModel(int id, RegimeAlimentaireDTO obj)
+        public ActionResult UpdateRegimeAlimentaire(int id, RegimeAlimentaireDTO obj)
         {
             Regimesalimentaire objFromRepo = _service.GetRegimeAlimentaireById(id);
             if (objFromRepo == null)
@@ -74,7 +74,7 @@ namespace AnimauxMulticouche.Controllers
         //DELETE api/RegimeAlimentaire/{id}
         [EnableCors("toto")]
         [HttpDelete("{id}")]
-        public ActionResult DeleteNomModel(int id)
+        public ActionResult DeleteRegimeAlimentaire(int id)
         {
             Regimesalimentaire obj = _service.GetRegimeAlimentaireById(id);
             if (obj == null)

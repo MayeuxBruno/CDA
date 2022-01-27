@@ -9,18 +9,19 @@ switch ($mode) {
 		break;
 }
 
-if (isset($_GET['id'])) {
-	$elm = AnimauxManager::findById($_GET['id']);
-} else {
-	$elm = new Animaux();
-}
+// if (isset($_GET['id'])) {
+// 	$elm = AnimauxManager::findById($_GET['id']);
+// } else {
+// 	$elm = new Animaux();
+// }
+$elm = new Animaux();
 echo '<main class="center">';
 
 echo '<form class="GridForm" action="index.php?page=ActionAnimaux&mode='.$_GET['mode'].'" method="post"/>';
 
 echo '<div class="caseForm col-span-form">Formulaire Animaux</div>';
 if ($mode != "Ajouter") {
-	echo '<div class="noDisplay"><input type="hidden" value="'.$elm->getIdAnimal().'" name=IdAnimal></div>';
+	echo '<div class="noDisplay"><input id="idAnimal" type="hidden" value="'.$_GET['id'].'" name=IdAnimal></div>';
 };
 echo '<div class="caseForm">NomAnimal</div>';
 echo '<div class="caseForm"><input type="text" '.$disabled;
@@ -29,14 +30,16 @@ echo '<div class="caseForm"><i class="fas fa-question-circle"></i></div>';
 echo '<div class="caseForm"><i class="fas fa-check-circle"></i></div>';
 
 echo '<div class="caseForm">IdRegimeAlimentaire</div>';
-echo '<div class="caseForm"><input type="text" '.$disabled;
-echo ($mode == "Ajouter") ? "" : " value=".$elm->getIdRegimeAlimentaire(); echo ' name=IdRegimeAlimentaire pattern="'.$regex["*"].'"></div>';
+echo '<div class="caseForm" id="SelectRegime"></div>';
+// echo '<div class="caseForm"><input type="text" '.$disabled;
+// echo ($mode == "Ajouter") ? "" : " value=".$elm->getIdRegimeAlimentaire(); echo ' name=IdRegimeAlimentaire pattern="'.$regex["*"].'"></div>';
 echo '<div class="caseForm"><i class="fas fa-question-circle"></i></div>';
 echo '<div class="caseForm"><i class="fas fa-check-circle"></i></div>';
 
 echo '<div class="caseForm">IdHabitat</div>';
-echo '<div class="caseForm"><input type="text" '.$disabled;
-echo ($mode == "Ajouter") ? "" : " value=".$elm->getIdHabitat(); echo ' name=IdHabitat pattern="'.$regex["*"].'"></div>';
+echo '<div class="caseForm" id="SelectHabitat"></div>';
+// echo '<div class="caseForm"><input type="text" '.$disabled;
+// echo ($mode == "Ajouter") ? "" : " value=".$elm->getIdHabitat(); echo ' name=IdHabitat pattern="'.$regex["*"].'"></div>';
 echo '<div class="caseForm"><i class="fas fa-question-circle"></i></div>';
 echo '<div class="caseForm"><i class="fas fa-check-circle"></i></div>';
 
