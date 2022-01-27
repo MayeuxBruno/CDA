@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Web.Http.Cors;
 using VillesMultiCouche.Data.Dtos;
 using VillesMultiCouche.Data.Models;
 using VillesMultiCouche.Data.Services;
@@ -13,7 +13,6 @@ namespace VillesMultiCouche.Controllers
 {
     [Route("api/[Controller]")]
     [ApiController]
-    [EnableCors(origins: "http://mywebclient.azurewebsites.net", headers: "*", methods: "*")]
     public class DepartementsController:ControllerBase
     {
         private readonly DepartementsServices _service;
@@ -27,6 +26,7 @@ namespace VillesMultiCouche.Controllers
 
         //GET api/Departements
         [HttpGet]
+        [EnableCors("tous")]
         public ActionResult<IEnumerable<DepartementDTO>> GetAllDepartements()
         {
             IEnumerable<Departement> listeDepartements = _service.GetAllDepartements();
@@ -35,6 +35,7 @@ namespace VillesMultiCouche.Controllers
 
         //GET api/Departements/{i}
         [HttpGet("{id}", Name = "GetDepartementById")]
+        [EnableCors("moi")]
         public ActionResult<DepartementDTO> GetDepartementById(int id)
         {
             Departement commandItem = _service.GetDepartementById(id);
@@ -47,14 +48,16 @@ namespace VillesMultiCouche.Controllers
 
         //POST api/Departements
         [HttpPost]
-        public ActionResult<DepartementDTO> CreateDepartement(Departement obj)
+        [EnableCors("tous")]
+        public ActionResult<DepartementDTO> CreateDepartement(DepartementDTO obj)
         {
-            _service.AddDepartement(obj);
+            _service.AddDepartement(_mapper.Map<Departement>(obj));
             return CreatedAtRoute(nameof(GetDepartementById), new { Id = obj.IdDepartement }, obj);
         }
 
         //POST api/Departements/{id}
         [HttpPut("{id}")]
+        [EnableCors("moi")]
         public ActionResult UpdateDepartement(int id, DepartementDTO obj)
         {
             Departement objFromRepo = _service.GetDepartementById(id);
@@ -67,10 +70,9 @@ namespace VillesMultiCouche.Controllers
             return NoContent();
         }
 
-       
-
         //DELETE api/Departements/{id}
         [HttpDelete("{id}")]
+        [EnableCors("tous")]
         public ActionResult DeleteDepartement(int id)
         {
             Departement obj = _service.GetDepartementById(id);
@@ -81,7 +83,5 @@ namespace VillesMultiCouche.Controllers
             _service.DeleteDepartement(obj);
             return NoContent();
         }
-
-
     }
 }

@@ -1,10 +1,11 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Web.Http.Cors;
+
 using VillesMultiCouche.Data.Dtos;
 using VillesMultiCouche.Data.Models;
 using VillesMultiCouche.Data.Services;
@@ -13,7 +14,6 @@ namespace VillesMultiCouche.Controllers
 {
     [Route("api/[Controller]")]
     [ApiController]
-    [EnableCors(origins: "https://localhost:44398/api/Villes", headers: "*", methods: "*")]
     public class VillesController:ControllerBase
     {
         private readonly VillesServices _service;
@@ -27,6 +27,7 @@ namespace VillesMultiCouche.Controllers
 
         //GET api/Villes
         [HttpGet]
+        [EnableCors("tous")]
         public ActionResult<IEnumerable<VilleDTO>> GetAllVilles()
         {
             IEnumerable<Ville> listeVilles = _service.GetAllVilles();
@@ -35,6 +36,7 @@ namespace VillesMultiCouche.Controllers
 
         //GET api/Villes/{i}
         [HttpGet("{id}", Name = "GetVillesById")]
+        [EnableCors("moi")]
         public ActionResult<VilleDTO> GetVillesById(int id)
         {
             Ville commandItem = _service.GetVilleById(id);
@@ -47,6 +49,7 @@ namespace VillesMultiCouche.Controllers
 
         //POST api/Villes
         [HttpPost]
+        [EnableCors("tous")]
         public ActionResult<VilleDTO> CreateVilles(Ville obj)
         {
             _service.AddVille(obj);
@@ -55,6 +58,7 @@ namespace VillesMultiCouche.Controllers
 
         //POST api/Villes/{id}
         [HttpPut("{id}")]
+        [EnableCors("tous")]
         public ActionResult UpdateVilles(int id, VilleDTO obj)
         {
             Ville objFromRepo = _service.GetVilleById(id);
@@ -70,6 +74,7 @@ namespace VillesMultiCouche.Controllers
        
         //DELETE api/Villes/{id}
         [HttpDelete("{id}")]
+        [EnableCors("tous")]
         public ActionResult DeleteVilles(int id)
         {
             Ville obj = _service.GetVilleById(id);
