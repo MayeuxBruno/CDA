@@ -49,9 +49,9 @@ namespace AnimauxMulticouche.Controllers
         //POST api/Animal
         [EnableCors("toto")]
         [HttpPost]
-        public ActionResult<AnimalDTO> CreateAnimal(Animal obj)
+        public ActionResult<AnimalDTO> CreateAnimal(AnimalDTO obj)
         {
-            _service.AddAnimal(obj);
+            _service.AddAnimal(_mapper.Map<Animal>(obj));
             return CreatedAtRoute(nameof(GetAnimalById), new { Id = obj.IdAnimal }, obj);
         }
 

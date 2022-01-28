@@ -1,5 +1,7 @@
+<script src="./JS/ActionAnimaux.js"></script>
 <?php
 $elm = new Animaux($_POST);
+die(var_dump($elm));
 
 switch ($_GET['mode']) {
 	case "Ajouter": {
@@ -17,3 +19,5 @@ switch ($_GET['mode']) {
 }
 
 header("location:index.php?page=ListeAnimaux");
+?>
+<script src="./JS/ActionAnimaux.js"></script>

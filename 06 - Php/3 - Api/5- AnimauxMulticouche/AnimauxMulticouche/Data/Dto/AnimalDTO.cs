@@ -13,7 +13,17 @@ namespace AnimauxMulticouche.Data.Dto
         public int IdRegimeAlimentaire { get; set; }
         public int IdHabitat { get; set; }
 
+        //public virtual HabitatDTO SonHabitat { get; set; }
+        //public virtual RegimeAlimentaireDTO SonRegimeAlimentaire { get; set; }
+    }
+
+    public class AnimalAvecLibDTO
+    {
+        public int IdAnimal { get; set; }
+        public string NomAnimal { get; set; }
+        public int IdRegimeAlimentaire { get; set; }
+        public int IdHabitat { get; set; }
+
         public virtual HabitatDTO SonHabitat { get; set; }
-        public virtual RegimeAlimentaireDTO SonRegimeAlimentaire { get; set; }
     }
 }
