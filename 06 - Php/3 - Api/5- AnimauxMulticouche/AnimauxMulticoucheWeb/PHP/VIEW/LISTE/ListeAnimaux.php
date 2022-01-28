@@ -39,11 +39,11 @@ echo '<div class="caseListe"></div>';
                                                     
 // }
 //Derniere ligne du tableau (bouton retour)
-echo '<div class="caseListe grid-columns-span-6">
-	<div></div>
-	<a href="index.php?page=Accueil"><button><i class="fas fa-sign-out-alt fa-rotate-180"></i></button></a>
-	<div></div>
-</div>';
+// echo '<div class="caseListe grid-columns-span-6">
+// 	<div></div>
+// 	<a href="index.php?page=Accueil"><button><i class="fas fa-sign-out-alt fa-rotate-180"></i></button></a>
+// 	<div></div>
+// </div>';
 
 echo'</div>'; //Grid
 echo'</div>'; //Div

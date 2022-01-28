@@ -177,7 +177,6 @@ function actionForm()
          requ4.send(JSON.stringify(args));
             break;
     case "Supprimer":
-        console.log(idAnimal);
         requ4.open('DELETE', 'https://localhost:44321/api/Animal/'.concat(idAnimal), true);
         requ4.setRequestHeader("Content-Type",  "application/x-www-form-urlencoded");
         requ4.send();
