@@ -25,5 +25,6 @@ namespace AnimauxMulticouche.Data.Dto
         public int IdHabitat { get; set; }
 
         public virtual HabitatDTO SonHabitat { get; set; }
+        public virtual RegimeAlimentaireDTO SonRegimeAlimentaire { get; set; }
     }
 }

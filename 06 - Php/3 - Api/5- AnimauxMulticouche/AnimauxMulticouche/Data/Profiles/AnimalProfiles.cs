@@ -14,6 +14,8 @@ namespace AnimauxMulticouche.Data.Profiles
         {
             CreateMap<Animal, AnimalDTO>();
             CreateMap<AnimalDTO, Animal>();
+            CreateMap<Animal, AnimalAvecLibDTO>();
+            CreateMap<AnimalAvecLibDTO, Animal>();
         }
     }
 }

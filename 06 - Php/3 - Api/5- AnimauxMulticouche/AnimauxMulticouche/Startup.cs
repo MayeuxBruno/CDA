@@ -44,7 +44,9 @@ namespace AnimauxMulticouche
                 options.AddPolicy(name: "toto",
                                     builder =>
                                     {
-                                        builder.WithOrigins("*").AllowAnyHeader().AllowAnyMethod();
+                                        builder.WithOrigins("http://exercicephp")
+                                        .WithMethods("PUT","DELETE","POST","GET")
+                                        .WithHeaders("content-type");
                                     });
             });
         }

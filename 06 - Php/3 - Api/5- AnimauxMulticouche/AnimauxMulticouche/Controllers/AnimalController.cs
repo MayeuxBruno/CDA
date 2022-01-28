@@ -27,10 +27,10 @@ namespace AnimauxMulticouche.Controllers
         //GET api/Animal
         [EnableCors("toto")]
         [HttpGet]
-        public ActionResult<IEnumerable<AnimalDTO>> GetAllAnimal()
+        public ActionResult<IEnumerable<AnimalAvecLibDTO>> GetAllAnimal()
         {
             IEnumerable<Animal> listeAnimal = _service.GetAllAnimaux();
-            return Ok(_mapper.Map<IEnumerable<AnimalDTO>>(listeAnimal));
+            return Ok(_mapper.Map<IEnumerable<AnimalAvecLibDTO>>(listeAnimal));
         }
 
         //GET api/Animal/{i}
