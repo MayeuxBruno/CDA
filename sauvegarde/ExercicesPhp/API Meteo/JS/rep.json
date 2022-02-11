@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 3.0586,
+        "lat": 50.633
+    },
+    "weather": [
+        {
+            "id": 741,
+            "main": "Fog",
+            "description": "brouillard",
+            "icon": "50d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": -2.04,
+        "feels_like": -2.04,
+        "temp_min": -2.88,
+        "temp_max": -0.17,
+        "pressure": 1032,
+        "humidity": 87
+    },
+    "visibility": 1700,
+    "wind": {
+        "speed": 0.51,
+        "deg": 0
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1643097301,
+    "sys": {
+        "type": 2,
+        "id": 2011132,
+        "country": "FR",
+        "sunrise": 1643095977,
+        "sunset": 1643128012
+    },
+    "timezone": 3600,
+    "id": 2998324,
+    "name": "Lille",
+    "cod": 200
+}

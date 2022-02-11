@@ -1,0 +1,1868 @@
+{
+    "nhits": 630000,
+    "parameters": {
+        "dataset": "objets-trouves-restitution",
+        "rows": 30,
+        "start": 0,
+        "sort": [
+            "date"
+        ],
+        "facet": [
+            "date",
+            "gc_obo_date_heure_restitution_c",
+            "gc_obo_gare_origine_r_name",
+            "gc_obo_nature_c",
+            "gc_obo_type_c",
+            "gc_obo_nom_recordtype_sc_c"
+        ],
+        "format": "json",
+        "timezone": "UTC"
+    },
+    "records": [
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "e79d3a52680ecc74e844ca2337e961e3c9655c67",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087481002",
+                "gc_obo_type_c": "Bagagerie: sacs, valises, cartables",
+                "gc_obo_gare_origine_r_name": "Nantes",
+                "gc_obo_nature_c": "Sac \u00e0 dos",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:59:10+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "2c93f004477e3091169ff97521aa3d7d8322d4a6",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087271007",
+                "gc_obo_type_c": "Appareils \u00e9lectroniques, informatiques, appareils photo",
+                "gc_obo_gare_origine_r_name": "Paris Gare du Nord",
+                "gc_obo_nature_c": "T\u00e9l\u00e9phone portable",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:57:39+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "947c6b7f87792527153b5460516516557ea25138",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087391003",
+                "gc_obo_type_c": "Bagagerie: sacs, valises, cartables",
+                "gc_obo_gare_origine_r_name": "Paris Montparnasse",
+                "gc_obo_nature_c": "Valise, sac sur roulettes",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:45:01+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "9f7a008de42791fa6e2503de65b593f3254a58c6",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087576207",
+                "gc_obo_type_c": "V\u00eatements, chaussures",
+                "gc_obo_gare_origine_r_name": "Bourges",
+                "gc_obo_nature_c": "Bonnet, chapeau",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:44:55+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "d781fee353c82d02e062e294dc7e53c743c960e7",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087481002",
+                "gc_obo_type_c": "Bagagerie: sacs, valises, cartables",
+                "gc_obo_gare_origine_r_name": "Nantes",
+                "gc_obo_nature_c": "Sac de voyage, sac de sport, sac \u00e0 bandouli\u00e8re",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:34:25+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "04283ba881c2b068a74984fd1fd6f345bff57215",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087141002",
+                "gc_obo_type_c": "Bagagerie: sacs, valises, cartables",
+                "gc_obo_gare_origine_r_name": "Nancy",
+                "gc_obo_nature_c": "Sac de voyage, sac de sport, sac \u00e0 bandouli\u00e8re",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:33:58+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "259925e81ed6314c382e5c5e362eea750741a3a4",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087722025",
+                "gc_obo_type_c": "Bagagerie: sacs, valises, cartables",
+                "gc_obo_gare_origine_r_name": "Lyon Perrache",
+                "gc_obo_nature_c": "Sac de voyage, sac de sport, sac \u00e0 bandouli\u00e8re",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:32:14+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "4c0c98f557dbc0780186f99d95b2118aced98df3",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087391003",
+                "gc_obo_type_c": "Optique",
+                "gc_obo_gare_origine_r_name": "Paris Montparnasse",
+                "gc_obo_nature_c": "Lunettes",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:30:36+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "533ed84221c942da2361f51dec54e12a2e72b350",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087751008",
+                "gc_obo_type_c": "Bagagerie: sacs, valises, cartables",
+                "gc_obo_gare_origine_r_name": "Marseille Saint-Charles",
+                "gc_obo_nature_c": "Valise, sac sur roulettes",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:26:49+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "d46825d8d96d03efef667a7f1faea5a5addaeab3",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087751008",
+                "gc_obo_type_c": "Bagagerie: sacs, valises, cartables",
+                "gc_obo_gare_origine_r_name": "Marseille Saint-Charles",
+                "gc_obo_nature_c": "Sac \u00e0 dos",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:20:19+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "da6ca2bea9401e30092a30225eb7732f63671d9a",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087571000",
+                "gc_obo_type_c": "Appareils \u00e9lectroniques, informatiques, appareils photo",
+                "gc_obo_gare_origine_r_name": "Tours",
+                "gc_obo_nature_c": "T\u00e9l\u00e9phone portable",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:19:10+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "d90276fb777388fb3abf6fe63e9f34fb32816dc1",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087223263",
+                "gc_obo_type_c": "Optique",
+                "gc_obo_gare_origine_r_name": "Lille Europe",
+                "gc_obo_nature_c": "Lunettes en \u00e9tui",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:17:49+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "fb9110d9a3f30ac92e0e37a313b66d5bf787f572",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087722025",
+                "gc_obo_type_c": "Appareils \u00e9lectroniques, informatiques, appareils photo",
+                "gc_obo_gare_origine_r_name": "Lyon Perrache",
+                "gc_obo_nature_c": "T\u00e9l\u00e9phone portable prot\u00e9g\u00e9 (\u00e9tui, coque,\u2026)",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:13:55+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "c4d914635ae2048ef761e67de60cc3a354c86686",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087484006",
+                "gc_obo_type_c": "Appareils \u00e9lectroniques, informatiques, appareils photo",
+                "gc_obo_gare_origine_r_name": "Angers Saint-Laud",
+                "gc_obo_nature_c": "T\u00e9l\u00e9phone portable prot\u00e9g\u00e9 (\u00e9tui, coque,\u2026)",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:13:29+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "b90e3bdda80fe8d11caee8b842964dd8287a79c9",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087571000",
+                "gc_obo_type_c": "Bijoux, montres",
+                "gc_obo_gare_origine_r_name": "Tours",
+                "gc_obo_nature_c": "Bague",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:12:20+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "1a357720ef7708053aabddb01f393f77d828e098",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087751008",
+                "gc_obo_type_c": "Bagagerie: sacs, valises, cartables",
+                "gc_obo_gare_origine_r_name": "Marseille Saint-Charles",
+                "gc_obo_nature_c": "Valise, sac sur roulettes",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:10:02+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "528ddc4026e6205cefeb181181ce3cb471206d88",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087763029",
+                "gc_obo_type_c": "Bagagerie: sacs, valises, cartables",
+                "gc_obo_gare_origine_r_name": "Valence TGV Rh\u00f4ne-Alpes Sud",
+                "gc_obo_nature_c": "Sac \u00e0 dos",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:09:15+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "ca25e784e672fd191b8f444c22968c3971a28da9",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087571000",
+                "gc_obo_type_c": "Parapluies",
+                "gc_obo_gare_origine_r_name": "Tours",
+                "gc_obo_nature_c": "Parapluie t\u00e9lescopique, parapluie de poche",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:08:21+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "42c9d59144ea345288873309601d9e046f4f864a",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087391003",
+                "gc_obo_type_c": "Pi\u00e8ces d'identit\u00e9s et papiers personnels",
+                "gc_obo_gare_origine_r_name": "Paris Montparnasse",
+                "gc_obo_nature_c": "Pi\u00e8ce d'identit\u00e9 personnelle et autre",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:08:17+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "e9c145c92738254d3d305f612fb38b051c48f912",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087113001",
+                "gc_obo_type_c": "Bagagerie: sacs, valises, cartables",
+                "gc_obo_gare_origine_r_name": "Paris Est",
+                "gc_obo_nature_c": "Sac \u00e0 main",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:06:57+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "18071a8fff86b06b7b87fe8c80365f66fc625103",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087686006",
+                "gc_obo_type_c": "Porte-monnaie / portefeuille, argent, titres",
+                "gc_obo_gare_origine_r_name": "Paris Gare de Lyon",
+                "gc_obo_nature_c": "Porte-monnaie, portefeuille",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:05:27+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "743487b307aa4dd73adc146ffd463f67223dd2c0",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087571000",
+                "gc_obo_type_c": "Articles d'enfants, de pu\u00e9riculture",
+                "gc_obo_gare_origine_r_name": "Tours",
+                "gc_obo_nature_c": "Cartable, trousse d'\u00e9colier, dossier scolaire",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:04:33+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "ef67041bfea61ca82fb8fe9d0be77d19d55ded86",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087751008",
+                "gc_obo_type_c": "V\u00eatements, chaussures",
+                "gc_obo_gare_origine_r_name": "Marseille Saint-Charles",
+                "gc_obo_nature_c": "Manteau, veste, blazer, parka, blouson, cape",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:04:00+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "b26558d7115477ff01c51090e9b85db9d74b9172",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087212027",
+                "gc_obo_date_heure_restitution_c": "2022-01-24T13:56:38+00:00",
+                "gc_obo_type_c": "Appareils \u00e9lectroniques, informatiques, appareils photo",
+                "gc_obo_gare_origine_r_name": "Strasbourg",
+                "gc_obo_nature_c": "T\u00e9l\u00e9phone portable",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T13:00:35+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "8db3a391af189b2294b55d222e908d5ef905300d",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087182063",
+                "gc_obo_type_c": "Bagagerie: sacs, valises, cartables",
+                "gc_obo_gare_origine_r_name": "Mulhouse",
+                "gc_obo_nature_c": "Sac de voyage, sac de sport, sac \u00e0 bandouli\u00e8re",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T12:54:40+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "8225508c943049fc7f664dad7629327fcd1c1966",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087182063",
+                "gc_obo_type_c": "Bagagerie: sacs, valises, cartables",
+                "gc_obo_gare_origine_r_name": "Mulhouse",
+                "gc_obo_nature_c": "Sac \u00e0 dos",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T12:52:06+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "57d28b650a7eb8e0c9c32c895ba971a0d6866e15",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087481002",
+                "gc_obo_type_c": "V\u00eatements, chaussures",
+                "gc_obo_gare_origine_r_name": "Nantes",
+                "gc_obo_nature_c": "Gants",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T12:50:31+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "58adbd603a3f6cdcc8127b3ce59e9ebeae3c0c07",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087182063",
+                "gc_obo_type_c": "Bagagerie: sacs, valises, cartables",
+                "gc_obo_gare_origine_r_name": "Mulhouse",
+                "gc_obo_nature_c": "Sac \u00e0 dos",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T12:49:42+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "c0c3536df308b5e5a4d2e471fae25b3968d4da59",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087722025",
+                "gc_obo_type_c": "Bagagerie: sacs, valises, cartables",
+                "gc_obo_gare_origine_r_name": "Lyon Perrache",
+                "gc_obo_nature_c": "Sac de voyage, sac de sport, sac \u00e0 bandouli\u00e8re",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T12:41:47+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        },
+        {
+            "datasetid": "objets-trouves-restitution",
+            "recordid": "bb7dd78474d7a86e3ed7dad69f30ba31d16a6b84",
+            "fields": {
+                "gc_obo_gare_origine_r_code_uic_c": "0087481002",
+                "gc_obo_type_c": "Appareils \u00e9lectroniques, informatiques, appareils photo",
+                "gc_obo_gare_origine_r_name": "Nantes",
+                "gc_obo_nature_c": "T\u00e9l\u00e9phone portable",
+                "gc_obo_nom_recordtype_sc_c": "Objet trouv\u00e9",
+                "date": "2022-01-24T12:41:33+00:00"
+            },
+            "record_timestamp": "2022-01-24T14:01:41.645000+00:00"
+        }
+    ],
+    "facet_groups": [
+        {
+            "name": "date",
+            "facets": [
+                {
+                    "name": "2013",
+                    "count": 12989,
+                    "state": "displayed",
+                    "path": "2013"
+                },
+                {
+                    "name": "2014",
+                    "count": 87117,
+                    "state": "displayed",
+                    "path": "2014"
+                },
+                {
+                    "name": "2015",
+                    "count": 98578,
+                    "state": "displayed",
+                    "path": "2015"
+                },
+                {
+                    "name": "2016",
+                    "count": 95555,
+                    "state": "displayed",
+                    "path": "2016"
+                },
+                {
+                    "name": "2017",
+                    "count": 44149,
+                    "state": "displayed",
+                    "path": "2017"
+                },
+                {
+                    "name": "2018",
+                    "count": 90264,
+                    "state": "displayed",
+                    "path": "2018"
+                },
+                {
+                    "name": "2019",
+                    "count": 88263,
+                    "state": "displayed",
+                    "path": "2019"
+                },
+                {
+                    "name": "2020",
+                    "count": 47351,
+                    "state": "displayed",
+                    "path": "2020"
+                },
+                {
+                    "name": "2021",
+                    "count": 61991,
+                    "state": "displayed",
+                    "path": "2021"
+                },
+                {
+                    "name": "2022",
+                    "count": 3743,
+                    "state": "displayed",
+                    "path": "2022"
+                }
+            ]
+        },
+        {
+            "name": "gc_obo_date_heure_restitution_c",
+            "facets": [
+                {
+                    "name": "2013",
+                    "count": 3346,
+                    "state": "displayed",
+                    "path": "2013"
+                },
+                {
+                    "name": "2014",
+                    "count": 24794,
+                    "state": "displayed",
+                    "path": "2014"
+                },
+                {
+                    "name": "2015",
+                    "count": 30401,
+                    "state": "displayed",
+                    "path": "2015"
+                },
+                {
+                    "name": "2016",
+                    "count": 31891,
+                    "state": "displayed",
+                    "path": "2016"
+                },
+                {
+                    "name": "2017",
+                    "count": 15873,
+                    "state": "displayed",
+                    "path": "2017"
+                },
+                {
+                    "name": "2018",
+                    "count": 32399,
+                    "state": "displayed",
+                    "path": "2018"
+                },
+                {
+                    "name": "2019",
+                    "count": 32170,
+                    "state": "displayed",
+                    "path": "2019"
+                },
+                {
+                    "name": "2020",
+                    "count": 17514,
+                    "state": "displayed",
+                    "path": "2020"
+                },
+                {
+                    "name": "2021",
+                    "count": 25048,
+                    "state": "displayed",
+                    "path": "2021"
+                },
+                {
+                    "name": "2022",
+                    "count": 1790,
+                    "state": "displayed",
+                    "path": "2022"
+                }
+            ]
+        },
+        {
+            "name": "gc_obo_gare_origine_r_name",
+            "facets": [
+                {
+                    "name": "Paris Gare de Lyon",
+                    "count": 47641,
+                    "state": "displayed",
+                    "path": "Paris Gare de Lyon"
+                },
+                {
+                    "name": "Paris Montparnasse",
+                    "count": 45089,
+                    "state": "displayed",
+                    "path": "Paris Montparnasse"
+                },
+                {
+                    "name": "Paris Gare du Nord",
+                    "count": 37142,
+                    "state": "displayed",
+                    "path": "Paris Gare du Nord"
+                },
+                {
+                    "name": "Strasbourg",
+                    "count": 28590,
+                    "state": "displayed",
+                    "path": "Strasbourg"
+                },
+                {
+                    "name": "Paris Saint-Lazare",
+                    "count": 26817,
+                    "state": "displayed",
+                    "path": "Paris Saint-Lazare"
+                },
+                {
+                    "name": "Lille Europe",
+                    "count": 25840,
+                    "state": "displayed",
+                    "path": "Lille Europe"
+                },
+                {
+                    "name": "Rennes",
+                    "count": 22435,
+                    "state": "displayed",
+                    "path": "Rennes"
+                },
+                {
+                    "name": "Marseille Saint-Charles",
+                    "count": 22306,
+                    "state": "displayed",
+                    "path": "Marseille Saint-Charles"
+                },
+                {
+                    "name": "Bordeaux Saint-Jean",
+                    "count": 22247,
+                    "state": "displayed",
+                    "path": "Bordeaux Saint-Jean"
+                },
+                {
+                    "name": "Paris Est",
+                    "count": 19288,
+                    "state": "displayed",
+                    "path": "Paris Est"
+                },
+                {
+                    "name": "Nantes",
+                    "count": 18399,
+                    "state": "displayed",
+                    "path": "Nantes"
+                },
+                {
+                    "name": "Lyon Perrache",
+                    "count": 15181,
+                    "state": "displayed",
+                    "path": "Lyon Perrache"
+                },
+                {
+                    "name": "Montpellier Saint-Roch",
+                    "count": 13450,
+                    "state": "displayed",
+                    "path": "Montpellier Saint-Roch"
+                },
+                {
+                    "name": "Lyon Part Dieu",
+                    "count": 13244,
+                    "state": "displayed",
+                    "path": "Lyon Part Dieu"
+                },
+                {
+                    "name": "Toulouse Matabiau",
+                    "count": 13235,
+                    "state": "displayed",
+                    "path": "Toulouse Matabiau"
+                },
+                {
+                    "name": "Nice",
+                    "count": 12768,
+                    "state": "displayed",
+                    "path": "Nice"
+                },
+                {
+                    "name": "Brest",
+                    "count": 12677,
+                    "state": "displayed",
+                    "path": "Brest"
+                },
+                {
+                    "name": "Mulhouse",
+                    "count": 11219,
+                    "state": "displayed",
+                    "path": "Mulhouse"
+                },
+                {
+                    "name": "Paris Austerlitz",
+                    "count": 9848,
+                    "state": "displayed",
+                    "path": "Paris Austerlitz"
+                },
+                {
+                    "name": "Tours",
+                    "count": 7645,
+                    "state": "displayed",
+                    "path": "Tours"
+                },
+                {
+                    "name": "La Rochelle",
+                    "count": 6774,
+                    "state": "displayed",
+                    "path": "La Rochelle"
+                },
+                {
+                    "name": "Quimper",
+                    "count": 6669,
+                    "state": "displayed",
+                    "path": "Quimper"
+                },
+                {
+                    "name": "Orl\u00e9ans",
+                    "count": 6474,
+                    "state": "displayed",
+                    "path": "Orl\u00e9ans"
+                },
+                {
+                    "name": "Nancy",
+                    "count": 6212,
+                    "state": "displayed",
+                    "path": "Nancy"
+                },
+                {
+                    "name": "Le Mans",
+                    "count": 6049,
+                    "state": "displayed",
+                    "path": "Le Mans"
+                },
+                {
+                    "name": "Hendaye",
+                    "count": 5792,
+                    "state": "displayed",
+                    "path": "Hendaye"
+                },
+                {
+                    "name": "Grenoble",
+                    "count": 5676,
+                    "state": "displayed",
+                    "path": "Grenoble"
+                },
+                {
+                    "name": "Metz Ville",
+                    "count": 5358,
+                    "state": "displayed",
+                    "path": "Metz Ville"
+                },
+                {
+                    "name": "Caen",
+                    "count": 5267,
+                    "state": "displayed",
+                    "path": "Caen"
+                },
+                {
+                    "name": "Dijon",
+                    "count": 4884,
+                    "state": "displayed",
+                    "path": "Dijon"
+                },
+                {
+                    "name": "Rouen Rive Droite",
+                    "count": 4709,
+                    "state": "displayed",
+                    "path": "Rouen Rive Droite"
+                },
+                {
+                    "name": "A\u00e9roport Charles de Gaulle 2 TGV",
+                    "count": 4675,
+                    "state": "displayed",
+                    "path": "A\u00e9roport Charles de Gaulle 2 TGV"
+                },
+                {
+                    "name": "Clermont-Ferrand",
+                    "count": 4622,
+                    "state": "displayed",
+                    "path": "Clermont-Ferrand"
+                },
+                {
+                    "name": "Poitiers",
+                    "count": 4467,
+                    "state": "displayed",
+                    "path": "Poitiers"
+                },
+                {
+                    "name": "Perpignan",
+                    "count": 4336,
+                    "state": "displayed",
+                    "path": "Perpignan"
+                },
+                {
+                    "name": "Cherbourg",
+                    "count": 4263,
+                    "state": "displayed",
+                    "path": "Cherbourg"
+                },
+                {
+                    "name": "Angers Saint-Laud",
+                    "count": 4049,
+                    "state": "displayed",
+                    "path": "Angers Saint-Laud"
+                },
+                {
+                    "name": "Le Havre",
+                    "count": 3483,
+                    "state": "displayed",
+                    "path": "Le Havre"
+                },
+                {
+                    "name": "Paris Bercy",
+                    "count": 3475,
+                    "state": "displayed",
+                    "path": "Paris Bercy"
+                },
+                {
+                    "name": "Chamb\u00e9ry - Challes-les-Eaux",
+                    "count": 3340,
+                    "state": "displayed",
+                    "path": "Chamb\u00e9ry - Challes-les-Eaux"
+                },
+                {
+                    "name": "Toulon",
+                    "count": 3269,
+                    "state": "displayed",
+                    "path": "Toulon"
+                },
+                {
+                    "name": "Avignon TGV",
+                    "count": 3146,
+                    "state": "displayed",
+                    "path": "Avignon TGV"
+                },
+                {
+                    "name": "Annecy",
+                    "count": 3083,
+                    "state": "displayed",
+                    "path": "Annecy"
+                },
+                {
+                    "name": "Marne-la-Vall\u00e9e Chessy",
+                    "count": 3010,
+                    "state": "displayed",
+                    "path": "Marne-la-Vall\u00e9e Chessy"
+                },
+                {
+                    "name": "Saint-\u00c9tienne Ch\u00e2teaucreux",
+                    "count": 2871,
+                    "state": "displayed",
+                    "path": "Saint-\u00c9tienne Ch\u00e2teaucreux"
+                },
+                {
+                    "name": "Amiens",
+                    "count": 2784,
+                    "state": "displayed",
+                    "path": "Amiens"
+                },
+                {
+                    "name": "Valence",
+                    "count": 2709,
+                    "state": "displayed",
+                    "path": "Valence"
+                },
+                {
+                    "name": "Tourcoing",
+                    "count": 2511,
+                    "state": "displayed",
+                    "path": "Tourcoing"
+                },
+                {
+                    "name": "Besan\u00e7on Viotte",
+                    "count": 2487,
+                    "state": "displayed",
+                    "path": "Besan\u00e7on Viotte"
+                },
+                {
+                    "name": "Aix-en-Provence TGV",
+                    "count": 2411,
+                    "state": "displayed",
+                    "path": "Aix-en-Provence TGV"
+                },
+                {
+                    "name": "Limoges B\u00e9n\u00e9dictins",
+                    "count": 2316,
+                    "state": "displayed",
+                    "path": "Limoges B\u00e9n\u00e9dictins"
+                },
+                {
+                    "name": "Bourges",
+                    "count": 2311,
+                    "state": "displayed",
+                    "path": "Bourges"
+                },
+                {
+                    "name": "Brive-la-Gaillarde",
+                    "count": 2184,
+                    "state": "displayed",
+                    "path": "Brive-la-Gaillarde"
+                },
+                {
+                    "name": "Tarbes",
+                    "count": 2126,
+                    "state": "displayed",
+                    "path": "Tarbes"
+                },
+                {
+                    "name": "Saint-Nazaire",
+                    "count": 2115,
+                    "state": "displayed",
+                    "path": "Saint-Nazaire"
+                },
+                {
+                    "name": "Dunkerque",
+                    "count": 1943,
+                    "state": "displayed",
+                    "path": "Dunkerque"
+                },
+                {
+                    "name": "Chartres",
+                    "count": 1868,
+                    "state": "displayed",
+                    "path": "Chartres"
+                },
+                {
+                    "name": "Agen",
+                    "count": 1867,
+                    "state": "displayed",
+                    "path": "Agen"
+                },
+                {
+                    "name": "N\u00eemes",
+                    "count": 1805,
+                    "state": "displayed",
+                    "path": "N\u00eemes"
+                },
+                {
+                    "name": "Reims",
+                    "count": 1691,
+                    "state": "displayed",
+                    "path": "Reims"
+                },
+                {
+                    "name": "Le Croisic",
+                    "count": 1604,
+                    "state": "displayed",
+                    "path": "Le Croisic"
+                },
+                {
+                    "name": "Saint-Pierre-des-Corps",
+                    "count": 1539,
+                    "state": "displayed",
+                    "path": "Saint-Pierre-des-Corps"
+                },
+                {
+                    "name": "P\u00e9rigueux",
+                    "count": 1530,
+                    "state": "displayed",
+                    "path": "P\u00e9rigueux"
+                },
+                {
+                    "name": "Colmar",
+                    "count": 1527,
+                    "state": "displayed",
+                    "path": "Colmar"
+                },
+                {
+                    "name": "Avignon Centre",
+                    "count": 1525,
+                    "state": "displayed",
+                    "path": "Avignon Centre"
+                },
+                {
+                    "name": "B\u00e9ziers",
+                    "count": 1517,
+                    "state": "displayed",
+                    "path": "B\u00e9ziers"
+                },
+                {
+                    "name": "Narbonne",
+                    "count": 1510,
+                    "state": "displayed",
+                    "path": "Narbonne"
+                },
+                {
+                    "name": "Vierzon",
+                    "count": 1498,
+                    "state": "displayed",
+                    "path": "Vierzon"
+                },
+                {
+                    "name": "Cannes",
+                    "count": 1397,
+                    "state": "displayed",
+                    "path": "Cannes"
+                },
+                {
+                    "name": "Nevers",
+                    "count": 1356,
+                    "state": "displayed",
+                    "path": "Nevers"
+                },
+                {
+                    "name": "Boulogne Ville",
+                    "count": 1332,
+                    "state": "displayed",
+                    "path": "Boulogne Ville"
+                },
+                {
+                    "name": "Mantes-la-Jolie",
+                    "count": 1249,
+                    "state": "displayed",
+                    "path": "Mantes-la-Jolie"
+                },
+                {
+                    "name": "Creil",
+                    "count": 1209,
+                    "state": "displayed",
+                    "path": "Creil"
+                },
+                {
+                    "name": "Les Aubrais",
+                    "count": 1208,
+                    "state": "displayed",
+                    "path": "Les Aubrais"
+                },
+                {
+                    "name": "Massy TGV",
+                    "count": 1194,
+                    "state": "displayed",
+                    "path": "Massy TGV"
+                },
+                {
+                    "name": "Montpellier Sud de France",
+                    "count": 1117,
+                    "state": "displayed",
+                    "path": "Montpellier Sud de France"
+                },
+                {
+                    "name": "Pau",
+                    "count": 1043,
+                    "state": "displayed",
+                    "path": "Pau"
+                },
+                {
+                    "name": "Valence TGV Rh\u00f4ne-Alpes Sud",
+                    "count": 1018,
+                    "state": "displayed",
+                    "path": "Valence TGV Rh\u00f4ne-Alpes Sud"
+                },
+                {
+                    "name": "Bellegarde",
+                    "count": 970,
+                    "state": "displayed",
+                    "path": "Bellegarde"
+                },
+                {
+                    "name": "Compi\u00e8gne",
+                    "count": 947,
+                    "state": "displayed",
+                    "path": "Compi\u00e8gne"
+                },
+                {
+                    "name": "Angoul\u00eame",
+                    "count": 907,
+                    "state": "displayed",
+                    "path": "Angoul\u00eame"
+                },
+                {
+                    "name": "Niort",
+                    "count": 895,
+                    "state": "displayed",
+                    "path": "Niort"
+                },
+                {
+                    "name": "Dax",
+                    "count": 820,
+                    "state": "displayed",
+                    "path": "Dax"
+                },
+                {
+                    "name": "Bayonne",
+                    "count": 787,
+                    "state": "displayed",
+                    "path": "Bayonne"
+                },
+                {
+                    "name": "Roanne",
+                    "count": 775,
+                    "state": "displayed",
+                    "path": "Roanne"
+                },
+                {
+                    "name": "Saintes",
+                    "count": 750,
+                    "state": "displayed",
+                    "path": "Saintes"
+                },
+                {
+                    "name": "Arras",
+                    "count": 724,
+                    "state": "displayed",
+                    "path": "Arras"
+                },
+                {
+                    "name": "Granville",
+                    "count": 724,
+                    "state": "displayed",
+                    "path": "Granville"
+                },
+                {
+                    "name": "Bourg-Saint-Maurice",
+                    "count": 704,
+                    "state": "displayed",
+                    "path": "Bourg-Saint-Maurice"
+                },
+                {
+                    "name": "S\u00e9lestat",
+                    "count": 699,
+                    "state": "displayed",
+                    "path": "S\u00e9lestat"
+                },
+                {
+                    "name": "Bourg-en-Bresse",
+                    "count": 693,
+                    "state": "displayed",
+                    "path": "Bourg-en-Bresse"
+                },
+                {
+                    "name": "Lorient Bretagne Sud",
+                    "count": 689,
+                    "state": "displayed",
+                    "path": "Lorient Bretagne Sud"
+                },
+                {
+                    "name": "Saint-Brieuc",
+                    "count": 669,
+                    "state": "displayed",
+                    "path": "Saint-Brieuc"
+                },
+                {
+                    "name": "Douai",
+                    "count": 661,
+                    "state": "displayed",
+                    "path": "Douai"
+                },
+                {
+                    "name": "Calais Ville",
+                    "count": 610,
+                    "state": "displayed",
+                    "path": "Calais Ville"
+                },
+                {
+                    "name": "La Roche-sur-Yon",
+                    "count": 587,
+                    "state": "displayed",
+                    "path": "La Roche-sur-Yon"
+                },
+                {
+                    "name": "\u00c9pinal",
+                    "count": 574,
+                    "state": "displayed",
+                    "path": "\u00c9pinal"
+                },
+                {
+                    "name": "Blois - Chambord",
+                    "count": 552,
+                    "state": "displayed",
+                    "path": "Blois - Chambord"
+                },
+                {
+                    "name": "Laroche - Migennes",
+                    "count": 550,
+                    "state": "displayed",
+                    "path": "Laroche - Migennes"
+                },
+                {
+                    "name": "Saint-Malo",
+                    "count": 517,
+                    "state": "displayed",
+                    "path": "Saint-Malo"
+                }
+            ]
+        },
+        {
+            "name": "gc_obo_nature_c",
+            "facets": [
+                {
+                    "name": "Porte-monnaie, portefeuille",
+                    "count": 57829,
+                    "state": "displayed",
+                    "path": "Porte-monnaie, portefeuille"
+                },
+                {
+                    "name": "Sac \u00e0 dos",
+                    "count": 51391,
+                    "state": "displayed",
+                    "path": "Sac \u00e0 dos"
+                },
+                {
+                    "name": "T\u00e9l\u00e9phone portable",
+                    "count": 51147,
+                    "state": "displayed",
+                    "path": "T\u00e9l\u00e9phone portable"
+                },
+                {
+                    "name": "Valise, sac sur roulettes",
+                    "count": 42068,
+                    "state": "displayed",
+                    "path": "Valise, sac sur roulettes"
+                },
+                {
+                    "name": "Manteau, veste, blazer, parka, blouson, cape",
+                    "count": 40107,
+                    "state": "displayed",
+                    "path": "Manteau, veste, blazer, parka, blouson, cape"
+                },
+                {
+                    "name": "Sac de voyage, sac de sport, sac \u00e0 bandouli\u00e8re",
+                    "count": 36314,
+                    "state": "displayed",
+                    "path": "Sac de voyage, sac de sport, sac \u00e0 bandouli\u00e8re"
+                },
+                {
+                    "name": "Cl\u00e9s, porte-cl\u00e9s",
+                    "count": 27766,
+                    "state": "displayed",
+                    "path": "Cl\u00e9s, porte-cl\u00e9s"
+                },
+                {
+                    "name": "Carte d'identit\u00e9, passeport, permis de conduire",
+                    "count": 24467,
+                    "state": "displayed",
+                    "path": "Carte d'identit\u00e9, passeport, permis de conduire"
+                },
+                {
+                    "name": "Lunettes",
+                    "count": 20029,
+                    "state": "displayed",
+                    "path": "Lunettes"
+                },
+                {
+                    "name": "Sac d'enseigne (plastique, papier, \u2026)",
+                    "count": 19334,
+                    "state": "displayed",
+                    "path": "Sac d'enseigne (plastique, papier, \u2026)"
+                },
+                {
+                    "name": "Sac \u00e0 main",
+                    "count": 15490,
+                    "state": "displayed",
+                    "path": "Sac \u00e0 main"
+                },
+                {
+                    "name": "Carte de cr\u00e9dit",
+                    "count": 14545,
+                    "state": "displayed",
+                    "path": "Carte de cr\u00e9dit"
+                },
+                {
+                    "name": "Lunettes en \u00e9tui",
+                    "count": 14032,
+                    "state": "displayed",
+                    "path": "Lunettes en \u00e9tui"
+                },
+                {
+                    "name": "Autres divers",
+                    "count": 13174,
+                    "state": "displayed",
+                    "path": "Autres divers"
+                },
+                {
+                    "name": "Bonnet, chapeau",
+                    "count": 11644,
+                    "state": "displayed",
+                    "path": "Bonnet, chapeau"
+                },
+                {
+                    "name": "Foulard, \u00e9charpe",
+                    "count": 11264,
+                    "state": "displayed",
+                    "path": "Foulard, \u00e9charpe"
+                },
+                {
+                    "name": "Carte d'abonnement",
+                    "count": 10557,
+                    "state": "displayed",
+                    "path": "Carte d'abonnement"
+                },
+                {
+                    "name": "T\u00e9l\u00e9phone portable prot\u00e9g\u00e9 (\u00e9tui, coque,\u2026)",
+                    "count": 10481,
+                    "state": "displayed",
+                    "path": "T\u00e9l\u00e9phone portable prot\u00e9g\u00e9 (\u00e9tui, coque,\u2026)"
+                },
+                {
+                    "name": "Pi\u00e8ce d'identit\u00e9 personnelle et autre",
+                    "count": 9259,
+                    "state": "displayed",
+                    "path": "Pi\u00e8ce d'identit\u00e9 personnelle et autre"
+                },
+                {
+                    "name": "Autre pi\u00e8ce ou papier personnel",
+                    "count": 8154,
+                    "state": "displayed",
+                    "path": "Autre pi\u00e8ce ou papier personnel"
+                },
+                {
+                    "name": "Autres appareils et accessoires \u00e9lectroniques",
+                    "count": 7537,
+                    "state": "displayed",
+                    "path": "Autres appareils et accessoires \u00e9lectroniques"
+                },
+                {
+                    "name": "Pull over, gilet",
+                    "count": 7404,
+                    "state": "displayed",
+                    "path": "Pull over, gilet"
+                },
+                {
+                    "name": "Autre bagagerie",
+                    "count": 7389,
+                    "state": "displayed",
+                    "path": "Autre bagagerie"
+                },
+                {
+                    "name": "Ordinateur, ordinateur portable, notebook",
+                    "count": 7183,
+                    "state": "displayed",
+                    "path": "Ordinateur, ordinateur portable, notebook"
+                },
+                {
+                    "name": "Autres v\u00eatements",
+                    "count": 5588,
+                    "state": "displayed",
+                    "path": "Autres v\u00eatements"
+                },
+                {
+                    "name": "Sacoche ventrale, banane",
+                    "count": 5028,
+                    "state": "displayed",
+                    "path": "Sacoche ventrale, banane"
+                },
+                {
+                    "name": "N\u00e9cessaire, mallette de toilette, sac de maquillage",
+                    "count": 4078,
+                    "state": "displayed",
+                    "path": "N\u00e9cessaire, mallette de toilette, sac de maquillage"
+                },
+                {
+                    "name": "Sacoche pour ordinateur, photo, vid\u00e9o",
+                    "count": 3926,
+                    "state": "displayed",
+                    "path": "Sacoche pour ordinateur, photo, vid\u00e9o"
+                },
+                {
+                    "name": "Parapluie t\u00e9lescopique, parapluie de poche",
+                    "count": 3736,
+                    "state": "displayed",
+                    "path": "Parapluie t\u00e9lescopique, parapluie de poche"
+                },
+                {
+                    "name": "Casque (v\u00e9lo, moto)",
+                    "count": 3560,
+                    "state": "displayed",
+                    "path": "Casque (v\u00e9lo, moto)"
+                },
+                {
+                    "name": "Parapluie-canne, parapluie \u00e0 bandouli\u00e8re",
+                    "count": 3446,
+                    "state": "displayed",
+                    "path": "Parapluie-canne, parapluie \u00e0 bandouli\u00e8re"
+                },
+                {
+                    "name": "Autres articles de papeterie",
+                    "count": 3411,
+                    "state": "displayed",
+                    "path": "Autres articles de papeterie"
+                },
+                {
+                    "name": "Tablette tactile prot\u00e9g\u00e9e (\u00e9tui, housse)",
+                    "count": 3411,
+                    "state": "displayed",
+                    "path": "Tablette tactile prot\u00e9g\u00e9e (\u00e9tui, housse)"
+                },
+                {
+                    "name": "Attach\u00e9-case, serviette",
+                    "count": 3118,
+                    "state": "displayed",
+                    "path": "Attach\u00e9-case, serviette"
+                },
+                {
+                    "name": "V\u00e9lo",
+                    "count": 2981,
+                    "state": "displayed",
+                    "path": "V\u00e9lo"
+                },
+                {
+                    "name": "Gants",
+                    "count": 2934,
+                    "state": "displayed",
+                    "path": "Gants"
+                },
+                {
+                    "name": "Doudou, peluche",
+                    "count": 2674,
+                    "state": "displayed",
+                    "path": "Doudou, peluche"
+                },
+                {
+                    "name": "Ordinateur, ordinateur portable, notebook prot\u00e9g\u00e9 (\u00e9tui, housse,\u2026)",
+                    "count": 2559,
+                    "state": "displayed",
+                    "path": "Ordinateur, ordinateur portable, notebook prot\u00e9g\u00e9 (\u00e9tui, housse,\u2026)"
+                },
+                {
+                    "name": "Article de pap\u00e9terie, stylo, classeur",
+                    "count": 2500,
+                    "state": "displayed",
+                    "path": "Article de pap\u00e9terie, stylo, classeur"
+                },
+                {
+                    "name": "Livre de poche",
+                    "count": 2452,
+                    "state": "displayed",
+                    "path": "Livre de poche"
+                },
+                {
+                    "name": "Chaussures (autre que chaussures de ski et patins)",
+                    "count": 2348,
+                    "state": "displayed",
+                    "path": "Chaussures (autre que chaussures de ski et patins)"
+                },
+                {
+                    "name": "Sacs de couchage, duvet",
+                    "count": 2316,
+                    "state": "displayed",
+                    "path": "Sacs de couchage, duvet"
+                },
+                {
+                    "name": "Carte Vitale",
+                    "count": 2309,
+                    "state": "displayed",
+                    "path": "Carte Vitale"
+                },
+                {
+                    "name": "Autre livre",
+                    "count": 2298,
+                    "state": "displayed",
+                    "path": "Autre livre"
+                },
+                {
+                    "name": "Montre",
+                    "count": 1881,
+                    "state": "displayed",
+                    "path": "Montre"
+                },
+                {
+                    "name": "Autres articles de sport, de loisirs ou de camping",
+                    "count": 1584,
+                    "state": "displayed",
+                    "path": "Autres articles de sport, de loisirs ou de camping"
+                },
+                {
+                    "name": "Chemise \u00e0 rabat",
+                    "count": 1523,
+                    "state": "displayed",
+                    "path": "Chemise \u00e0 rabat"
+                },
+                {
+                    "name": "Appareil photo, cam\u00e9scope/cam\u00e9ras et accessoires",
+                    "count": 1518,
+                    "state": "displayed",
+                    "path": "Appareil photo, cam\u00e9scope/cam\u00e9ras et accessoires"
+                },
+                {
+                    "name": "Bracelet",
+                    "count": 1466,
+                    "state": "displayed",
+                    "path": "Bracelet"
+                },
+                {
+                    "name": "Agenda, calendrier",
+                    "count": 1441,
+                    "state": "displayed",
+                    "path": "Agenda, calendrier"
+                },
+                {
+                    "name": "Appareil audio portable (lecteur de CD, baladeur MP3, iPod, ... )",
+                    "count": 1432,
+                    "state": "displayed",
+                    "path": "Appareil audio portable (lecteur de CD, baladeur MP3, iPod, ... )"
+                },
+                {
+                    "name": "Tablette tactile",
+                    "count": 1391,
+                    "state": "displayed",
+                    "path": "Tablette tactile"
+                },
+                {
+                    "name": "Trottinette",
+                    "count": 1388,
+                    "state": "displayed",
+                    "path": "Trottinette"
+                },
+                {
+                    "name": "Livre num\u00e9rique",
+                    "count": 1327,
+                    "state": "displayed",
+                    "path": "Livre num\u00e9rique"
+                },
+                {
+                    "name": "Autres articles enfants, b\u00e9b\u00e9",
+                    "count": 1326,
+                    "state": "displayed",
+                    "path": "Autres articles enfants, b\u00e9b\u00e9"
+                },
+                {
+                    "name": "Cartable, trousse d'\u00e9colier, dossier scolaire",
+                    "count": 1289,
+                    "state": "displayed",
+                    "path": "Cartable, trousse d'\u00e9colier, dossier scolaire"
+                },
+                {
+                    "name": "Bague",
+                    "count": 1273,
+                    "state": "displayed",
+                    "path": "Bague"
+                },
+                {
+                    "name": "Badge magn\u00e9tique",
+                    "count": 1192,
+                    "state": "displayed",
+                    "path": "Badge magn\u00e9tique"
+                },
+                {
+                    "name": "Appareil photo, cam\u00e9scope/cam\u00e9ras et accessoires prot\u00e9g\u00e9 (sac, sacoche,\u2026)",
+                    "count": 1166,
+                    "state": "displayed",
+                    "path": "Appareil photo, cam\u00e9scope/cam\u00e9ras et accessoires prot\u00e9g\u00e9 (sac, sacoche,\u2026)"
+                },
+                {
+                    "name": "Landau, poussette d'enfants",
+                    "count": 1123,
+                    "state": "displayed",
+                    "path": "Landau, poussette d'enfants"
+                },
+                {
+                    "name": "Billets SNCF",
+                    "count": 1086,
+                    "state": "displayed",
+                    "path": "Billets SNCF"
+                },
+                {
+                    "name": "Ch\u00e9quier",
+                    "count": 1086,
+                    "state": "displayed",
+                    "path": "Ch\u00e9quier"
+                },
+                {
+                    "name": "Disque dur externe, cl\u00e9 USB",
+                    "count": 1067,
+                    "state": "displayed",
+                    "path": "Disque dur externe, cl\u00e9 USB"
+                },
+                {
+                    "name": "Dipl\u00f4me, papiers personnels",
+                    "count": 908,
+                    "state": "displayed",
+                    "path": "Dipl\u00f4me, papiers personnels"
+                },
+                {
+                    "name": "Outils, Accesoires",
+                    "count": 907,
+                    "state": "displayed",
+                    "path": "Outils, Accesoires"
+                },
+                {
+                    "name": "AirPod, casque audio, \u00e9couteurs",
+                    "count": 877,
+                    "state": "displayed",
+                    "path": "AirPod, casque audio, \u00e9couteurs"
+                },
+                {
+                    "name": "Cl\u00e9 de voiture",
+                    "count": 825,
+                    "state": "displayed",
+                    "path": "Cl\u00e9 de voiture"
+                },
+                {
+                    "name": "Autres articles m\u00e9dicaux",
+                    "count": 815,
+                    "state": "displayed",
+                    "path": "Autres articles m\u00e9dicaux"
+                },
+                {
+                    "name": "Argent liquide / Esp\u00e8ces",
+                    "count": 753,
+                    "state": "displayed",
+                    "path": "Argent liquide / Esp\u00e8ces"
+                },
+                {
+                    "name": "Autres instruments de musique",
+                    "count": 729,
+                    "state": "displayed",
+                    "path": "Autres instruments de musique"
+                },
+                {
+                    "name": "Canne",
+                    "count": 729,
+                    "state": "displayed",
+                    "path": "Canne"
+                },
+                {
+                    "name": "Cartable \u00e0 dessins, pochette \u00e0 dessins",
+                    "count": 695,
+                    "state": "displayed",
+                    "path": "Cartable \u00e0 dessins, pochette \u00e0 dessins"
+                },
+                {
+                    "name": "Cha\u00eene, collier",
+                    "count": 692,
+                    "state": "displayed",
+                    "path": "Cha\u00eene, collier"
+                },
+                {
+                    "name": "Raquette de tennis, de badminton",
+                    "count": 689,
+                    "state": "displayed",
+                    "path": "Raquette de tennis, de badminton"
+                },
+                {
+                    "name": "Livre reli\u00e9",
+                    "count": 669,
+                    "state": "displayed",
+                    "path": "Livre reli\u00e9"
+                },
+                {
+                    "name": "Etui \u00e0 lunettes vide",
+                    "count": 648,
+                    "state": "displayed",
+                    "path": "Etui \u00e0 lunettes vide"
+                },
+                {
+                    "name": "Tente",
+                    "count": 618,
+                    "state": "displayed",
+                    "path": "Tente"
+                },
+                {
+                    "name": "Guitare",
+                    "count": 579,
+                    "state": "displayed",
+                    "path": "Guitare"
+                },
+                {
+                    "name": "Appareils audio portables (lecteur de CD, baladeur MP3, iPod, etc. )",
+                    "count": 578,
+                    "state": "displayed",
+                    "path": "Appareils audio portables (lecteur de CD, baladeur MP3, iPod, etc. )"
+                },
+                {
+                    "name": "Radiographie",
+                    "count": 533,
+                    "state": "displayed",
+                    "path": "Radiographie"
+                },
+                {
+                    "name": "Skateboard",
+                    "count": 516,
+                    "state": "displayed",
+                    "path": "Skateboard"
+                },
+                {
+                    "name": "M\u00e9dicaments",
+                    "count": 513,
+                    "state": "displayed",
+                    "path": "M\u00e9dicaments"
+                },
+                {
+                    "name": "Autre argent",
+                    "count": 502,
+                    "state": "displayed",
+                    "path": "Autre argent"
+                },
+                {
+                    "name": "Autres jeux/jouets",
+                    "count": 466,
+                    "state": "displayed",
+                    "path": "Autres jeux/jouets"
+                },
+                {
+                    "name": "Boucles d'oreilles",
+                    "count": 404,
+                    "state": "displayed",
+                    "path": "Boucles d'oreilles"
+                },
+                {
+                    "name": "B\u00e9quilles",
+                    "count": 385,
+                    "state": "displayed",
+                    "path": "B\u00e9quilles"
+                },
+                {
+                    "name": "Produits cosm\u00e9tiques (parfum, etc.)",
+                    "count": 377,
+                    "state": "displayed",
+                    "path": "Produits cosm\u00e9tiques (parfum, etc.)"
+                },
+                {
+                    "name": "Couteau de poche, autre couteau",
+                    "count": 361,
+                    "state": "displayed",
+                    "path": "Couteau de poche, autre couteau"
+                },
+                {
+                    "name": "Accessoires 2 roues",
+                    "count": 328,
+                    "state": "displayed",
+                    "path": "Accessoires 2 roues"
+                },
+                {
+                    "name": "B\u00e2ton de marche",
+                    "count": 326,
+                    "state": "displayed",
+                    "path": "B\u00e2ton de marche"
+                },
+                {
+                    "name": "Autre petit v\u00e9hicule",
+                    "count": 314,
+                    "state": "displayed",
+                    "path": "Autre petit v\u00e9hicule"
+                },
+                {
+                    "name": "Tabac et accessoire",
+                    "count": 294,
+                    "state": "displayed",
+                    "path": "Tabac et accessoire"
+                },
+                {
+                    "name": "Jeu \u00e9lectronique (console de jeux: Gameboy, PSP, DS, \u2026)",
+                    "count": 259,
+                    "state": "displayed",
+                    "path": "Jeu \u00e9lectronique (console de jeux: Gameboy, PSP, DS, \u2026)"
+                },
+                {
+                    "name": "Photos, albums de photos",
+                    "count": 242,
+                    "state": "displayed",
+                    "path": "Photos, albums de photos"
+                },
+                {
+                    "name": "T\u00e9l\u00e9viseur, magn\u00e9toscope, lecteur DVD, radio",
+                    "count": 229,
+                    "state": "displayed",
+                    "path": "T\u00e9l\u00e9viseur, magn\u00e9toscope, lecteur DVD, radio"
+                },
+                {
+                    "name": "Livre scolaire",
+                    "count": 223,
+                    "state": "displayed",
+                    "path": "Livre scolaire"
+                },
+                {
+                    "name": "Appareils auditifs",
+                    "count": 213,
+                    "state": "displayed",
+                    "path": "Appareils auditifs"
+                },
+                {
+                    "name": "Support de donn\u00e9es (CD, DVD, etc.)",
+                    "count": 205,
+                    "state": "displayed",
+                    "path": "Support de donn\u00e9es (CD, DVD, etc.)"
+                },
+                {
+                    "name": "Housse de v\u00eatement",
+                    "count": 191,
+                    "state": "displayed",
+                    "path": "Housse de v\u00eatement"
+                },
+                {
+                    "name": "Accessoires de musique",
+                    "count": 189,
+                    "state": "displayed",
+                    "path": "Accessoires de musique"
+                }
+            ]
+        },
+        {
+            "name": "gc_obo_type_c",
+            "facets": [
+                {
+                    "name": "Bagagerie: sacs, valises, cartables",
+                    "count": 188138,
+                    "state": "displayed",
+                    "path": "Bagagerie: sacs, valises, cartables"
+                },
+                {
+                    "name": "Appareils \u00e9lectroniques, informatiques, appareils photo",
+                    "count": 92431,
+                    "state": "displayed",
+                    "path": "Appareils \u00e9lectroniques, informatiques, appareils photo"
+                },
+                {
+                    "name": "V\u00eatements, chaussures",
+                    "count": 81478,
+                    "state": "displayed",
+                    "path": "V\u00eatements, chaussures"
+                },
+                {
+                    "name": "Porte-monnaie / portefeuille, argent, titres",
+                    "count": 74875,
+                    "state": "displayed",
+                    "path": "Porte-monnaie / portefeuille, argent, titres"
+                },
+                {
+                    "name": "Pi\u00e8ces d'identit\u00e9s et papiers personnels",
+                    "count": 56743,
+                    "state": "displayed",
+                    "path": "Pi\u00e8ces d'identit\u00e9s et papiers personnels"
+                },
+                {
+                    "name": "Optique",
+                    "count": 34948,
+                    "state": "displayed",
+                    "path": "Optique"
+                },
+                {
+                    "name": "Cl\u00e9s, porte-cl\u00e9s, badge magn\u00e9tique",
+                    "count": 29783,
+                    "state": "displayed",
+                    "path": "Cl\u00e9s, porte-cl\u00e9s, badge magn\u00e9tique"
+                },
+                {
+                    "name": "Livres, articles de pap\u00e9terie",
+                    "count": 15544,
+                    "state": "displayed",
+                    "path": "Livres, articles de pap\u00e9terie"
+                },
+                {
+                    "name": "Divers",
+                    "count": 14434,
+                    "state": "displayed",
+                    "path": "Divers"
+                },
+                {
+                    "name": "V\u00e9los, trottinettes, accessoires 2 roues",
+                    "count": 8571,
+                    "state": "displayed",
+                    "path": "V\u00e9los, trottinettes, accessoires 2 roues"
+                },
+                {
+                    "name": "Articles de sport, loisirs, camping",
+                    "count": 7369,
+                    "state": "displayed",
+                    "path": "Articles de sport, loisirs, camping"
+                },
+                {
+                    "name": "Articles d'enfants, de pu\u00e9riculture",
+                    "count": 7321,
+                    "state": "displayed",
+                    "path": "Articles d'enfants, de pu\u00e9riculture"
+                },
+                {
+                    "name": "Parapluies",
+                    "count": 7182,
+                    "state": "displayed",
+                    "path": "Parapluies"
+                },
+                {
+                    "name": "Bijoux, montres",
+                    "count": 6025,
+                    "state": "displayed",
+                    "path": "Bijoux, montres"
+                },
+                {
+                    "name": "Articles m\u00e9dicaux",
+                    "count": 3481,
+                    "state": "displayed",
+                    "path": "Articles m\u00e9dicaux"
+                },
+                {
+                    "name": "Instruments de musique",
+                    "count": 1677,
+                    "state": "displayed",
+                    "path": "Instruments de musique"
+                }
+            ]
+        },
+        {
+            "name": "gc_obo_nom_recordtype_sc_c",
+            "facets": [
+                {
+                    "name": "Objet trouv\u00e9",
+                    "count": 630000,
+                    "state": "displayed",
+                    "path": "Objet trouv\u00e9"
+                }
+            ]
+        }
+    ]
+}
