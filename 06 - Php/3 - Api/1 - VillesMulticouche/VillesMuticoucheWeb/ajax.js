@@ -3,8 +3,8 @@ var contenu = document.querySelector(".contenu");
 const requ = new XMLHttpRequest();
 
 /**** GET */
-// requ.open('GET', 'https://localhost:44398/api/Departements', true);
-// requ.send();
+ requ.open('GET', 'https://localhost:44398/api/Departements', true);
+ requ.send();
 
 /**** GET by ID  */
 // requ.open('GET', 'https://localhost:44398/api/Departements/1', true);
@@ -32,9 +32,9 @@ const requ = new XMLHttpRequest();
 
 
 // /**** Delete  */
-requ.open('DELETE', 'https://localhost:44398/api/Departements/4', true);
-requ.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-requ.send();
+//requ.open('DELETE', 'https://localhost:44398/api/Departements/4', true);
+//requ.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+//requ.send();
 
 
 requ.onreadystatechange = function(event) {
