@@ -51,7 +51,7 @@ function RecupHeure(date)
     if(heures<10){heures="0"+heures}
     let minutes=timeTemp.getMinutes();
     if(minutes<10){minutes="0"+minutes}
-    affichage=heures+" h "+minutes+" mns";
+    affichage=heures+" h "+minutes+" m";
     console.log(affichage);
     return affichage;
 }
