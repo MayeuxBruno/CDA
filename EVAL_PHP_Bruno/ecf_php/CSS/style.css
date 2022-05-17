@@ -1,0 +1,42 @@
+body{
+    background-color:var(--backgroundColor);
+    color:var(--fondHeader);
+}
+header,footer{
+    background-color: var(--fondHeader);
+}
+
+header,nav a, footer, header a,i{
+    color:var(--texteColor);
+}
+
+footer{
+    margin-top: 5em;
+}
+
+.caseMenu{
+    box-shadow: 2px 2px 3px black;
+    padding :2em;
+    align-items:center;
+}
+
+.bold{
+    font-weight:bold;
+}
+
+.grid-catalogue {
+	display : grid;
+	/* border : 0.5px solid #ff0080; */
+	grid-template-columns : 1fr 1fr 1fr ;
+}
+
+.inputCat, .buttonCat
+{
+    border:none;
+    text-align:center;
+    background-color:var(--backgroundColor);
+}
+
+
+
+

@@ -1,0 +1,56 @@
+/****  GENERAL ****/
+html, body {
+	margin : 0;
+	padding : 0;
+}
+body{
+	background-color:rgb(63, 60, 60);
+}
+div, header, footer, nav, article {
+	display : flex;
+	flex : 1;
+	/* border : 1px dotted blue; */
+}
+
+img, video {
+	width : 100%;
+}
+
+.colonne {
+	flex-direction : column;
+}
+.centrer{
+	align-items:center;
+	justify-content:center;
+}
+.titre {
+	flex: 5;
+	color:white;
+	font-weight: bold;
+}
+
+.espaceH{
+	flex:none;
+	height:20vh;
+}
+.petitEspaceH{
+	flex:none;
+	height:2vh;
+}
+form{
+	display: grid;
+    grid-template-columns:  0.1fr 1fr 1fr 0.1fr;
+    grid-gap: 0.5em;
+    grid-auto-rows: minmax(1em, auto);
+}
+
+.span2{
+	grid-column:span 2;
+}
+.backgroundForm{
+	background-color : rgb(158, 158, 224)
+}
+.demiPage
+{
+	width:50%;
+}
