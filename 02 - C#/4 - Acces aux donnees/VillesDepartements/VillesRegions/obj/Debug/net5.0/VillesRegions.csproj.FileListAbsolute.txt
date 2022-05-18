@@ -104,3 +104,4 @@ U:\59011-07-08\CDA\02 - C#\4 - Acces aux donnees\VillesDepartements\VillesRegion
 U:\59011-07-08\CDA\02 - C#\4 - Acces aux donnees\VillesDepartements\VillesRegions\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 U:\59011-07-08\CDA\02 - C#\4 - Acces aux donnees\VillesDepartements\VillesRegions\bin\Debug\net5.0\Newtonsoft.Json.dll
 U:\59011-07-08\CDA\02 - C#\4 - Acces aux donnees\VillesDepartements\VillesRegions\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\Exercices\CDA\02 - C#\4 - Acces aux donnees\VillesDepartements\VillesRegions\obj\Debug\net5.0\VillesRegions.csproj.CopyComplete
