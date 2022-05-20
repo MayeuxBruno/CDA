@@ -6072,23 +6072,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\59011-07-08\\.nuget\\packages\\": {},
+    "C:\\Users\\nonom\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "U:\\59011-07-08\\CDA\\02 - C#\\4 - Acces aux donnees\\TestEF\\TestProject1\\TestProject1.csproj",
+      "projectUniqueName": "D:\\Exercices\\CDA\\02 - C#\\4 - Acces aux donnees\\TestEF\\TestProject1\\TestProject1.csproj",
       "projectName": "TestProject1",
-      "projectPath": "U:\\59011-07-08\\CDA\\02 - C#\\4 - Acces aux donnees\\TestEF\\TestProject1\\TestProject1.csproj",
-      "packagesPath": "C:\\Users\\59011-07-08\\.nuget\\packages\\",
-      "outputPath": "U:\\59011-07-08\\CDA\\02 - C#\\4 - Acces aux donnees\\TestEF\\TestProject1\\obj\\",
+      "projectPath": "D:\\Exercices\\CDA\\02 - C#\\4 - Acces aux donnees\\TestEF\\TestProject1\\TestProject1.csproj",
+      "packagesPath": "C:\\Users\\nonom\\.nuget\\packages\\",
+      "outputPath": "D:\\Exercices\\CDA\\02 - C#\\4 - Acces aux donnees\\TestEF\\TestProject1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\59011-07-08\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nonom\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6103,8 +6103,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "U:\\59011-07-08\\CDA\\02 - C#\\4 - Acces aux donnees\\TestEF\\TestEF\\TestEF.csproj": {
-              "projectPath": "U:\\59011-07-08\\CDA\\02 - C#\\4 - Acces aux donnees\\TestEF\\TestEF\\TestEF.csproj"
+            "D:\\Exercices\\CDA\\02 - C#\\4 - Acces aux donnees\\TestEF\\TestEF\\TestEF.csproj": {
+              "projectPath": "D:\\Exercices\\CDA\\02 - C#\\4 - Acces aux donnees\\TestEF\\TestEF\\TestEF.csproj"
             }
           }
         }
@@ -6151,7 +6151,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
