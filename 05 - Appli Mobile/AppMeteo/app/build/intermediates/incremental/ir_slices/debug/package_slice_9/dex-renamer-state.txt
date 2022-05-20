@@ -1,0 +1,4 @@
+#Tue May 17 11:21:18 CEST 2022
+base.0=C\:\\Users\\1701871\\Documents\\Mes_applis_android\\AppMeteo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
+path.0=classes.dex
+renamed.0=classes.dex

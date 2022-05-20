@@ -1,0 +1,154 @@
+{
+    "logs": [
+        {
+            "outputFile": "U:\\59011-07-08\\CDA\\Android\\AppMeteo\\app\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "U:\\59011-07-08\\CDA\\Android\\AppMeteo\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "6,15,39,29,25,19,34",
+                        "startColumns": "4,4,3,3,3,4,3",
+                        "startOffsets": "186,510,1383,1018,876,675,1177",
+                        "endLines": "12,17,51,31,27,22,37",
+                        "endColumns": "12,12,12,11,11,9,11",
+                        "endOffsets": "472,665,2025,1167,1012,862,1374"
+                    },
+                    "to": {
+                        "startLines": "16,23,26,39,42,45,49",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "983,1274,1434,2069,2223,2364,2556",
+                        "endLines": "22,25,38,41,44,48,52",
+                        "endColumns": "12,12,12,11,11,9,11",
+                        "endOffsets": "1269,1429,2064,2218,2359,2551,2753"
+                    }
+                },
+                {
+                    "source": "U:\\59011-07-08\\CDA\\Android\\AppMeteo\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "4,3,2,5,9,11,6,7,13,12,8,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "173,118,55,229,628,712,279,426,815,765,582,674",
+                        "endColumns": "55,54,62,49,45,52,146,155,54,49,45,37",
+                        "endOffsets": "224,168,113,274,669,760,421,577,865,810,623,707"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "169,225,280,343,393,439,491,638,794,849,899,945",
+                        "endColumns": "55,54,62,49,45,51,146,155,54,49,45,37",
+                        "endOffsets": "220,275,338,388,434,486,633,789,844,894,940,978"
+                    }
+                },
+                {
+                    "source": "U:\\59011-07-08\\CDA\\Android\\AppMeteo\\app\\src\\main\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "89,147",
+                        "endColumns": "57,55",
+                        "endOffsets": "142,198"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,113",
+                        "endColumns": "57,55",
+                        "endOffsets": "108,164"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "U:\\59011-07-08\\CDA\\Android\\AppMeteo\\app\\build\\intermediates\\res\\merged\\debug\\values-sw720dp-land-v13_values-sw720dp-land-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "U:\\59011-07-08\\CDA\\Android\\AppMeteo\\app\\src\\main\\res\\values-sw720dp-land\\dimens.xml",
+                    "from": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "200",
+                        "endColumns": "58",
+                        "endOffsets": "254"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "58",
+                        "endOffsets": "109"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "U:\\59011-07-08\\CDA\\Android\\AppMeteo\\app\\build\\intermediates\\res\\merged\\debug\\values-en_values-en.arsc.flat",
+            "map": [
+                {
+                    "source": "U:\\59011-07-08\\CDA\\Android\\AppMeteo\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "from": {
+                        "startLines": "4,3,2,5,9,11,6,7,13,12,8,10",
+                        "startColumns": "0,0,0,0,0,0,0,0,4,0,0,0",
+                        "startOffsets": "159,107,53,210,559,637,253,377,725,681,516,602",
+                        "endColumns": "49,50,52,41,41,42,122,137,51,38,41,33",
+                        "endOffsets": "208,157,105,251,600,679,375,514,772,719,557,635"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,109,164,221,267,313,360,487,629,681,724,770",
+                        "endColumns": "53,54,56,45,45,46,126,141,51,42,45,37",
+                        "endOffsets": "104,159,216,262,308,355,482,624,676,719,765,803"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "U:\\59011-07-08\\CDA\\Android\\AppMeteo\\app\\build\\intermediates\\res\\merged\\debug\\values-v11_values-v11.arsc.flat",
+            "map": [
+                {
+                    "source": "U:\\59011-07-08\\CDA\\Android\\AppMeteo\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "from": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "177",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "309"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "187"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "U:\\59011-07-08\\CDA\\Android\\AppMeteo\\app\\build\\intermediates\\res\\merged\\debug\\values-v14_values-v14.arsc.flat",
+            "map": [
+                {
+                    "source": "U:\\59011-07-08\\CDA\\Android\\AppMeteo\\app\\src\\main\\res\\values-v14\\styles.xml",
+                    "from": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "220",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "366"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "201"
+                    }
+                }
+            ]
+        }
+    ]
+}

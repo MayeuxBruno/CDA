@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_fr.png.flat",
+        "source": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\src\\main\\res\\drawable-xhdpi\\fr.png"
+    },
+    {
+        "merged": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_blue_button.xml.flat",
+        "source": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\src\\main\\res\\drawable\\blue_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\build\\intermediates\\res\\merged\\debug\\menu_main.xml.flat",
+        "source": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_gb.png.flat",
+        "source": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\src\\main\\res\\drawable-xhdpi\\gb.png"
+    },
+    {
+        "merged": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_fr.png.flat",
+        "source": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\src\\main\\res\\drawable-mdpi\\fr.png"
+    },
+    {
+        "merged": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_gb.png.flat",
+        "source": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\src\\main\\res\\drawable-xxhdpi\\gb.png"
+    },
+    {
+        "merged": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_gb.png.flat",
+        "source": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\src\\main\\res\\drawable-mdpi\\gb.png"
+    },
+    {
+        "merged": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_fr.png.flat",
+        "source": "C:\\Users\\1701871\\Documents\\AppMeteo\\app\\src\\main\\res\\drawable-xxhdpi\\fr.png"
+    }
+]
