@@ -1,0 +1,108 @@
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\appsettings.Development.json
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\appsettings.json
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\DemoEF.exe
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\DemoEF.deps.json
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\DemoEF.runtimeconfig.json
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\DemoEF.runtimeconfig.dev.json
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\DemoEF.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\ref\DemoEF.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\DemoEF.pdb
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\AutoMapper.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\BouncyCastle.Crypto.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\Google.Protobuf.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\Humanizer.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\K4os.Compression.LZ4.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\K4os.Hash.xxHash.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\Microsoft.OpenApi.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\MySql.Data.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\Ubiety.Dns.Core.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\ZstdNet.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\MySql.EntityFrameworkCore.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\Newtonsoft.Json.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\obj\Release\net5.0\DemoEF.csproj.AssemblyReference.cache
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\obj\Release\net5.0\DemoEF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\obj\Release\net5.0\DemoEF.AssemblyInfoInputs.cache
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\obj\Release\net5.0\DemoEF.AssemblyInfo.cs
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\obj\Release\net5.0\DemoEF.csproj.CoreCompileInputs.cache
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\obj\Release\net5.0\DemoEF.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\obj\Release\net5.0\DemoEF.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\obj\Release\net5.0\staticwebassets\DemoEF.StaticWebAssets.Manifest.cache
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\obj\Release\net5.0\staticwebassets\DemoEF.StaticWebAssets.xml
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\obj\Release\net5.0\scopedcss\bundle\DemoEF.styles.css
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\obj\Release\net5.0\DemoEF.RazorTargetAssemblyInfo.cache
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\obj\Release\net5.0\DemoEF.csproj.CopyComplete
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\obj\Release\net5.0\DemoEF.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\obj\Release\net5.0\ref\DemoEF.dll
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\obj\Release\net5.0\DemoEF.pdb
+C:\Users\1701871\Documents\2. DemoEF\DemoEF\obj\Release\net5.0\DemoEF.genruntimeconfig.cache
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\appsettings.Development.json
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\appsettings.json
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\DemoEF.exe
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\DemoEF.deps.json
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\DemoEF.runtimeconfig.json
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\DemoEF.runtimeconfig.dev.json
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\DemoEF.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\ref\DemoEF.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\DemoEF.pdb
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\AutoMapper.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\BouncyCastle.Crypto.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\Google.Protobuf.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\Humanizer.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\K4os.Compression.LZ4.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\K4os.Compression.LZ4.Streams.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\K4os.Hash.xxHash.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\Microsoft.EntityFrameworkCore.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\Microsoft.Extensions.DependencyInjection.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\Microsoft.OpenApi.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\MySql.Data.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\Ubiety.Dns.Core.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\ZstdNet.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\MySql.EntityFrameworkCore.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\Newtonsoft.Json.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\Newtonsoft.Json.Bson.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\System.Configuration.ConfigurationManager.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\System.Diagnostics.DiagnosticSource.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\System.Security.Cryptography.ProtectedData.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\obj\Release\net5.0\DemoEF.csproj.AssemblyReference.cache
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\obj\Release\net5.0\DemoEF.GeneratedMSBuildEditorConfig.editorconfig
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\obj\Release\net5.0\DemoEF.AssemblyInfoInputs.cache
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\obj\Release\net5.0\DemoEF.AssemblyInfo.cs
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\obj\Release\net5.0\DemoEF.csproj.CoreCompileInputs.cache
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\obj\Release\net5.0\DemoEF.MvcApplicationPartsAssemblyInfo.cs
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\obj\Release\net5.0\DemoEF.MvcApplicationPartsAssemblyInfo.cache
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\obj\Release\net5.0\staticwebassets\DemoEF.StaticWebAssets.Manifest.cache
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\obj\Release\net5.0\staticwebassets\DemoEF.StaticWebAssets.xml
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\obj\Release\net5.0\scopedcss\bundle\DemoEF.styles.css
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\obj\Release\net5.0\DemoEF.RazorTargetAssemblyInfo.cache
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\obj\Release\net5.0\DemoEF.csproj.CopyComplete
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\obj\Release\net5.0\DemoEF.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\obj\Release\net5.0\ref\DemoEF.dll
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\obj\Release\net5.0\DemoEF.pdb
+U:\GRP-07\Reference\06 - Archi n-tiers\c#\DemoEF\obj\Release\net5.0\DemoEF.genruntimeconfig.cache

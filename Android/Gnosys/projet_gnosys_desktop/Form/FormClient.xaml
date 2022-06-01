@@ -1,0 +1,173 @@
+﻿<Window x:Class="projet_gnosys.Form.FormClient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projet_gnosys.Form"
+        mc:Ignorable="d"
+        Title="FormClient" Height="450" Width="800">
+    <Grid Margin="0,0,0,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="labTitreFormulaire" 
+               Content="Titre" 
+               Grid.Row="1" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center"
+               Grid.Column="1" 
+               FontWeight="Bold" 
+               FontSize="16" 
+               Grid.ColumnSpan="3"/>
+        
+        <Label Content="Genre : " 
+               Grid.Row="3" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center"
+               Grid.Column="1"  
+              />
+
+        <ComboBox x:Name="genre" 
+                  Grid.Column="3" 
+                  Grid.Row="3" 
+                  VerticalContentAlignment="Center" >
+            <ComboBoxItem  Content="Monsieur" Name="Monsieur"/>
+            <ComboBoxItem Content="Madame" Name="Madame"/> 
+        </ComboBox>
+        <Label Content="Nom : " 
+               Grid.Row="5" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center"
+               Grid.Column="1"  
+              />
+
+        <TextBox x:Name="txbNom" 
+                 Grid.Row="5" 
+                 Text="" 
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 Grid.Column="3" 
+               />
+        
+        <Label Content="Prenom : " 
+               Grid.Row="7" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center"
+               Grid.Column="1"  
+              />
+        <TextBox x:Name="txbPrenom" 
+                 Grid.Row="7" 
+                 Text="" 
+                 HorizontalContentAlignment="Center" 
+                 VerticalContentAlignment="Center"
+                 Grid.Column="3" 
+               />
+        <Label Content="Adresse : " 
+               Grid.Row="9" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center"
+               Grid.Column="1"  
+              />
+        <TextBox x:Name="txbAdresse" 
+                 Grid.Row="9" 
+                 Text="" 
+                 HorizontalContentAlignment="Center" 
+                 VerticalContentAlignment="Center"
+                 Grid.Column="3" 
+               />
+        <Label Content="Code postal : " 
+               Grid.Row="11" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center"
+               Grid.Column="1"  
+              />
+        <TextBox x:Name="txbCodePostal" 
+                 Grid.Row="11" 
+                 Text="" 
+                 HorizontalContentAlignment="Center" 
+                 VerticalContentAlignment="Center"
+                 Grid.Column="3" 
+               />
+        <Label Content="Ville : " 
+               Grid.Row="13" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center"
+               Grid.Column="1"  
+              />
+        <TextBox x:Name="txbVille" 
+                 Grid.Row="13" 
+                 Text="" 
+                 HorizontalContentAlignment="Center" 
+                 VerticalContentAlignment="Center"
+                 Grid.Column="3" 
+               />
+        <Label Content="Numero Telephone : " 
+               Grid.Row="15" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center"
+               Grid.Column="1"  
+              />
+        <TextBox x:Name="txbNumtel" 
+                 Grid.Row="15" 
+                 Text="" 
+                 HorizontalContentAlignment="Center" 
+                 VerticalContentAlignment="Center"
+                 Grid.Column="3" 
+               />
+        <Label Content="AdresseMail : " 
+               Grid.Row="17" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center"
+               Grid.Column="1"  
+              />
+        <TextBox x:Name="txbMail" 
+                 Grid.Row="17" 
+                 Text="" 
+                 HorizontalContentAlignment="Center" 
+                 VerticalContentAlignment="Center"
+                 Grid.Column="3" 
+               />
+        <Grid Grid.Row="19" Grid.Column="1" Grid.ColumnSpan="5">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btn_Annuler" Content="Annuler" Grid.Column="1"  Grid.Row="1"  Click="Retour" />
+            <Button x:Name="btn_Valider" Content="Valider" Grid.Column="3" Grid.Row="1"  />
+
+        </Grid>
+    </Grid>
+</Window>

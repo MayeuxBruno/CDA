@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Fri May 20 08:54:27 CEST 2022
+0.base=U\:\\59011-07-08\\CDA\\Android\\AppMeteo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes.dex
+count=1
+0.baseType=DIRECTORY
+0.set=DEX

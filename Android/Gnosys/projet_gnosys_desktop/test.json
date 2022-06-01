@@ -1,0 +1,85 @@
+{
+    "@context": "/apip/contexts/Client",
+    "@id": "/apip/clients",
+    "@type": "hydra:Collection",
+    "hydra:member": [
+        {
+            "@id": "/apip/clients/1",
+            "@type": "Client",
+            "id": 1,
+            "nom": "Dupont",
+            "prenom": "Toto",
+            "email": "z@z.fre",
+            "fonction": "focntionnaire",
+            "adresse": "11 rue dun chateau",
+            "informations": null,
+            "siteInternet": null,
+            "dateCreation": "2022-04-26T10:24:49+00:00",
+            "dateModification": null,
+            "ville": "Lol",
+            "codePostal": "62560",
+            "numerosTelephone": "4654646",
+            "complementsAdresse": null,
+            "clientEntreprise": [
+                {
+                    "@type": "ClientEntreprise",
+                    "@id": ":2315",
+                    "entreprise": {
+                        "@type": "Entreprise",
+                        "@id": ":2318",
+                        "id": 30
+                    }
+                },
+                {
+                    "@type": "ClientEntreprise",
+                    "@id": ":2495",
+                    "entreprise": {
+                        "@type": "Entreprise",
+                        "@id": ":2519",
+                        "id": 31
+                    }
+                }
+            ],
+            "genre": "Monsieur"
+        },
+        {
+            "@id": "/apip/clients/1",
+            "@type": "Client",
+            "id": 2,
+            "nom": "ffafafazfafa",
+            "prenom": "fzafzafazfazfazafaz",
+            "email": "z@z.fre",
+            "fonction": "focntionnaire",
+            "adresse": "11 rue dun chateau",
+            "informations": null,
+            "siteInternet": null,
+            "dateCreation": "2022-04-26T10:24:49+00:00",
+            "dateModification": null,
+            "ville": "Lol",
+            "codePostal": "62560",
+            "numerosTelephone": "4654646",
+            "complementsAdresse": null,
+            "clientEntreprise": [
+                {
+                    "@type": "ClientEntreprise",
+                    "@id": ":2315",
+                    "entreprise": {
+                        "@type": "Entreprise",
+                        "@id": ":2318",
+                        "id": 30
+                    }
+                },
+                {
+                    "@type": "ClientEntreprise",
+                    "@id": ":2495",
+                    "entreprise": {
+                        "@type": "Entreprise",
+                        "@id": ":2519",
+                        "id": 31
+                    }
+                }
+            ],
+            "genre": "Monsieur"
+        },
+
+}

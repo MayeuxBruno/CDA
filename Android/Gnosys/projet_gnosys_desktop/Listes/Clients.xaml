@@ -1,0 +1,91 @@
+﻿<Window x:Class="projet_gnosys.Listes.Clients"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projet_gnosys.Listes"
+        mc:Ignorable="d"
+        Title="Clients" Height="450" Width="800" Background="#516BA8">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="0.1*"/>
+            </Grid.RowDefinitions>
+            <!--Row 0-->
+            <Label x:Name="titreWindow" Grid.Row="0" Content="Liste des Clients" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="45" Foreground="#F7FAFF"/>
+
+            <!--Row 1-->
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.1*"/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="0.1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="0.1*"/>
+                </Grid.ColumnDefinitions>
+
+                <DataGrid x:Name="dg" Grid.Column="1" CanUserAddRows="False" AutoGenerateColumns="False" CellStyle="{DynamicResource SelectedBackground}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Id" Binding="{Binding Id}"  Width="1.5*" Visibility="Hidden"/>
+                        <DataGridTextColumn Header="Genre" Binding="{Binding Genre}" Width="0.7*"/>
+                        <DataGridTextColumn Header="Nom" Binding="{Binding Nom}" Width="1*"/>
+                        <DataGridTextColumn Header="Prenom" Binding="{Binding Prenom}" Width="1*"/>
+                        <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="1.5*"/>
+                        <DataGridTextColumn Header="Numero Telephone" Binding="{Binding NumerosTelephone}" Width="1.5*"/>
+                        <DataGridTextColumn Header="Adresse" Binding="{Binding Adresse}" Width="1.5*"/>
+                        <DataGridTextColumn Header="Ville" Binding="{Binding Ville}" Width="1*"/>
+                        <DataGridTextColumn Header="Code postal" Binding="{Binding CodePostal}" Width="1*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <Grid Grid.Column="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.8*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="0.8*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="0.8*"/>
+                    </Grid.RowDefinitions>
+
+                    <Button Grid.Row="1" Content="Ajouter" BorderBrush="Black" Background="#FFB624" FontWeight="Bold" FontSize="15" Click="Button_Action" />
+                    <Button Grid.Row="3" Content="Modifier" BorderBrush="Black" Background="#FFB624" FontWeight="Bold" FontSize="15" Click="Button_Action" />
+                    <Button Grid.Row="5" Content="Supprimer" BorderBrush="Black" Background="#FFB624" FontWeight="Bold" FontSize="15" Click="Button_Action" />
+                </Grid>
+
+            </Grid>
+
+
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.1*"/>
+                    <ColumnDefinition Width="6.1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="0.1*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Grid Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.2*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="0.2*"/>
+                    </Grid.RowDefinitions>
+
+                    <!--<Button Grid.Row="1" Content="Retour" BorderBrush="{DynamicResource BorderBoutton}" Background="{DynamicResource FondBoutton}" FontSize="15" Click="Back"/>-->
+
+                </Grid>
+
+            </Grid>
+
+
+
+        </Grid>
+
+    </Grid>
+</Window>
