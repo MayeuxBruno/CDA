@@ -10,35 +10,33 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.testapi.Models.ModeDePaiement;
+import com.example.testapi.Parsers.JsonMdpParser;
+
+import org.json.JSONException;
+
+import java.util.List;
+
+public class ListeModeDePaiement extends AppCompatActivity {
 
     // On déclare les variables dans la classe pour les récupérer plus facilment
-    private EditText EtIdPersonne;
-    private TextView reponse;
+    private ListView liste;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // au lancement de l'application
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        // on récupère les contrôles de la view
-        EtIdPersonne = (EditText) findViewById(R.id.idPersonne);
-        Button btnLancer = (Button) findViewById(R.id.btnLancer);
-        reponse = (TextView) findViewById(R.id.reponse);
-        // on pose un listener sur le bouton
-        btnLancer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //on lance la requête ajax
-                sendRequest(btnLancer);
-            }
-        });
+        setContentView(R.layout.activity_liste_mode_de_paiement);
+        liste = (ListView) findViewById(R.id.Liste);
+        sendRequest(liste);
     }
 
 
@@ -67,23 +65,26 @@ public class MainActivity extends AppCompatActivity {
      * Lancement de la recherche
      */
     public void sendRequest(View view) {
-
-        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        Log.d("*************** Send **********", "sendRequest: ");        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         if (isNetworkAvailable()) {
             if (isOnline()) {
                 // On a accès au réseau et à internet
                 // On récupère l'id de la personne et on enlève les espaces
-                EtIdPersonne.setText(EtIdPersonne.getText().toString().trim());
-                Log.d("Test", "onSendRequest: idPersonne" + EtIdPersonne.getText());
+//                EtIdPersonne.setText(EtIdPersonne.getText().toString().trim());
+//                Log.d("Test", "onSendRequest: idPersonne" + EtIdPersonne.getText());
                 imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
                 //  on lance une tâche asynchrone en fonction de la saisie
                 AppelAPI task = new AppelAPI();
-                task.execute(EtIdPersonne.getText().toString());
+//                if (EtIdPersonne.getText().toString().trim()!="" )
+                    task.execute();
             } else {
                 Toast.makeText(view.getContext(), getApplicationContext().getResources().getString(R.string.no_online), Toast.LENGTH_LONG);
+                Log.d("DEBUG", "sendRequest: pas d'internet");
             }
         } else {
             Toast.makeText(view.getContext(), getApplicationContext().getResources().getString(R.string.no_network), Toast.LENGTH_LONG);
+            Log.d("DEBUG", "sendRequest: pas de reseau");
+
         }
     }
 
@@ -97,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
             String data = "";
 
             //exécution de la requête http avec en paramètres l'id saisi ou pas
-            data = ((new ApiHttpClient()).getData(params[0]));
+            data = ((new ApiHttpClient()).getListeMDP());
             if (data != null) {
                 Log.d("test", " retour:" + data);
                 //on log et on renvoi les données
@@ -113,9 +114,16 @@ public class MainActivity extends AppCompatActivity {
             super.onPostExecute(data);
             //si l'objet retourné n'est pas null on affiche le résultat brut
             if (data != null) {
-                reponse.setText(data);
-                //le mieux serait d'extraire les données du json et de les présenter
-                // voire créer un objet de type personnes , caster les données et remplir les contrôles de la view
+                try {
+                    Log.d("***************************** On passe *****************", "onPostExecute: ");
+                    List<ModeDePaiement> listeMdp=JsonMdpParser.parseListeMdp(data);
+                    ArrayAdapter<ModeDePaiement> mdp = new ArrayAdapter<ModeDePaiement>(this,R.layout.list_item_mode_paiement,R.id.textViewItem,listeMdp );
+
+//                    Log.d("**************", "onPostExecute: "+mdp);
+////                    reponse.setText(p.getNom());
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }

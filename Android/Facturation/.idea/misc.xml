@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/59011-07-08/CDA/Android/Facturation/app/src/main/res/layout/activity_liste_mode_de_paiement.xml" value="0.36666666666666664" />
+        <entry key="..\:/59011-07-08/CDA/Android/Facturation/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/59011-07-08/CDA/Android/Facturation/app/src/main/res/layout/list_item_mode_paiement.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/1701871/Documents/TestApi/app/src/main/res/layout/activity_main.xml" value="0.33" />
       </map>
     </option>
